@@ -64,7 +64,11 @@ The historical 180-second clip shows synthetic **M05–M10**, with M01–M04 pre
 
 ## Publication and owner review
 
-Known private source URL: https://github.com/peterpeter228/recallledger; it is not a verified public judging link. **t211u Q13=B′** authorizes a fresh cleaned export for a later single-commit public repository. The old repository stays private with history unchanged. Export scan results must bind to that export, not imply old-history clearance. Repository creation/push is later Dev-Orchestrator work, not this job. **Q14=A** leaves preview deployment to Dev/Rio later. Historical WP6b authentication was **Logged out**; no preview URL or deployment receipt is recorded here. Local handler evidence does not establish public routing or anonymous access.
+**Public repository:** https://github.com/peterpeter228/recallledger-public (MIT). The older private source repository remains private.
+
+**Working demo preview (recorded-live, writes off):** https://recallledger-public-9i7iiexz8-peterpeter228s-projects.vercel.app
+
+This published page is the external blog URL for judging. Local handler evidence is supplemental.
 
 Blog publication, unlisted video upload, form submission and optional social sharing remain separate pending owner acts. The [ordered checklist](SUBMISSION_CHECKLIST.md) is unsigned/open; nine identity/account answers remain **OWNER-ONLY open**. No final release SHA, export clearance, public readbacks, owner signature or submission receipt is supplied by this pack. Twelve memories and one successful Tatum read support their stated technical scopes, not eligibility certification.
 

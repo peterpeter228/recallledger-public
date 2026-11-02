@@ -6,7 +6,7 @@
 
 **One successful read-only Tatum Sui gRPC call is recorded** for `J91TcZuhTUphac9wS1TL2uCE3mNCafmbCmyLK3euayEq` at `2026-11-02T15:42:20.589+08:00`. The [probe receipt](evidence/tatum-probe-J91TcZuh.json) reports transaction success at checkpoint `340709151`. The real-transfer operator loop was not run; this read does not certify competition eligibility.
 
-[Blog](submission/BLOG_DRAFT.md) · [14 official fields](submission/FORM_FIELDS.md) · [Local video receipt](evidence/video-final/video-receipt.json) · [Storyboard](submission/VIDEO_STORYBOARD.md) · [Narration and captions](submission/VIDEO_NARRATION.md) · [Owner checklist](submission/SUBMISSION_CHECKLIST.md)
+[Blog](https://peterpeter228.github.io/recallledger-public/) · [Blog source](submission/BLOG_DRAFT.md) · [14 official fields](submission/FORM_FIELDS.md) · [Local video receipt](evidence/video-final/video-receipt.json) · [Storyboard](submission/VIDEO_STORYBOARD.md) · [Narration and captions](submission/VIDEO_NARRATION.md) · [Owner checklist](submission/SUBMISSION_CHECKLIST.md)
 
 ## Four lifecycle cases, not four flips
 
@@ -67,7 +67,11 @@ The historical [180-second video](evidence/video/RecallLedger_Core_Correction_18
 
 ### Publication and owner review
 
-Known private source URL: https://github.com/peterpeter228/recallledger. It is not a verified public judging link. Owner **t211u Q13=B′** authorizes a fresh cleaned export for a later single-commit public repository, not a visibility change or history rewrite of the old private repository. Cleaning and scan results must bind to the exact export; they do not clear the old history. Repository creation/push happens later through Dev-Orchestrator, not this job. **Q14=A** defers the Vercel preview to Dev/Rio. The historical WP6b `vercel whoami` result was exit 1, **Logged out**; no preview URL or deployment receipt is recorded here.
+**Public repository (judging link):** https://github.com/peterpeter228/recallledger-public (single-commit public export; MIT). The older private source repository remains private and is not the judging link.
+
+**Working demo (non-production recorded-live preview):** https://recallledger-public-9i7iiexz8-peterpeter228s-projects.vercel.app — writes disabled; no secret env vars; mainnetMemoryCount=12.
+
+Local loopback setup below remains available for offline inspection.
 
 Blog publication, unlisted video upload, form submission and optional social sharing remain separate pending owner acts in the [ordered checklist](submission/SUBMISSION_CHECKLIST.md). Nine identity/account answers remain **OWNER-ONLY open**. Final release SHA, export clearance, public readbacks, submission receipt and owner signature are not supplied by these drafts. The single Tatum read and twelve verified teaching memories are evidence for specific technical claims, not certification of relevant-use sufficiency or overall eligibility.
 

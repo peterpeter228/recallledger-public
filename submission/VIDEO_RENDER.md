@@ -1,5 +1,8 @@
 # Local narrated video receipt — Step B
 
+> **Historical preparation / evidence record — current status updated 2026-11-02 10:14 UTC.** Earlier unpublished, pending-upload, missing-memory and preparation-only statements below describe their original checkpoints, not present publication status. The [current README](https://github.com/peterpeter228/recallledger-public/blob/main/README.md#current-publication-status--2026-11-02-1014-utc) and [current checklist](https://github.com/peterpeter228/recallledger-public/blob/main/submission/SUBMISSION_CHECKLIST.md) supersede those status claims. Repo, production demo, blog and 165-second narrated video are public; the owner reported submission success at 09:55 UTC (independent receipt and exact submitted fields not inspected). Twelve synthetic teaching memories have recorded Mainnet verification and fresh remote restore; one read-only Tatum lookup is recorded, not a real-transfer operator learning loop. Original logs, limits and timestamps below are preserved.
+
+
 **Completed locally; not uploaded.** `out/recallledger-demo.mp4` is an actual **165-second H.264/AAC narrated video** with burned English captions, a complete English subtitle track and sidecar `out/recallledger-demo.srt`. The final receipt is `evidence/video-final/video-receipt.json`; full local evidence is in `out/recallledger-demo-manifest.json` and the owner's job `video.json`. No provider lookup, Mainnet write, signing, spending, deployment or publication was performed by this video work.
 
 ## Actual media results
@@ -74,4 +77,5 @@ It ran in the assigned clean environment and completed **17 segment encodes plus
 - `out/recallledger-demo-manifest.json`, `evidence/video-final/video-receipt.json`, and job `video.json`: final actual MP4/SRT hashes, local copies, source/evidence links and limits. The repository receipt uses repository-relative paths only; private job-copy paths are not exported there.
 
 **External boundary remains unchanged:** no unlisted URL, upload, logged-out remote playback, public deployment, real-transfer loop or new Mainnet operation is claimed. Publication is a separate parent-authorized action.
+
 

@@ -1,4 +1,30 @@
-# Submission checklist — unsigned owner review
+# Submission checklist — current status and historical preparation
+
+## Current publication status — 2026-11-02 10:14 UTC
+
+- **Public repository:** [https://github.com/peterpeter228/recallledger-public](https://github.com/peterpeter228/recallledger-public) (MIT).
+- **Published blog:** [https://peterpeter228.github.io/recallledger-public/](https://peterpeter228.github.io/recallledger-public/).
+- **Public demo:** [recallledger-public.vercel.app](https://recallledger-public.vercel.app/) — production deployment ready at 2026-11-02 10:10:58 UTC, application source `f4c6c4322511327cdc711abc40d607a61770685e`. Anonymous Inbox, View Evidence, Replay and Memory checks passed. Operator access and writes remain disabled; persistence is not configured.
+- **Public video:** [narrated MP4, 165 seconds / 2:45](https://cdn.jsdelivr.net/gh/peterpeter228/recallledger-public@2b86a4d6567afbfd428d818bb8d392fb6ed235fa/docs/recallledger-demo.mp4), also embedded in the blog; browser playback was verified. This is public hosting, not a claim of YouTube/Loom unlisted publication. SHA-256: `c36e8af5a55d48792971ed059695f50b531361e50ee6d9e2b3c585794f7780ba`.
+- **Submission:** the owner reported successful form submission at 2026-11-02 09:55 UTC. The submitted field values and independent receipt have not been inspected; this is owner-reported success, not an independently verified receipt or eligibility decision. Do not resubmit.
+- **Evidence boundary:** 12 synthetic teaching memories have recorded Mainnet verification at `2026-11-02T05:45:02.234Z` and fresh remote restore at `2026-11-02T05:45:08.379Z`. Public `recorded_live` evidence shows those saved results, not a fresh provider query. One successful read-only Tatum lookup is recorded; no live real-transfer operator learning loop was run.
+
+This status supersedes earlier preparation-only/publication-pending wording. Historical receipts, timestamps and failed runs remain unchanged. Private identity/account answers are deliberately not published; their absence here is not a claim that the owner's submitted form omitted them.
+
+## Current closing record
+
+| Gate | Current status |
+|---|---|
+| Public repo / demo / blog / video | Published; links and scoped browser checks above |
+| Form submission | Owner reported success, 2026-11-02 09:55 UTC; do not resubmit |
+| Independent receipt and exact submitted fields | Not inspected; no receipt fabricated |
+| Private identity/account values | Intentionally not published; no inference that submitted values are missing |
+| Optional social sharing | Not claimed; any new post requires separate authorization |
+| Mainnet writes / live operator learning | No new writes or real-transfer loop; historical teaching evidence only |
+
+## Historical preparation record — superseded, retained for audit
+
+The following records the earlier local-preparation authorization and open gates **at that time**, not current publication or submission status. Historical restrictions do not authorize any new action. The current record above controls present status.
 
 **Local preparation only. Owner review: UNSIGNED / OPEN.** No external publication, old-repository visibility/history change, deployment, video upload, form submission or optional post is authorized in this job. The local narrated video is complete; clean-export preparation and final checks remain parent-owned pending records.
 
@@ -32,7 +58,7 @@ Cached official rules (`rules.txt:22–24,32–56,83–94`) give the deadline **
 
 `evidence/video/RecallLedger_Core_Correction_180s.mp4` is historical synthetic **M05–M10** footage, with M01–M04 preloaded and M11/M12 outside capture. `evidence/video/metadata.json` records 180 seconds, no audio, optional English captions, source baseline `11d2af35ce9bb665a0f3de3d695582c237020825` plus indexed patch hashes, and SHA-256 `b44c878096c23e4a4b8cf8cfc8d41ca4623f869973ae45c875324876d108328c`. The final local candidate has its own `evidence/video-final/video-receipt.json`, completed `2026-11-02T08:10:48.644189Z`; this rewrite carries that observed receipt forward, not a new verification run.
 
-## Unsigned owner closing record
+## Historical unsigned owner closing record
 
 | Review gate | Status |
 |---|---|
@@ -45,3 +71,4 @@ Cached official rules (`rules.txt:22–24,32–56,83–94`) give the deadline **
 | Actual submission success receipt | OPEN — no submission performed or receipt invented |
 
 If any external action has an uncertain outcome, inspect its actual state before a separately authorized retry. Never invent success, replay Mainnet writes, reopen the real-loop scope or silently drop a blocker to complete the form.
+

@@ -1,5 +1,8 @@
 # 11 · 证据包与评委快速验证
 
+> **Historical preparation / evidence record — current status updated 2026-11-02 10:14 UTC.** Earlier unpublished, pending-upload, missing-memory and preparation-only statements below describe their original checkpoints, not present publication status. The [current README](https://github.com/peterpeter228/recallledger-public/blob/main/README.md#current-publication-status--2026-11-02-1014-utc) and [current checklist](https://github.com/peterpeter228/recallledger-public/blob/main/submission/SUBMISSION_CHECKLIST.md) supersede those status claims. Repo, production demo, blog and 165-second narrated video are public; the owner reported submission success at 09:55 UTC (independent receipt and exact submitted fields not inspected). Twelve synthetic teaching memories have recorded Mainnet verification and fresh remote restore; one read-only Tatum lookup is recorded, not a real-transfer operator learning loop. Original logs, limits and timestamps below are preserved.
+
+
 本文件解决“它真的记住了吗”和“它真的用了两家的技术吗”。证据仅在实际执行成功后生成；模板和离线合成 provider 不证明主网存储。本轮 WP3–WP5 只做离线准备，不生成真实 Mainnet 完成声明。
 
 ## 1. 四类声明不能混在一起
@@ -95,3 +98,4 @@ pnpm run verify:restore -- evidence/frozen-manifest.json --out evidence/restore-
 必须人工实际打开repo/demo/blog/video，确认无登录墙和失效链接；检查视频中的账户与提交表单相同；核对MEMWAL_AGENT_ID是公钥；检查录屏中没有.env或API headers。证据引用应落到同一release commit，不能视频演示新版而公开仓库仍是旧版。
 
 核验依据：[比赛规则](https://thewalrussessions.wal.app/tatum-total-recall/index.html)、[当前活动页](https://recall-tatum-walrus.vercel.app/)、[Walrus持久化与恢复限制](https://docs.wal.app/walrus-memory/sdk/production-readiness)。上述具体证据格式是本项目的工程设计。
+

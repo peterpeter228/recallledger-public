@@ -1,5 +1,8 @@
 # 参赛文案、技术博客与2分40秒演示
 
+> **Historical preparation / evidence record — current status updated 2026-11-02 10:14 UTC.** Earlier unpublished, pending-upload, missing-memory and preparation-only statements below describe their original checkpoints, not present publication status. The [current README](https://github.com/peterpeter228/recallledger-public/blob/main/README.md#current-publication-status--2026-11-02-1014-utc) and [current checklist](https://github.com/peterpeter228/recallledger-public/blob/main/submission/SUBMISSION_CHECKLIST.md) supersede those status claims. Repo, production demo, blog and 165-second narrated video are public; the owner reported submission success at 09:55 UTC (independent receipt and exact submitted fields not inspected). Twelve synthetic teaching memories have recorded Mainnet verification and fresh remote restore; one read-only Tatum lookup is recorded, not a real-transfer operator learning loop. Original logs, limits and timestamps below are preserved.
+
+
 > 版本：1.0｜准备日期：2026-10-26（北京时间）  
 > 当前状态：**开发前交接材料**。以下英文文案是待实施、填证据、核对后使用的草稿；没有已完成的demo、视频、博客发表或主网写入声明。`{{TODO_*}}`必须由真实结果替换。  
 > 主赛道：Smart Agents for Real Life。重点特别奖：Best Walrus Memory。Dot独立开发；不申报AI Builder或支付奖。  
@@ -319,4 +322,5 @@ Built with AI assistance, with the actual tool contributions disclosed in the re
 > Is a public read-only demo, public source, a 2–3 minute video, and a reproducible evidence manifest sufficient for judging a project whose memory-write actions are protected? The public demo replays a frozen history without creating new Mainnet writes. We can provide the author-flow video and restore evidence without sharing private keys.
 
 如主办方回复，保存原始链接、日期与明确答复，更新[规则审查](01_AUDIT_AND_RULES.md)与[来源记录](14_SOURCES_AND_UNCERTAINTY.md)。没有答复时保留“未获澄清”，不得改成“官方已批准”。
+
 

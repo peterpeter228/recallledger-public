@@ -1,0 +1,177 @@
+1
+00:00:00,000 --> 00:00:04,133
+A wallet shows what moved, not why.
+
+2
+00:00:04,133 --> 00:00:10,000
+RecallLedger demonstrates how an assistant
+can remember a correction without
+
+3
+00:00:10,000 --> 00:00:14,700
+assuming every similar transfer means the
+same thing.
+
+4
+00:00:14,700 --> 00:00:20,000
+This walkthrough uses synthetic teaching
+data, not customer payments.
+
+5
+00:00:20,000 --> 00:00:25,867
+In this local sandbox, I label one
+transfer as tools.
+
+6
+00:00:25,867 --> 00:00:31,767
+Reusing that label needs a separate
+confirmation of recipient, asset,
+
+7
+00:00:31,767 --> 00:00:34,700
+direction, amount range and validity.
+
+8
+00:00:34,700 --> 00:00:40,000
+While the fixture job is pending, policy
+stays unchanged.
+
+9
+00:00:40,000 --> 00:00:45,867
+Complete fixture job is a simulation, not
+a Walrus receipt.
+
+10
+00:00:45,867 --> 00:00:50,600
+I then correct a twenty-five-unit transfer
+to reimbursement.
+
+11
+00:00:50,600 --> 00:00:53,533
+That changes this item only.
+
+12
+00:00:53,533 --> 00:00:57,633
+Narrowing future matches from
+five-through-thirty to five-through-twenty
+
+13
+00:00:57,633 --> 00:01:00,000
+requires another explicit confirmation.
+
+14
+00:01:00,000 --> 00:01:06,667
+Here are memory off and on for the same
+twelve-unit input, at
+
+15
+00:01:06,667 --> 00:01:08,900
+the same evaluation time.
+
+16
+00:01:08,900 --> 00:01:11,100
+The input hashes match.
+
+17
+00:01:11,100 --> 00:01:17,233
+Without context it asks; with the
+confirmed rule it becomes tools.
+
+18
+00:01:17,233 --> 00:01:21,100
+After narrowing, the twenty-five-unit
+input asks again.
+
+19
+00:01:21,100 --> 00:01:26,667
+An incoming transfer cannot inherit an
+outgoing label: a refund
+
+20
+00:01:26,667 --> 00:01:28,900
+needs an explicit link.
+
+21
+00:01:28,900 --> 00:01:32,233
+After revocation, future matches ask
+again.
+
+22
+00:01:32,233 --> 00:01:37,767
+This demonstrates deterministic policy
+replay, not model training or measured
+
+23
+00:01:37,767 --> 00:01:40,000
+improvement on real users.
+
+24
+00:01:40,000 --> 00:01:44,800
+These are recorded evidence files, not a
+new write.
+
+25
+00:01:44,800 --> 00:01:49,067
+WP6a stored twelve synthetic teaching
+memories, M01 through
+
+26
+00:01:49,067 --> 00:01:51,200
+M12, on Walrus Mainnet.
+
+27
+00:01:51,200 --> 00:01:56,000
+Reconciliation shows twelve done
+operations and no unresolved operations.
+
+28
+00:01:56,000 --> 00:02:02,400
+The verified manifest reports count
+twelve, exact set true and hashes true.
+
+29
+00:02:02,400 --> 00:02:06,667
+Each entry supplies its event and text
+hashes.
+
+30
+00:02:06,667 --> 00:02:10,933
+Storage is real; the business story is
+synthetic.
+
+31
+00:02:10,933 --> 00:02:17,867
+One recorded Tatum read succeeded, but the
+real-transfer loop was not run by
+
+32
+00:02:17,867 --> 00:02:20,000
+owner decision one B.
+
+33
+00:02:20,000 --> 00:02:25,100
+The recorded fresh-client restore reports
+verified, with the same manifest
+
+34
+00:02:25,100 --> 00:02:28,167
+version, count twelve and state hash.
+
+35
+00:02:28,167 --> 00:02:33,267
+The full hash and original check time are
+on screen.
+
+36
+00:02:33,267 --> 00:02:38,367
+The demo cannot write; Mainnet writes
+belong only to the
+
+37
+00:02:38,367 --> 00:02:40,400
+separately authorized operator host.
+
+38
+00:02:40,400 --> 00:02:45,000
+These are recorded results, not a current
+availability guarantee.

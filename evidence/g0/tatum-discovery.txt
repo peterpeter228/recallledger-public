@@ -1,0 +1,42 @@
+# Tatum Blockchain Gateway
+
+**Official Documentation:** https://docs.tatum.io
+
+The following interfaces are available on this chain:
+- `sui-mainnet-grpc` (gRPC)
+
+## sui-mainnet-grpc - gRPC
+
+The gRPC endpoint is:
+`https://sui-mainnet-grpc.gateway.tatum.io`
+
+Use a gRPC client with protobuf-encoded requests. Please refer to the official documentation and the service proto definitions for available RPC methods and message formats.
+
+    - `grpc.reflection.v1.ServerReflection/ServerReflectionInfo`
+    - `grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo`
+    - `sui.rpc.v2.CheckpointSummaryService/GetCheckpointSummary`
+    - `sui.rpc.v2.CheckpointSummaryService/ListCheckpointSummaries`
+    - `sui.rpc.v2.LedgerService/BatchGetObjects`
+    - `sui.rpc.v2.LedgerService/BatchGetTransactions`
+    - `sui.rpc.v2.LedgerService/GetCheckpoint`
+    - `sui.rpc.v2.LedgerService/GetEpoch`
+    - `sui.rpc.v2.LedgerService/GetObject`
+    - `sui.rpc.v2.LedgerService/GetServiceInfo`
+    - `sui.rpc.v2.LedgerService/GetTransaction`
+    - `sui.rpc.v2.LedgerService/ListCheckpoints`
+    - `sui.rpc.v2.LedgerService/ListTransactions`
+    - `sui.rpc.v2.MovePackageService/GetDatatype`
+    - `sui.rpc.v2.MovePackageService/GetFunction`
+    - `sui.rpc.v2.MovePackageService/GetPackage`
+    - `sui.rpc.v2.MovePackageService/ListPackageVersions`
+    - `sui.rpc.v2.NameService/LookupName`
+    - `sui.rpc.v2.NameService/ReverseLookupName`
+    - `sui.rpc.v2.SignatureVerificationService/VerifySignature`
+    - `sui.rpc.v2.StateService/GetBalance`
+    - `sui.rpc.v2.StateService/GetCoinInfo`
+    - `sui.rpc.v2.StateService/ListBalances`
+    - `sui.rpc.v2.StateService/ListDynamicFields`
+    - `sui.rpc.v2.StateService/ListOwnedObjects`
+    - `sui.rpc.v2.SubscriptionService/SubscribeCheckpoints`
+    - `sui.rpc.v2.TransactionExecutionService/ExecuteTransaction`
+    - `sui.rpc.v2.TransactionExecutionService/SimulateTransaction`

@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-02T07:49:49.144Z",
+  "completedAt": "2026-11-02T07:49:52.050Z",
+  "mode": "recorded_live",
+  "teachingMode": "browser-local synthetic; no provider or Mainnet writes",
+  "baseUrl": "http://127.0.0.1:3276",
+  "health": {
+    "status": "ok",
+    "persistence": "not_configured",
+    "operatorEnabled": false,
+    "writesEnabled": false,
+    "remoteWrites": "operator-only",
+    "demo": "ephemeral-synthetic"
+  },
+  "publicEvidence": {
+    "dataOrigin": "synthetic",
+    "mainnetMemoryCount": 12,
+    "liveVerification": "verified",
+    "mode": "recorded_live",
+    "verifiedAt": "2026-11-02T05:45:02.234Z",
+    "manifestVersion": "recallledger-teaching-v1-demo-recallledger-n12",
+    "stateHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04",
+    "note": "Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions."
+  },
+  "browser": "Playwright with Google Chrome, isolated ephemeral profile",
+  "externalRequestsBlocked": true,
+  "blockedRequests": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/assets/index-D0Wc_EPD.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/assets/index-yFeuGw7c.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/api/evidence/public"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/api/health"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:3276/api/session"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "recorded handler: operator false, writes false, recorded_live count 12",
+    "M01 explicit confirmation; pending summary unchanged; completion visible",
+    "M02 explicit confirmation; pending summary unchanged; completion visible",
+    "M03 explicit confirmation; pending summary unchanged; completion visible",
+    "M04 explicit confirmation; pending summary unchanged; completion visible",
+    "M05 explicit confirmation; pending summary unchanged; completion visible",
+    "M06 explicit confirmation; pending summary unchanged; completion visible",
+    "M07 explicit confirmation; pending summary unchanged; completion visible",
+    "M08 explicit confirmation; pending summary unchanged; completion visible",
+    "M09 explicit confirmation; pending summary unchanged; completion visible",
+    "M10 explicit confirmation; pending summary unchanged; completion visible",
+    "M11 explicit confirmation; pending summary unchanged; completion visible",
+    "M12 explicit confirmation; pending summary unchanged; completion visible",
+    "fixed-input B/M4: same hash; expected off/on decisions visible",
+    "fixed-input E/M8: same hash; expected off/on decisions visible",
+    "fixed-input B/M12: same hash; expected off/on decisions visible",
+    "zero page errors; all browser HTTP requests GET; teaching state page-local"
+  ],
+  "files": [
+    {
+      "name": "recorded-storage",
+      "path": "evidence/video-final/recorded-storage.png",
+      "sha256": "d862cf427bd14a493efd1d302143524c17ee893493572755e61729ee2276f4da",
+      "bytes": 21975,
+      "domPath": "evidence/video-final/recorded-storage.txt",
+      "domSha256": "635ed1736404f7c31af0a668406af65e93555ab99faae89928339254cd364570",
+      "capturedAt": "2026-11-02T07:48:28.445Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".memory-note",
+      "expectations": [
+        "12",
+        "Mainnet verified (recorded"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "M02",
+      "path": "evidence/video-final/M02.png",
+      "sha256": "1f2472eafae2c2d455f794091363f950a2bb2c5c10cdf724aa5d3846cd4f14fa",
+      "bytes": 56663,
+      "domPath": "evidence/video-final/M02.txt",
+      "domSha256": "e414fe9aee835e4d689645dc619d04993fdebd0b2b22f6cf9bb8ce9526640a40",
+      "capturedAt": "2026-11-02T07:48:28.795Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".workspace",
+      "expectations": [
+        "Needs context",
+        "A transfer alone does not tell us its purpose."
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "single-label",
+      "path": "evidence/video-final/single-label.png",
+      "sha256": "ebdef1d410c0637de415137c473f4623edd96d9d1f56dca41a39bf7ccf2dc0a4",
+      "bytes": 39890,
+      "domPath": "evidence/video-final/single-label.txt",
+      "domSha256": "e414fe9aee835e4d689645dc619d04993fdebd0b2b22f6cf9bb8ce9526640a40",
+      "capturedAt": "2026-11-02T07:48:28.889Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".composer",
+      "expectations": [
+        "this change applies only to this transfer",
+        "Purpose"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "scope-M04",
+      "path": "evidence/video-final/scope-M04.png",
+      "sha256": "d74ae8aa258bc97c3ac21f8683cd5a47675face2fde8a5550c9dd97d68c0ce26",
+      "bytes": 91558,
+      "domPath": "evidence/video-final/scope-M04.txt",
+      "domSha256": "e649996cedbab9717b8a6d7d05d2d6abe888485b1b668bfd588c5e0423840513",
+      "capturedAt": "2026-11-02T07:48:29.152Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".composer",
+      "expectations": [
+        "Exact scope",
+        "COUNTERPARTY_R",
+        "Confirm this rule"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "M04-pending",
+      "path": "evidence/video-final/M04-pending.png",
+      "sha256": "ae7f28e9241a9b86d7d319536bcf208ef34a5678bbc55c13b72438a4c09552ac",
+      "bytes": 25486,
+      "domPath": "evidence/video-final/M04-pending.txt",
+      "domSha256": "1b88124250030186173d50ab2e3ad521cc3475f3f15bff82dc061048e49a914c",
+      "capturedAt": "2026-11-02T07:48:29.314Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".pending",
+      "expectations": [
+        "Not active yet.",
+        "Complete fixture job",
+        "No Walrus request is sent."
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "M06",
+      "path": "evidence/video-final/M06.png",
+      "sha256": "039dfe1f00aecc8442d5656ecfd15a85c2117ba869404bf6b64746efa7c6c3b4",
+      "bytes": 67480,
+      "domPath": "evidence/video-final/M06.txt",
+      "domSha256": "f073cff2b4120582dd682c9d377caeafe2a4ae9bd388290705d4db403c35723d",
+      "capturedAt": "2026-11-02T07:48:29.663Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".workspace",
+      "expectations": [
+        "Expense"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "summary-M06",
+      "path": "evidence/video-final/summary-M06.png",
+      "sha256": "b777769fe3d603f821fc4d7d4cff6671f08161a64568f9d5733f54458015eb3b",
+      "bytes": 8055,
+      "domPath": "evidence/video-final/summary-M06.txt",
+      "domSha256": "f073cff2b4120582dd682c9d377caeafe2a4ae9bd388290705d4db403c35723d",
+      "capturedAt": "2026-11-02T07:48:29.743Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".stats",
+      "expectations": [
+        "49.00"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "M07",
+      "path": "evidence/video-final/M07.png",
+      "sha256": "30f60450e1b4bfbca8eb555bb94295d8dfa0cac21c01e9539b4ea7c0b42ec121",
+      "bytes": 68106,
+      "domPath": "evidence/video-final/M07.txt",
+      "domSha256": "80cc4eb3d0407b276df64bc8b352d89c4d31d21775bdc34d5d4af17a5fb10557",
+      "capturedAt": "2026-11-02T07:48:29.964Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".workspace",
+      "expectations": [
+        "Reimbursement"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "summary-M07",
+      "path": "evidence/video-final/summary-M07.png",
+      "sha256": "f1b76303e1aa4ac47ca69ef3d338339e185f86c9b8c9c50f5f76d4fe6480442e",
+      "bytes": 7926,
+      "domPath": "evidence/video-final/summary-M07.txt",
+      "domSha256": "80cc4eb3d0407b276df64bc8b352d89c4d31d21775bdc34d5d4af17a5fb10557",
+      "capturedAt": "2026-11-02T07:48:30.043Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".stats",
+      "expectations": [
+        "24.00"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "scope-M08",
+      "path": "evidence/video-final/scope-M08.png",
+      "sha256": "20a9aa52b1197bad3dbd4469a3521b9ff275ef24589a09c5a5dd12bf2817d9c4",
+      "bytes": 100412,
+      "domPath": "evidence/video-final/scope-M08.txt",
+      "domSha256": "cb94ebf8ed3485cd624e4a750daa0b2b6eb00004243c78e9c53bda755bfc7e1f",
+      "capturedAt": "2026-11-02T07:48:30.179Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".composer",
+      "expectations": [
+        "Exact scope",
+        "COUNTERPARTY_R",
+        "Confirm this rule"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "M10",
+      "path": "evidence/video-final/M10.png",
+      "sha256": "4e12c602c7d9b2a63e80da3e9407c4aafd8c6267b7be9891f192c7898cea7e64",
+      "bytes": 71855,
+      "domPath": "evidence/video-final/M10.txt",
+      "domSha256": "7a05b144ce469136a98eb93f9884a6c9c9b10b4c19068c60c1a0a91a8c96df1d",
+      "capturedAt": "2026-11-02T07:48:30.599Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".workspace",
+      "expectations": [
+        "Refund"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "summary-M10",
+      "path": "evidence/video-final/summary-M10.png",
+      "sha256": "34987334c19d8cd9135b27379e3e1c46cf0594d696a4a7615fdae740a4f1225f",
+      "bytes": 7730,
+      "domPath": "evidence/video-final/summary-M10.txt",
+      "domSha256": "7a05b144ce469136a98eb93f9884a6c9c9b10b4c19068c60c1a0a91a8c96df1d",
+      "capturedAt": "2026-11-02T07:48:30.675Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".stats",
+      "expectations": [
+        "12.00"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "final-inbox",
+      "path": "evidence/video-final/final-inbox.png",
+      "sha256": "61b101d13b3e645e0685a5f178fc041a399afd9e51537108c871d701e77f6020",
+      "bytes": 84731,
+      "domPath": "evidence/video-final/final-inbox.txt",
+      "domSha256": "9d5594cc56940033b37146a8a87bf0400ffad3632d6af0ab9635bf4c76cad29c",
+      "capturedAt": "2026-11-02T07:48:31.017Z",
+      "captureTimeSource": "image filesystem mtime from successful first-attempt capture; reused without overwriting",
+      "selector": ".workspace",
+      "expectations": [
+        "Reimbursement",
+        "Refund"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "fixture-restore",
+      "path": "evidence/video-final/fixture-restore.png",
+      "sha256": "56bb213d06dce671dbdd9fcfcf5f23b4c0924c2d288554d4e830cece3385af5d",
+      "bytes": 26972,
+      "domPath": "evidence/video-final/fixture-restore.txt",
+      "domSha256": "2b3a210515412e3b51316eed0a96a5c80c30e8d41e798913d0a27e5bb0c285db",
+      "capturedAt": "2026-11-02T07:49:51.584Z",
+      "captureTimeSource": "capture invocation UTC",
+      "selector": ".notice[role=\"status\"]",
+      "expectations": [
+        "Fixture restore report",
+        "simulated",
+        "remoteRestoreVerified"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "replay-B-M04",
+      "path": "evidence/video-final/replay-B-M04.png",
+      "sha256": "c466830025f5de25575cc842656e52e0cc7f6586d6e61596503e3086e958b822",
+      "bytes": 36020,
+      "domPath": "evidence/video-final/replay-B-M04.txt",
+      "domSha256": "f2cbc7dcbf0620db78b8951a3f647c8b400dfc9ba424c50b5aa98fcbd458d708",
+      "capturedAt": "2026-11-02T07:49:51.777Z",
+      "captureTimeSource": "capture invocation UTC",
+      "selector": ".comparison",
+      "expectations": [
+        "WITHOUT SAVED CONTEXT",
+        "WITH SAVED CONTEXT",
+        "Expense"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "replay-E-M08",
+      "path": "evidence/video-final/replay-E-M08.png",
+      "sha256": "a8ad1b81f99f5cd075d0b31eb0d51a0225b7386da9f02193221c22c3277ffb87",
+      "bytes": 39656,
+      "domPath": "evidence/video-final/replay-E-M08.txt",
+      "domSha256": "cff7038b0e77a3c3cf3440996ca047a54a652dc1362b78922a074fb2ea1ebef1",
+      "capturedAt": "2026-11-02T07:49:51.874Z",
+      "captureTimeSource": "capture invocation UTC",
+      "selector": ".comparison",
+      "expectations": [
+        "WITHOUT SAVED CONTEXT",
+        "WITH SAVED CONTEXT",
+        "Needs context"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    },
+    {
+      "name": "replay-B-M12",
+      "path": "evidence/video-final/replay-B-M12.png",
+      "sha256": "a8126c920e40304a6a3efe075425aa88ce97997ac1cd3fcb7f158db9cc197da4",
+      "bytes": 37811,
+      "domPath": "evidence/video-final/replay-B-M12.txt",
+      "domSha256": "da68d0475463ffefdf79027d20cf6e221add1bb3872f3b561db52aa946068949",
+      "capturedAt": "2026-11-02T07:49:51.975Z",
+      "captureTimeSource": "capture invocation UTC",
+      "selector": ".comparison",
+      "expectations": [
+        "WITHOUT SAVED CONTEXT",
+        "WITH SAVED CONTEXT",
+        "Needs context"
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "url": "http://127.0.0.1:3276/"
+    }
+  ],
+  "buildFiles": [
+    {
+      "path": "dist/api/index.js",
+      "bytes": 55438,
+      "sha256": "d7f354fa6736ae89e59f784f7a1acd74b65ba7e1226949b8baf6f0b01e6a426f"
+    },
+    {
+      "path": "dist/web/assets/index-D0Wc_EPD.js",
+      "bytes": 389588,
+      "sha256": "6b6b180b46e7209f8678f14c6a2adb3173cd238852def13d8ac2641e20bf587e"
+    },
+    {
+      "path": "dist/web/assets/index-yFeuGw7c.css",
+      "bytes": 11099,
+      "sha256": "3656456e697694080978b45899d41260265881c7d271e478629da33236769a32"
+    }
+  ]
+}

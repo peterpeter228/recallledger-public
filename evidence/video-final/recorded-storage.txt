@@ -1,0 +1,90 @@
+RecallLedger
+Your wallet facts. Your remembered context.
+Inbox
+Memory
+Replay
+Recorded scenario · Read only
+Synthetic inputs
+Storage: Mainnet verified (recorded 2026-11-02T05:45:02.234Z)
+Mainnet memories: 12
+Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions.
+
+The teaching sandbox runs only in this browser tab. Reloading or closing it loses its state; other tabs are isolated. Nothing is persisted or sent to Walrus.
+
+Your transfers, understood.
+
+A clear record of what moved, and what it meant.
+
+Replay the correction
+Tools spend
+12.00 TEST_USDC
+Needs context
+25.00 TEST_USDC
+Active rules
+0
+Tools budget: 60.00 TEST_USDC
+Synthetic amounts · unknown ≠ expense
+Transfer inbox
+A
+Transfer A
+Outgoing · Synthetic
+Expense
+−12.00
+TEST_USDC
+B
+Transfer B
+Outgoing · Synthetic
+Expense
+−12.00
+TEST_USDC
+C
+Transfer C
+Outgoing · Synthetic
+Reimbursement
+−25.00
+TEST_USDC
+D
+Transfer D
+Incoming · Synthetic
+Refund
++12.00
+TEST_USDC
+E
+Transfer E
+Outgoing · Synthetic
+Needs context
+−25.00
+TEST_USDC
+Transfer E
+
+25.00 TEST_USDC
+
+Needs context
+
+Synthetic transfer · 2026-10-26
+
+Onchain facts
+Direction
+Outgoing
+Counterparty alias
+COUNTERPARTY_R
+Network
+Fixture · not verified onchain
+Your context
+
+Needs context
+
+A transfer alone does not tell us its purpose.
+
+Why this result
+
+Amount above maximum · No matching rule
+
+View evidence
+Add context
+
+Open a temporary sandbox to try explaining and correcting transfers.
+
+Operator tools · protected local session
+Fixture provider · No mainnet writes
+Your context is yours to confirm.

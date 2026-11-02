@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-26T05:20:01.561Z",
+  "mode": "compiled HTTP not browser",
+  "health": {
+    "data": {
+      "status": "ok",
+      "persistence": "not_configured",
+      "operatorEnabled": false,
+      "writesEnabled": false,
+      "remoteWrites": "operator-only",
+      "demo": "ephemeral-synthetic"
+    },
+    "meta": {
+      "requestId": "req-2",
+      "dataOrigin": "synthetic",
+      "memoryVersion": 0
+    }
+  },
+  "httpPage": 200,
+  "session": 200,
+  "publicMutation": 401,
+  "synthetic": "ephemeral-synthetic",
+  "mainnetCalls": 0
+}

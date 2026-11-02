@@ -1,0 +1,2 @@
+c14621ba4820dd1b694e93240836bc92f8a6eca6560b1e6375dc9e30949f9e94  tests/e2e/operator-synthetic-harness.ts
+41e48972a6b5e9125d10404f0e04e3693f7d72bb99785123626247a76cbdc5f2  tests/e2e/start-operator-synthetic.sh

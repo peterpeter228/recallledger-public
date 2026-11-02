@@ -1,0 +1,6 @@
+import {it,expect} from 'vitest';
+import {manualRulePayload} from '../../src/web/operator-rule';
+import {demoObservation} from '../../src/domain/demo';
+const fields={minAmountAtomic:'5000000',maxAmountAtomic:'20000000',validFrom:'2026-10-26T00:00:00.000Z',validUntil:'2026-11-25T00:00:00.000Z',classification:'expense' as const};
+it('builds exact manual scope from fixed identities plus explicit bounds, never inferring a range from one transfer',()=>{const o=demoObservation('A');expect(manualRulePayload(o,fields)).toEqual({sourceObservationId:o.observationId,scope:{chain:o.chain,walletRef:o.walletRef,counterpartyRef:o.counterpartyRef,coinType:o.coinType,direction:o.direction,minAmountAtomic:'5000000',maxAmountAtomic:'20000000',validFrom:fields.validFrom,validUntil:fields.validUntil},classification:'expense',category:'tools'});});
+it('rejects unverified shape, missing identity, decimal/inverted bounds and invalid UTC interval',()=>{const o=demoObservation('A');for(const input of [{...o,complexity:'complex' as const},{...o,counterpartyRef:null}])expect(()=>manualRulePayload(input,fields)).toThrow();for(const patch of [{minAmountAtomic:''},{maxAmountAtomic:'1.2'},{minAmountAtomic:'30000000'},{validFrom:'not-a-date'},{validUntil:'2026-01-01T00:00:00.000Z'}])expect(()=>manualRulePayload(o,{...fields,...patch})).toThrow();});

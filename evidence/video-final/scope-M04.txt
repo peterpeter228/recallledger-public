@@ -1,0 +1,106 @@
+RecallLedger
+Your wallet facts. Your remembered context.
+Inbox
+Memory
+Replay
+Temporary sandbox
+Synthetic inputs
+Storage: Mainnet verified (recorded 2026-11-02T05:45:02.234Z)
+Mainnet memories: 12
+Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions.
+
+The teaching sandbox runs only in this browser tab. Reloading or closing it loses its state; other tabs are isolated. Nothing is persisted or sent to Walrus.
+
+Remembered in this temporary sandbox. This is not a Walrus receipt.
+
+Your transfers, understood.
+
+A clear record of what moved, and what it meant.
+
+Compare saved context
+Tools spend
+12.00 TEST_USDC
+Needs context
+0.00 TEST_USDC
+Active rules
+0
+Tools budget: 60.00 TEST_USDC
+Synthetic amounts · unknown ≠ expense
+Teaching session · 3 of 12 changes confirmed
+Leave sandbox
+SANDBOX · STEP 4 / 12
+Teach a reusable rule
+Manual review
+
+These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+
+Your explanation
+
+AI proposals are unavailable. Use the manual scope below; text alone never activates a rule.
+
+For outgoing TEST_USDC to COUNTERPARTY_R, from 5.00 to 30.00, classify as Tools expense.
+Minimum (atomic units)
+Maximum (atomic units)
+Valid from (UTC)
+Valid until (UTC)
+Exact scope · review every condition
+Chain
+sui:fixture
+WalletRef
+DEMO_OWNER
+CounterpartyRef
+COUNTERPARTY_R
+CoinType
+fixture:TEST_USDC
+Direction
+out
+MinAmountAtomic
+5000000
+MaxAmountAtomic
+30000000
+ValidFrom
+2026-10-26T00:00:00.000Z
+ValidUntil
+2026-11-25T00:00:00.000Z
+I reviewed and confirm this exact scope.
+Confirm this rule
+Transfer inbox
+A
+Transfer A
+Outgoing · Synthetic
+Expense
+−12.00
+TEST_USDC
+Transfer A
+
+12.00 TEST_USDC
+
+Expense
+
+Synthetic transfer · 2026-10-26
+
+Onchain facts
+Direction
+Outgoing
+Counterparty alias
+COUNTERPARTY_R
+Network
+Fixture · not verified onchain
+Your context
+
+Expense
+
+Confirmed by you
+
+Why this result
+
+Explicit user label
+
+View evidence
+Add context
+
+Use the reviewed step above to make a change.
+
+Operator tools · protected local session
+Fixture provider · No mainnet writes
+Your context is yours to confirm.

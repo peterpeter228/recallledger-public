@@ -1,0 +1,98 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "Your transfers, understood." [level=1]
+  - paragraph: A clear record of what moved, and what it meant.
+  - button "Compare saved context"
+  - region "Ledger summary":
+    - generic: Tools spend
+    - strong: 24.00 TEST_USDC
+    - generic: Needs context
+    - strong: 12.00 TEST_USDC
+    - generic: Active rules
+    - strong: "1"
+  - text: "Tools budget:"
+  - strong: "60.00"
+  - text: TEST_USDC
+  - generic: Synthetic amounts · unknown ≠ expense
+  - generic: Teaching session · 9 of 12 changes confirmed
+  - button "Leave sandbox"
+  - generic: SANDBOX · STEP 10 / 12
+  - heading "Link an explicit refund" [level=2]
+  - generic: Manual review
+  - paragraph: These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+  - text: Incoming transfer
+  - textbox "Incoming transfer": fixture:tx-D
+  - text: Original expense
+  - textbox "Original expense": fixture:tx-B
+  - text: Refund amount (atomic units)
+  - textbox "Refund amount (atomic units)": "12000000"
+  - paragraph: The server checks owner, direction, asset, and the remaining refundable amount.
+  - checkbox "I reviewed and confirm this change."
+  - text: I reviewed and confirm this change.
+  - button "Confirm and prepare" [disabled]
+  - heading "Transfer inbox" [level=2]
+  - button "A Transfer A Outgoing · Synthetic Expense −12.00 TEST_USDC":
+    - generic: A
+    - strong: Transfer A
+    - generic: Outgoing · Synthetic
+    - generic: Expense
+    - text: −12.00
+    - generic: TEST_USDC
+  - button "B Transfer B Outgoing · Synthetic Expense −12.00 TEST_USDC":
+    - generic: B
+    - strong: Transfer B
+    - generic: Outgoing · Synthetic
+    - generic: Expense
+    - text: −12.00
+    - generic: TEST_USDC
+  - button "C Transfer C Outgoing · Synthetic Reimbursement −25.00 TEST_USDC":
+    - generic: C
+    - strong: Transfer C
+    - generic: Outgoing · Synthetic
+    - generic: Reimbursement
+    - text: −25.00
+    - generic: TEST_USDC
+  - button "D Transfer D Incoming · Synthetic Needs context +12.00 TEST_USDC":
+    - generic: D
+    - strong: Transfer D
+    - generic: Incoming · Synthetic
+    - generic: Needs context
+    - text: "+12.00"
+    - generic: TEST_USDC
+  - heading "Transfer D" [level=2]
+  - paragraph: 12.00 TEST_USDC
+  - generic: Needs context
+  - paragraph: Synthetic transfer · 2026-10-26
+  - heading "Onchain facts" [level=3]
+  - term: Direction
+  - definition: Incoming
+  - term: Counterparty alias
+  - definition: COUNTERPARTY_R
+  - term: Network
+  - definition: Fixture · not verified onchain
+  - heading "Your context" [level=3]
+  - paragraph: Needs context
+  - paragraph: A transfer alone does not tell us its purpose.
+  - heading "Why this result" [level=3]
+  - paragraph: No recorded context
+  - button "View evidence"
+  - button "Add context" [disabled]
+  - paragraph: Use the reviewed step above to make a change.
+  - generic "Operator tools · protected local session"
+  - paragraph: Use your configured server session for real transaction inspection. These controls never substitute teaching fixtures for a failed live request.
+  - strong: Operator session unavailable.
+  - paragraph: Server authentication and durable persistence are not configured. Live inspection and memory writes remain disabled. The public teaching sandbox is separate.
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

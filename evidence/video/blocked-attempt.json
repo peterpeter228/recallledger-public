@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED_RECORDING_NOT_A_WORKFLOW_DEMO",
+  "artifact": "recallledger-blocked-static-recording.mp4",
+  "bytes": 701149,
+  "sha256": "d6552c0e7914c85a809fad2da287609efd7126a029710da6d04e95b7b5a46cc0",
+  "durationSeconds": 180,
+  "reason": "Existing-tab actions denied before first M05 checkbox; no remaining workflow actions executed during capture. Earlier actual QA is separate.",
+  "sourceEvidence": "../browser-cua/video-attempt-policy-block.json",
+  "renamedFrom": "recallledger-local-ui-demo.mp4",
+  "deliveredAsDemo": false
+}

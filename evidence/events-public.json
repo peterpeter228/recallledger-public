@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1",
+  "manifestVersion": "recallledger-teaching-v1-demo-recallledger-n12",
+  "verifiedAt": "2026-11-02T05:45:02.234Z",
+  "entries": [
+    {
+      "eventId": "M01",
+      "sequence": 1,
+      "eventHash": "6b50aabb8a973969370f3403930cbcc0c5350948d262cc951250c693c62229be",
+      "blobId": "x9iB_rTAe5JQZXRki38KOY7lAfVFwH26DpeS--7aFzU",
+      "textSha256": "2f14503e50b28d64a947b470e6f88e81186e31dad8884d599cf0ce2e9f267e9f",
+      "memoryId": "7025096f-f80b-41ac-ae55-925a22f04db7",
+      "jobId": "7025096f-f80b-41ac-ae55-925a22f04db7"
+    },
+    {
+      "eventId": "M02",
+      "sequence": 2,
+      "eventHash": "efe8e202c87a2e05d56ac50a6dc299f08e6cd1df45d4349de1d8fc7f8ca0f0f2",
+      "blobId": "lRk5LENp6C2sGjI-65cRd3hC2d79ziBbD3cwpN-IZvs",
+      "textSha256": "a48685cfdab5fe123f74a42abe5d7f15ec8c72497a423fe334f4cb938ec28d1e",
+      "memoryId": "222c4b78-2290-4910-be84-43619839d1de",
+      "jobId": "222c4b78-2290-4910-be84-43619839d1de"
+    },
+    {
+      "eventId": "M03",
+      "sequence": 3,
+      "eventHash": "a94743db3d54a599041cb3682901f223572b226fecfeb2ea9d3fde63abd6f371",
+      "blobId": "anw62RUI9rj8-DblAAVs_cEBwFC4lnlgvBZWK9lut28",
+      "textSha256": "a394a758bbf69b34a6f33d5ec16fb309def7b9b8712e382234fcfae921ccfe4d",
+      "memoryId": "237e17a6-5fed-4246-82fe-d01ca3b3014e",
+      "jobId": "237e17a6-5fed-4246-82fe-d01ca3b3014e"
+    },
+    {
+      "eventId": "M04",
+      "sequence": 4,
+      "eventHash": "71c5338eb05ffc9c4541cf2655efce164c29258a238101b78e34b0eed645a9eb",
+      "blobId": "-ofGFuN5B_cq3XCRd3HfQCkO94oXj9zoBO025Pj_YJM",
+      "textSha256": "74af09e8ae9946d5efecde51009b36ec5d6e1a657ea772153fb1bc7e34be27c7",
+      "memoryId": "da29df80-ca8c-4c1e-b557-897530cc16de",
+      "jobId": "da29df80-ca8c-4c1e-b557-897530cc16de"
+    },
+    {
+      "eventId": "M05",
+      "sequence": 5,
+      "eventHash": "90842f95938e4baa54c5a1b2a26679521ca9c8c71c031fcff25792d87183bab4",
+      "blobId": "k8erNUZGjhSkVtlIGDLakeGVZlo2gRlQSqBO0MfC7EQ",
+      "textSha256": "a438abcef10549f42f6544cd447d7eb4dc4d668fdfe6bb5880a44ecc251014b0",
+      "memoryId": "1de40fbe-8f3b-4ccc-804c-6123c05baf9b",
+      "jobId": "1de40fbe-8f3b-4ccc-804c-6123c05baf9b"
+    },
+    {
+      "eventId": "M06",
+      "sequence": 6,
+      "eventHash": "b1657f3e2924ea8cfb558b6f12e611c7e2d5c5cc801c2e61ec391b9c26511044",
+      "blobId": "fUmQbgw7JG8JvWXbM_EFp1JElD-fUfMjJB8L_KB7KY0",
+      "textSha256": "bcfee304ba6165c917f9b22c418d07aa50196c47b3d432fcbc242ad0ca431c5c",
+      "memoryId": "b1957e32-7d42-4c7d-9f43-649fe2e6ae9f",
+      "jobId": "b1957e32-7d42-4c7d-9f43-649fe2e6ae9f"
+    },
+    {
+      "eventId": "M07",
+      "sequence": 7,
+      "eventHash": "657550bcae58dd7c1529b6eab30f98941192d4552e175192409fefaf4db04a6a",
+      "blobId": "4JBEDJczvP_Yi0s-_Fkh2tDI62Mx55MsLZgKZtemdBE",
+      "textSha256": "e95b0879ae58d052af2c210a2cf57ea740553509bc1d2f4f593d6b2546859322",
+      "memoryId": "bb51b46c-92df-44ce-a973-e245424224cb",
+      "jobId": "bb51b46c-92df-44ce-a973-e245424224cb"
+    },
+    {
+      "eventId": "M08",
+      "sequence": 8,
+      "eventHash": "8242ee661eec01c528f177122a571bb37f2a79e3cea443124db7492bbc951a12",
+      "blobId": "brUOKJ17kPVGuHZxG6EZA4OnTC1d2ROHpproqOBGrUI",
+      "textSha256": "95744004aa5816457ab1e65510725c5333ec8dbfe4385f1831d568d261053647",
+      "memoryId": "ce6acf10-28e2-4a2b-819c-708c001d62c7",
+      "jobId": "ce6acf10-28e2-4a2b-819c-708c001d62c7"
+    },
+    {
+      "eventId": "M09",
+      "sequence": 9,
+      "eventHash": "d7b92e8a3ef8087c0863d42d2d572d5906c4df79def0119caad71dc4a43be6dc",
+      "blobId": "59Bo9eCPb0ZLruZYUAt6W_juAAbaFE6KB3XEMBGEs7A",
+      "textSha256": "31bedb5ad93f5a0ff84826108eec90578a26b706afcbf3ceedd7987f9982f813",
+      "memoryId": "13e2a107-6320-4cda-b6ab-e80e5f6946cf",
+      "jobId": "13e2a107-6320-4cda-b6ab-e80e5f6946cf"
+    },
+    {
+      "eventId": "M10",
+      "sequence": 10,
+      "eventHash": "d782447d5667a3e6c29dc5448a00e700b1f510357395142f284be547f7009f26",
+      "blobId": "1VLpL2IwdOy4sjGkoA_2O9N2HO5JcuZ7cMNP-856WEc",
+      "textSha256": "ca4125b0c453e9a24fec52646c301e43f9932c05b85248e8be289e9be991e5ed",
+      "memoryId": "64318c0f-fc34-4f35-887d-5fb0b7c8a3f5",
+      "jobId": "64318c0f-fc34-4f35-887d-5fb0b7c8a3f5"
+    },
+    {
+      "eventId": "M11",
+      "sequence": 11,
+      "eventHash": "64813fb78e43c0f699d798929ce39b7ff331f5cab9d68d08fb05db27d34188ef",
+      "blobId": "Y3ygZQo5rI4BZCvuaBJgC5_FrOnv_Hh9u6UqV-2rD0c",
+      "textSha256": "530b4ef478e3c037e5f1c9c4ee5f325fb4184d75e202e6991d90b49b2f9573fb",
+      "memoryId": "52d82f96-1678-4fb4-9e8b-b9ce8565ef8e",
+      "jobId": "52d82f96-1678-4fb4-9e8b-b9ce8565ef8e"
+    },
+    {
+      "eventId": "M12",
+      "sequence": 12,
+      "eventHash": "b3409056419eb33faf0c15a3ab42bdd82626287741c8d30828a5a2a99c7f44ca",
+      "blobId": "3UyydPggOWfY-m1mYwjZTGSp_Ovv707TzFERXKGhihY",
+      "textSha256": "73c39248c421186a33271b897abb2882515d81798b865d958cb69e7daf5efebe",
+      "memoryId": "fd5b7d48-6584-4391-828f-4d87451507a0",
+      "jobId": "fd5b7d48-6584-4391-828f-4d87451507a0"
+    }
+  ]
+}

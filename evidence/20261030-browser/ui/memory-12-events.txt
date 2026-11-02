@@ -1,0 +1,84 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory" [active]
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "Context with a history." [level=1]
+  - paragraph: See what you confirmed, what changed, and why.
+  - button "Check fixture restoration"
+  - strong: "Mainnet memories: Not verified"
+  - generic: "Planned scenario events: 12 · Current sandbox events: 12"
+  - heading "Remembered rules" [level=2]
+  - heading "Tools · rule-tools-v1" [level=3]
+  - paragraph: Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–30.00.
+  - paragraph: 2026-10-26 to 2026-11-25 · confirmed in 1cf5e9e2-5874-4d70-befc-40dd0fbf571d
+  - generic: Superseded
+  - heading "Tools · rule-tools-v2" [level=3]
+  - paragraph: Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–20.00.
+  - paragraph: 2026-10-26 to 2026-11-25 · confirmed in 4189fa90-d5d2-49fb-8b36-168ab79e491d
+  - generic: Revoked
+  - heading "Your memory timeline" [level=2]
+  - list:
+    - generic: 55b418e0-402c-417c-aa2f-3d259f0b8743
+    - heading "Set your Tools budget" [level=3]
+    - paragraph: Preference confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 959cd110-d791-4ab0-8547-8843b7e8dc07
+    - heading "Inspect transfer A" [level=3]
+    - paragraph: Observation recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: e7ecd095-d9bd-45d4-b7c8-7b7d4f87ed22
+    - heading "Explain transfer A" [level=3]
+    - paragraph: Label confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 1cf5e9e2-5874-4d70-befc-40dd0fbf571d
+    - heading "Teach a reusable rule" [level=3]
+    - paragraph: Rule confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 6c85ffe3-4619-4438-9971-465944d7c973
+    - heading "Apply context to transfer B" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 8adc5a12-cff5-4723-b60d-d5d425097598
+    - heading "Review transfer C" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: abf45ed0-c2a7-42db-a592-be775eb00012
+    - heading "Correct this transfer" [level=3]
+    - paragraph: Correction confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 4189fa90-d5d2-49fb-8b36-168ab79e491d
+    - heading "Narrow the matching range" [level=3]
+    - paragraph: Rule confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 82f21275-15f5-4246-b4c8-295be80aa073
+    - heading "Inspect incoming transfer D" [level=3]
+    - paragraph: Observation recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 2bf4cd46-c72b-41c5-a842-b0409df22ecc
+    - heading "Link an explicit refund" [level=3]
+    - paragraph: Refund link confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 4e5f213e-2001-42ad-ba7c-7ab42532139a
+    - heading "Review the next transfer" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 0ba4dd57-45d1-4947-98b2-ff843fb4cc49
+    - heading "Stop using this rule" [level=3]
+    - paragraph: Rule revoked · Synthetic event
+    - generic "View event and exact scope"
+  - generic "Operator tools · protected local session"
+  - paragraph: Use your configured server session for real transaction inspection. These controls never substitute teaching fixtures for a failed live request.
+  - strong: Operator session unavailable.
+  - paragraph: Server authentication and durable persistence are not configured. Live inspection and memory writes remain disabled. The public teaching sandbox is separate.
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

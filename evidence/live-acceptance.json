@@ -1,0 +1,29 @@
+{
+  "status": "PASS_READ_ONLY",
+  "checkedAt": "2026-11-02T07:42:20.589Z",
+  "checks": [
+    {
+      "name": "tatum",
+      "status": "PASS_READ_ONLY",
+      "requestedAt": "2026-11-02T15:42:20.589+08:00",
+      "digest": "J91TcZuhTUphac9wS1TL2uCE3mNCafmbCmyLK3euayEq",
+      "method": "/sui.rpc.v2.LedgerService/GetTransaction",
+      "transport": "grpc",
+      "httpStatus": null,
+      "httpStatusReason": "The gRPC adapter does not expose an HTTP status.",
+      "responseSha256": "8bd877ab1138a5142de2d79b9dddd18bcb73c9156e0dac95ee724abca4f4cd67",
+      "responseHashScope": "RFC 8785 canonical adapter envelope including local fetchedAt; not raw wire bytes.",
+      "evidencePath": "evidence/tatum-probe-J91TcZuh.json",
+      "lookupCount": 1,
+      "realTransferLoop": "NOT_RUN_OWNER_1B"
+    },
+    {
+      "name": "walrus_inventory",
+      "status": "PASS_READ_ONLY",
+      "observedMetadataCount": 0,
+      "notice": "Metadata count does not establish completed content verification or cold restore"
+    }
+  ],
+  "mainnetWritesPerformed": 0,
+  "notice": "One read-only Tatum gRPC lookup recorded; the earlier Walrus inventory observation remains historical. No per-transfer operator loop was run (owner 1B), no writes were performed by these probes, and competition eligibility is not certified. Exact-manifest restore and verified done receipts independently establish teaching-scope storage."
+}

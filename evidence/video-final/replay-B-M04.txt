@@ -1,0 +1,63 @@
+RecallLedger
+Your wallet facts. Your remembered context.
+Inbox
+Memory
+Replay
+Temporary sandbox
+Synthetic inputs
+Storage: Mainnet verified (recorded 2026-11-02T05:45:02.234Z)
+Mainnet memories: 12
+Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions.
+
+The teaching sandbox runs only in this browser tab. Reloading or closing it loses its state; other tabs are isolated. Nothing is persisted or sent to Walrus.
+
+Remembered in this temporary sandbox. This is not a Walrus receipt.
+
+The same transfer. Different context.
+
+Replay never changes your memories.
+
+Fixed synthetic input
+Transfer B · 12.00 TEST_USDC
+Transfer E · 25.00 TEST_USDC
+Memory snapshot
+As of M04 · Original scope
+As of M08 · Narrowed scope
+As of M12 · Revoked
+WITHOUT SAVED CONTEXT
+Needs context
+
+Your explanation is needed.
+
+Basis
+Needs context
+Rule
+None
+Reason
+No matching rule
+Memory version
+0
+WITH SAVED CONTEXT
+Expense
+
+Tools expense
+
+Basis
+Confirmed rule
+Rule
+rule-tools-v1
+Reason
+Confirmed scope match
+Memory version
+4
+Same input hash · 68cb9d42a26e1759…
+
+68cb9d42a26e175914bccffe5ecf0c9e0baaaa9acb003fc8fdf4cef753c34cd3
+
+Input hashes match. Only the memory snapshot changes.
+
+Deterministic domain engine · no AI inference · no writes.
+
+Operator tools · protected local session
+Fixture provider · No mainnet writes
+Your context is yours to confirm.

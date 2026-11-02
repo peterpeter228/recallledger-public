@@ -1,0 +1,56 @@
+{
+  "observedAt": "2026-11-01T19:12:27.970Z",
+  "runtime": "v24.22.1",
+  "expectedRuntime": "24.22.1",
+  "runtimeMatches": true,
+  "dependencies": {
+    "@grpc/grpc-js": "1.14.6",
+    "@mysten-incubation/memwal": "0.1.9",
+    "@mysten/seal": "1.5.1",
+    "@mysten/sui": "2.37.0",
+    "@noble/hashes": "2.4.0",
+    "@protobuf-ts/grpc-transport": "2.11.1",
+    "canonicalize": "5.1.0",
+    "fastify": "5.12.7",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "configuration": {
+    "DATABASE_URL": {
+      "present": false
+    },
+    "SESSION_SECRET": {
+      "present": false
+    },
+    "OPERATOR_BOOTSTRAP_SECRET": {
+      "present": false
+    },
+    "TATUM_API_KEY": {
+      "present": false
+    },
+    "MEMWAL_ACCOUNT_ID": {
+      "present": false
+    },
+    "MEMWAL_PRIVATE_KEY": {
+      "present": false
+    },
+    "MEMWAL_AGENT_PUBLIC_KEY": {
+      "present": false
+    },
+    "LLM_BASE_URL": {
+      "present": false
+    },
+    "LLM_API_KEY": {
+      "present": false
+    },
+    "LLM_MODEL": {
+      "present": false
+    }
+  },
+  "liveAcceptance": "BLOCKED_NO_AUTHENTICATED_EVIDENCE",
+  "actualMainnetMemoryCount": 0,
+  "mainnetWritesEnabled": false,
+  "notice": "Presence is not authentication or authorization. No keys or secret values are printed. No network request performed."
+}

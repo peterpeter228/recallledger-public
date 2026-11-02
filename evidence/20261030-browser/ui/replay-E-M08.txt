@@ -1,0 +1,56 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay" [active]
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "The same transfer. Different context." [level=1]
+  - paragraph: Replay never changes your memories.
+  - text: Fixed synthetic input
+  - combobox "Fixed synthetic input":
+    - option "Transfer B · 12.00 TEST_USDC"
+    - option "Transfer E · 25.00 TEST_USDC" [selected]
+  - text: Memory snapshot
+  - combobox "Memory snapshot":
+    - option "As of M04 · Original scope"
+    - option "As of M08 · Narrowed scope" [selected]
+    - option "As of M12 · Revoked"
+  - generic: WITHOUT SAVED CONTEXT
+  - heading "Needs context" [level=2]
+  - paragraph: Your explanation is needed.
+  - separator
+  - term: Basis
+  - definition: Needs context
+  - term: Rule
+  - definition: None
+  - term: Reason
+  - definition: No matching rule
+  - term: Memory version
+  - definition: "0"
+  - generic: WITH SAVED CONTEXT
+  - heading "Needs context" [level=2]
+  - paragraph: Your explanation is needed.
+  - separator
+  - term: Basis
+  - definition: Needs context
+  - term: Rule
+  - definition: None
+  - term: Reason
+  - definition: Amount above maximum, No matching rule
+  - term: Memory version
+  - definition: "8"
+  - generic "Same input hash · 075b137f9ef40c4b…"
+  - generic "Operator tools · protected local session"
+  - paragraph: Use your configured server session for real transaction inspection. These controls never substitute teaching fixtures for a failed live request.
+  - strong: Operator session unavailable.
+  - paragraph: Server authentication and durable persistence are not configured. Live inspection and memory writes remain disabled. The public teaching sandbox is separate.
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

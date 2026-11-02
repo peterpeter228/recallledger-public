@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-26T05:07:41.032Z",
+  "node": "v24.22.1",
+  "packages": [
+    {
+      "name": "@mysten-incubation/memwal",
+      "version": "0.1.9",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "ai": ">=4.0.0",
+        "zod": "^3.23.0 || ^4.0.0",
+        "@mysten/sui": ">=2.5.0",
+        "@mysten/seal": ">=1.1.0",
+        "@mysten/walrus": ">=1.0.3"
+      }
+    },
+    {
+      "name": "@mysten/sui",
+      "version": "2.37.0",
+      "engines": {
+        "node": ">=22"
+      }
+    },
+    {
+      "name": "@mysten/seal",
+      "version": "1.5.1",
+      "peerDependencies": {
+        "@mysten/sui": "^2.37.0"
+      }
+    },
+    {
+      "name": "@protobuf-ts/grpc-transport",
+      "version": "2.11.1",
+      "peerDependencies": {
+        "@grpc/grpc-js": "^1.6.0"
+      }
+    },
+    {
+      "name": "@grpc/grpc-js",
+      "version": "1.14.6",
+      "engines": {
+        "node": ">=12.10.0"
+      }
+    }
+  ],
+  "configurationPresence": {
+    "MEMWAL_PRIVATE_KEY": false,
+    "MEMWAL_ACCOUNT_ID": false,
+    "TATUM_API_KEY": false,
+    "MODEL_API_KEY": false
+  },
+  "liveStatus": "LIVE_BLOCKED_BY_CREDENTIALS; no authenticated calls or mainnet writes attempted"
+}

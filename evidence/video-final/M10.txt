@@ -1,0 +1,101 @@
+RecallLedger
+Your wallet facts. Your remembered context.
+Inbox
+Memory
+Replay
+Temporary sandbox
+Synthetic inputs
+Storage: Mainnet verified (recorded 2026-11-02T05:45:02.234Z)
+Mainnet memories: 12
+Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions.
+
+The teaching sandbox runs only in this browser tab. Reloading or closing it loses its state; other tabs are isolated. Nothing is persisted or sent to Walrus.
+
+Remembered in this temporary sandbox. This is not a Walrus receipt.
+
+Your transfers, understood.
+
+A clear record of what moved, and what it meant.
+
+Compare saved context
+Tools spend
+12.00 TEST_USDC
+Needs context
+0.00 TEST_USDC
+Active rules
+1
+Tools budget: 60.00 TEST_USDC
+Synthetic amounts · unknown ≠ expense
+Teaching session · 10 of 12 changes confirmed
+Leave sandbox
+SANDBOX · STEP 11 / 12
+Review the next transfer
+Manual review
+
+These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+
+fixture:tx-E · 25.00 TEST_USDC
+Synthetic outgoing transfer to/from COUNTERPARTY_R.
+
+The local domain engine computes the decision from the current confirmed scope. No purpose is inferred from the transfer alone.
+
+I reviewed and confirm this change.
+Confirm and prepare
+Transfer inbox
+A
+Transfer A
+Outgoing · Synthetic
+Expense
+−12.00
+TEST_USDC
+B
+Transfer B
+Outgoing · Synthetic
+Expense
+−12.00
+TEST_USDC
+C
+Transfer C
+Outgoing · Synthetic
+Reimbursement
+−25.00
+TEST_USDC
+D
+Transfer D
+Incoming · Synthetic
+Refund
++12.00
+TEST_USDC
+Transfer D
+
+12.00 TEST_USDC
+
+Refund
+
+Synthetic transfer · 2026-10-26
+
+Onchain facts
+Direction
+Incoming
+Counterparty alias
+COUNTERPARTY_R
+Network
+Fixture · not verified onchain
+Your context
+
+Refund
+
+Confirmed by you
+
+Why this result
+
+Explicit refund link
+
+View evidence
+Add context
+
+Use the reviewed step above to make a change.
+
+Operator tools · protected local session
+Fixture provider · No mainnet writes
+Your context is yours to confirm.

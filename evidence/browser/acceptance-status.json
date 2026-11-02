@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED",
+  "observedAt": "2026-10-26T05:11:57Z",
+  "providerMode": "fixture_only_no_live_writes",
+  "bundleIdentifier": "dist/web/assets/index-DfVn1i95.js",
+  "codeCommit": null,
+  "browser": "cua cloud cdp independent tabs 3 and 4",
+  "completed": ["Read AGENTS.md and UI/acceptance specifications", "Followed cua first-call entry", "Started Vite with explicit loopback host session60803", "Started fixed API session41120"],
+  "blockers": [{"action": "Open application in independent cloud browser", "target": "http://127.0.0.1:5173", "reason": "ERR_CONNECTION_REFUSED. Subsequent terminal curl to both service ports also returned HTTP000; running session alone does not establish reachability.", "status": "BLOCKED"}, {"action":"Rebind first failed tab", "target":"tab3", "reason":"Browser URL policy rejects chrome-error protocol. Read-only tab inventory confirmed initial navigation failed and subsequent goto did not run. Exactly one fresh HTTP tab was then attempted based on this new evidence.", "status":"not_retried_further"}],
+  "caseResults": {"twelve_step_correction": "BLOCKED", "editable_scope_labels_refund_revoke": "BLOCKED", "pending_not_active": "BLOCKED", "duplicate_click_failure_retry": "BLOCKED", "fixed_input_memory_on_off_M04_M08_M12": "BLOCKED", "evidence_copy_focus_escape": "BLOCKED", "navigation_memory_history": "BLOCKED", "viewport375": "BLOCKED", "viewport768": "BLOCKED", "viewport1440": "BLOCKED", "console": "BLOCKED"},
+  "screenshots": [],
+  "viewportActual": null,
+  "claims": "No UI pass claimed. No screenshots or video captured. No mainnet activity. Awaiting supported reachable application URL."
+}

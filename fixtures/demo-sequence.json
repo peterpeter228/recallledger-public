@@ -1,0 +1,359 @@
+{
+  "planSchemaVersion": "1.0",
+  "fixtureOnly": true,
+  "title": "RecallLedger teaching and counterexample scenario",
+  "notice": "All people, counterparties, assets, transactions and amounts in this plan are synthetic. This is neither mainnet evidence nor a measured product result. TEST_USDC is not a real asset identifier. Live persistence of these scenario events must remain labeled synthetic content.",
+  "scopePlan": {
+    "ownerRef": "DEMO_OWNER",
+    "namespaceRef": "DEMO_NAMESPACE",
+    "oneOwnerAndNamespace": true,
+    "plannedMemoryEventCount": 12,
+    "actualMainnetMemoryCount": 0,
+    "actualMainnetReceipts": []
+  },
+  "currency": {
+    "assetRef": "TEST_USDC",
+    "decimals": 6,
+    "realCoinType": null
+  },
+  "transactions": {
+    "tx-A": {
+      "direction": "outgoing",
+      "amountAtomic": "12000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-A",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    },
+    "tx-B": {
+      "direction": "outgoing",
+      "amountAtomic": "12000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-B",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    },
+    "tx-C": {
+      "direction": "outgoing",
+      "amountAtomic": "25000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-C",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    },
+    "tx-D": {
+      "direction": "incoming",
+      "amountAtomic": "12000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-D",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    },
+    "tx-E": {
+      "direction": "outgoing",
+      "amountAtomic": "25000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-E",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    },
+    "tx-F-preview": {
+      "direction": "outgoing",
+      "amountAtomic": "12000000",
+      "counterpartyRef": "COUNTERPARTY_R",
+      "inputRef": "fixture:tx-F-preview",
+      "assetRef": "TEST_USDC",
+      "decimals": 6,
+      "ownerRef": "DEMO_OWNER",
+      "evidenceKind": "synthetic",
+      "realTransactionDigest": null
+    }
+  },
+  "events": [
+    {
+      "plannedEventId": "M01",
+      "eventType": "preference_confirmed",
+      "description": "用户确认Tools预算与未知用途口径，定义提醒阈值，不扩大支付权限",
+      "evidenceKind": "synthetic",
+      "inputRef": null,
+      "plannedPayload": {
+        "budgetAtomic": "60000000",
+        "warnAtAtomic": "45000000",
+        "assetRef": "TEST_USDC",
+        "category": "tools",
+        "unknownTransfersCountAsExpense": false,
+        "reimbursementsCountInTools": false,
+        "refundsRequireExplicitLink": true
+      },
+      "expectedState": {
+        "toolsSpendAtomic": "0",
+        "activeRuleRefs": []
+      }
+    },
+    {
+      "plannedEventId": "M02",
+      "eventType": "observation_recorded",
+      "description": "交易A首次出现，不能凭地址和方向判断用途",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-A",
+      "plannedPayload": {},
+      "expectedState": {
+        "classification": "needs_context",
+        "toolsSpendAtomic": "0",
+        "needsContextRefs": [
+          "fixture:tx-A"
+        ]
+      }
+    },
+    {
+      "plannedEventId": "M03",
+      "eventType": "label_confirmed",
+      "description": "用户明确把A标为工具订阅支出",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-A",
+      "plannedPayload": {
+        "classification": "expense",
+        "category": "tools",
+        "source": "user_assertion"
+      },
+      "expectedState": {
+        "classification": "expense",
+        "toolsSpendAtomic": "12000000",
+        "needsContextRefs": []
+      }
+    },
+    {
+      "plannedEventId": "M04",
+      "eventType": "rule_confirmed",
+      "description": "用户明确提供并确认5–30范围的v1；该范围不是从A的单个12样本推断出来",
+      "evidenceKind": "synthetic",
+      "inputRef": null,
+      "plannedPayload": {
+        "ruleRef": "rule-tools-v1",
+        "status": "active",
+        "networkRef": "SYNTHETIC_SUI",
+        "assetRef": "TEST_USDC",
+        "direction": "outgoing",
+        "counterpartyRef": "COUNTERPARTY_R",
+        "amountMinAtomic": "5000000",
+        "amountMaxAtomic": "30000000",
+        "boundsInclusive": true,
+        "validityDays": 30,
+        "classification": "expense",
+        "category": "tools",
+        "requiresUserConfirmation": true,
+        "rangeSource": "explicit_user_input",
+        "userStatement": "For this counterparty, I want outgoing tool charges from 5 to 30 TEST_USDC to use this category."
+      },
+      "expectedState": {
+        "activeRuleRefs": [
+          "rule-tools-v1"
+        ],
+        "toolsSpendAtomic": "12000000"
+      }
+    },
+    {
+      "plannedEventId": "M05",
+      "eventType": "decision_recorded",
+      "description": "交易B范围内，引用v1归类，不再次询问相同问题",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-B",
+      "plannedPayload": {
+        "usedRuleRef": "rule-tools-v1"
+      },
+      "expectedState": {
+        "classification": "expense",
+        "category": "tools",
+        "toolsSpendAtomic": "24000000",
+        "budgetWarning": false
+      }
+    },
+    {
+      "plannedEventId": "M06",
+      "eventType": "decision_recorded",
+      "description": "交易C落入v1，被错误归类；保留这一错误而不是事后改写历史",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-C",
+      "plannedPayload": {
+        "usedRuleRef": "rule-tools-v1"
+      },
+      "expectedState": {
+        "classification": "expense",
+        "category": "tools",
+        "toolsSpendAtomic": "49000000",
+        "budgetWarning": true
+      }
+    },
+    {
+      "plannedEventId": "M07",
+      "eventType": "correction_confirmed",
+      "description": "用户说明C为报销并明确排除Tools，纠正只作用于C",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-C",
+      "plannedPayload": {
+        "classification": "reimbursement",
+        "category": null,
+        "source": "user_assertion",
+        "correctsPlannedEventId": "M06"
+      },
+      "expectedState": {
+        "classification": "reimbursement",
+        "toolsSpendAtomic": "24000000",
+        "budgetWarning": false,
+        "activeRuleRefs": [
+          "rule-tools-v1"
+        ]
+      }
+    },
+    {
+      "plannedEventId": "M08",
+      "eventType": "rule_confirmed",
+      "description": "用户确认v2收窄金额上界至20，明确取代v1；其他条件不扩大",
+      "evidenceKind": "synthetic",
+      "inputRef": null,
+      "plannedPayload": {
+        "ruleRef": "rule-tools-v2",
+        "status": "active",
+        "networkRef": "SYNTHETIC_SUI",
+        "assetRef": "TEST_USDC",
+        "direction": "outgoing",
+        "counterpartyRef": "COUNTERPARTY_R",
+        "amountMinAtomic": "5000000",
+        "amountMaxAtomic": "20000000",
+        "boundsInclusive": true,
+        "validityDays": 30,
+        "classification": "expense",
+        "category": "tools",
+        "requiresUserConfirmation": true,
+        "supersedesRuleRef": "rule-tools-v1",
+        "rangeSource": "explicit_user_input",
+        "userStatement": "Narrow future tool-charge matches to 5–20 TEST_USDC; keep the 25 transfer correction limited to transaction C."
+      },
+      "expectedState": {
+        "activeRuleRefs": [
+          "rule-tools-v2"
+        ],
+        "supersededRuleRefs": [
+          "rule-tools-v1"
+        ],
+        "toolsSpendAtomic": "24000000"
+      }
+    },
+    {
+      "plannedEventId": "M09",
+      "eventType": "observation_recorded",
+      "description": "交易D是入账，不匹配outgoing规则，仍需说明",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-D",
+      "plannedPayload": {},
+      "expectedState": {
+        "classification": "needs_context",
+        "toolsSpendAtomic": "24000000",
+        "needsContextRefs": [
+          "fixture:tx-D"
+        ]
+      }
+    },
+    {
+      "plannedEventId": "M10",
+      "eventType": "refund_link_confirmed",
+      "description": "用户明确D为B的退款，校验同owner同资产及金额上限后冲回B",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-D",
+      "plannedPayload": {
+        "classification": "refund",
+        "refundOfInputRef": "fixture:tx-B",
+        "refundAmountAtomic": "12000000",
+        "source": "user_assertion"
+      },
+      "expectedState": {
+        "classification": "refund",
+        "toolsSpendAtomic": "12000000",
+        "needsContextRefs": []
+      }
+    },
+    {
+      "plannedEventId": "M11",
+      "eventType": "decision_recorded",
+      "description": "新交易E仍为25，但v2不适用；不会重复把它当Tools",
+      "evidenceKind": "synthetic",
+      "inputRef": "fixture:tx-E",
+      "plannedPayload": {
+        "evaluatedRuleRef": "rule-tools-v2"
+      },
+      "expectedState": {
+        "classification": "needs_context",
+        "toolsSpendAtomic": "12000000",
+        "needsContextRefs": [
+          "fixture:tx-E"
+        ],
+        "budgetWarning": false
+      }
+    },
+    {
+      "plannedEventId": "M12",
+      "eventType": "rule_revoked",
+      "description": "用户停止未来使用v2；不删除历史blob，不追溯抹去旧决策",
+      "evidenceKind": "synthetic",
+      "inputRef": null,
+      "plannedPayload": {
+        "ruleRef": "rule-tools-v2",
+        "newStatus": "revoked",
+        "reason": "User chooses to review future transfers individually"
+      },
+      "expectedState": {
+        "activeRuleRefs": [],
+        "revokedRuleRefs": [
+          "rule-tools-v2"
+        ],
+        "toolsSpendAtomic": "12000000",
+        "previewOnlyAfterRevocation": {
+          "inputRef": "fixture:tx-F-preview",
+          "classification": "needs_context",
+          "createsMemoryEvent": false
+        }
+      }
+    }
+  ],
+  "readOnlyChecksAfterM12": [
+    "Cold restore in a clean process using an exact manifest",
+    "CLI/Web projection and decision equivalence",
+    "Memory off/on on fixed input at a selected as-of sequence",
+    "Preview tx-F after revocation without writing M13"
+  ],
+  "replayRecipes": [
+    {
+      "id": "memory-benefit",
+      "inputRef": "fixture:tx-B",
+      "asOfSequence": 4,
+      "memoryOffExpected": "needs_context",
+      "memoryOnExpected": "expense",
+      "doNotPersistDecision": true
+    },
+    {
+      "id": "counterexample-benefit",
+      "inputRef": "fixture:tx-E",
+      "beforeSequence": 4,
+      "afterSequence": 8,
+      "beforeExpected": "expense",
+      "afterExpected": "needs_context",
+      "doNotPersistDecision": true
+    }
+  ],
+  "finalExpectedToolsSpendAtomic": "12000000"
+}

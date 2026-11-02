@@ -1,0 +1,62 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Confirmed · pending fixture completion. The current classification has not changed.
+  - heading "Your transfers, understood." [level=1]
+  - paragraph: A clear record of what moved, and what it meant.
+  - button "Compare saved context"
+  - region "Ledger summary":
+    - generic: Tools spend
+    - strong: — TEST_USDC
+    - generic: Needs context
+    - strong: — TEST_USDC
+    - generic: Active rules
+    - strong: "0"
+  - text: "Tools budget:"
+  - strong: Not set
+  - generic: Synthetic amounts · unknown ≠ expense
+  - generic: Teaching session · 0 of 12 changes confirmed
+  - button "Leave sandbox"
+  - status:
+    - heading "Confirmed · Saving memory…" [level=2]
+    - paragraph: Not active yet. This pending operation cannot affect a new judgment.
+    - paragraph: "Operation: simulation:2d7049de-0b54-4fba-aad4-b3dded368301"
+    - button "Complete fixture job"
+    - paragraph: Explicit local simulation. No Walrus request is sent.
+  - heading "Transfer inbox" [level=2]
+  - paragraph: No transfers recorded. Confirm the budget, then inspect your first synthetic transfer.
+  - heading "Transfer A" [level=2]
+  - paragraph: 12.00 TEST_USDC
+  - generic: Needs context
+  - paragraph: Synthetic transfer · 2026-10-26
+  - heading "Onchain facts" [level=3]
+  - term: Direction
+  - definition: Outgoing
+  - term: Counterparty alias
+  - definition: COUNTERPARTY_R
+  - term: Network
+  - definition: Fixture · not verified onchain
+  - heading "Your context" [level=3]
+  - paragraph: Needs context
+  - paragraph: A transfer alone does not tell us its purpose.
+  - heading "Why this result" [level=3]
+  - paragraph: No recorded context. This amount is not counted as an expense.
+  - button "View evidence"
+  - button "Add context" [disabled]
+  - paragraph: Use the reviewed step above to make a change.
+  - generic "Operator tools · protected local session"
+  - paragraph: Use your configured server session for real transaction inspection. These controls never substitute teaching fixtures for a failed live request.
+  - strong: Operator session unavailable.
+  - paragraph: Server authentication and durable persistence are not configured. Live inspection and memory writes remain disabled. The public teaching sandbox is separate.
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

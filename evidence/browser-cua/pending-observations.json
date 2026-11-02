@@ -1,0 +1,55 @@
+[
+  {
+    "step": 1,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 2,
+    "pendingUnchanged": true,
+    "doubleClick": true
+  },
+  {
+    "step": 3,
+    "pendingUnchanged": true,
+    "editedPurpose": true
+  },
+  {
+    "step": 4,
+    "pendingUnchanged": true,
+    "invalidScopeRejectedAndRecovered": true
+  },
+  {
+    "step": 5,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 6,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 7,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 8,
+    "pendingUnchanged": true,
+    "editedMaximum": true
+  },
+  {
+    "step": 9,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 10,
+    "pendingUnchanged": true,
+    "refundOriginal": "fixture:tx-B"
+  },
+  {
+    "step": 11,
+    "pendingUnchanged": true
+  },
+  {
+    "step": 12,
+    "pendingUnchanged": true
+  }
+]

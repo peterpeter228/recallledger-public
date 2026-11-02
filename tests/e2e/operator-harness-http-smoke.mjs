@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';import {writeFile} from 'node:fs/promises';
+const base='http://127.0.0.1:3100',results=[];let cookie,csrf;
+const req=async(path,body,key)=>{const r=await fetch(base+path,{method:body?'POST':'GET',headers:{origin:base,'content-type':'application/json',...(cookie?{cookie}:{}),...(csrf?{'x-csrf-token':csrf}:{}),...(key?{'idempotency-key':key}:{})},body:body?JSON.stringify(body):undefined});const j=await r.json();return{r,j}};
+const ctl=async(path,body)=>req('/__synthetic/'+path,body);const check=async(name,fn)=>{try{await fn();results.push({name,status:'PASS'})}catch(e){results.push({name,status:'FAIL',error:String(e)});throw e}};
+try{let s=await req('/api/session',{token:'synthetic-fixture-only'});cookie=s.r.headers.get('set-cookie').split(';')[0];csrf=s.j.data.csrfToken;
+await check('fresh real PG synthetic scope',async()=>assert.equal(s.j.data.memoryVersion,0));
+const inspected=await req('/api/transactions/inspect',{digest:'A',walletAddress:'synthetic-only'});const body={observationDraftId:inspected.j.data.observationDraftId,confirmed:true,expectedVersion:0},key='http-synthetic-stable-key-20261030';
+await ctl('fault',{mode:'drop'});await check('202 lost after commit yields unknown transport',async()=>{await assert.rejects(req('/api/observations/import',body,key))});
+await check('same-key readback finds committed operation',async()=>{s=await req('/api/operation-keys/'+key);assert.equal(s.j.data.found,true);assert.equal(s.j.data.operation.state,'prepared')});const operationId=s.j.data.operation.operationId;
+await check('new authenticated session resumes same pending operation',async()=>{s=await req('/api/session',{token:'synthetic-fixture-only'});cookie=s.r.headers.get('set-cookie').split(';')[0];csrf=s.j.data.csrfToken;assert.equal(s.j.data.pendingOperation.operationId,operationId);assert.equal(s.j.data.memoryVersion,0)});
+await check('same key identical body does not duplicate',async()=>{s=await req('/api/observations/import',body,key);assert.equal(s.r.status,202);assert.equal(s.j.data.operationId,operationId)});
+await check('same key changed body conflicts',async()=>{s=await req('/api/observations/import',{...body,expectedVersion:1},key);assert.equal(s.r.status,409);assert.equal(s.j.error.code,'IDEMPOTENCY_CONFLICT')});
+await check('unknown different key does not fabricate operation',async()=>{s=await req('/api/operation-keys/unseen-synthetic-key');assert.equal(s.j.data.found,false)});
+await ctl('complete',{});await ctl('complete',{});
+await check('synthetic verified receipt advances exactly one event',async()=>{s=await req('/api/session');assert.equal(s.j.data.memoryVersion,1);assert.equal(s.j.data.events.length,1);assert.equal(s.j.data.pendingOperation,null);assert.equal(s.j.data.events[0].evidenceKind,'synthetic')});
+const label={observationId:body.observationDraftId,confirmed:true,classification:'expense',category:'tools',expectedVersion:1};
+await ctl('fault',{mode:'conflict'});await check('injected conflict remains explicit 409',async()=>{s=await req('/api/labels/confirm',label,'synthetic-label-conflict');assert.equal(s.r.status,409);assert.equal(s.j.error.code,'VERSION_CONFLICT')});
+await ctl('fault',{mode:'rate'});await check('injected rate limit remains explicit 429',async()=>{s=await req('/api/labels/confirm',label,'synthetic-label-rate');assert.equal(s.r.status,429);assert.equal(s.j.error.code,'RATE_LIMITED')});
+await check('error cases do not advance projection',async()=>{s=await req('/api/session');assert.equal(s.j.data.memoryVersion,1);assert.equal(s.j.data.events.length,1)});
+await writeFile('evidence/20261030-browser/http-status.json',JSON.stringify((await ctl('status')).j,null,2));
+}catch(e){process.exitCode=1;console.error(e)}finally{await writeFile('evidence/20261030-browser/http-results.json',JSON.stringify({at:new Date().toISOString(),synthetic:true,realBrowser:false,results},null,2));console.log(JSON.stringify(results,null,2))}

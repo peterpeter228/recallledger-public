@@ -1,0 +1,559 @@
+{
+  "reportStatus": "teaching_mainnet_verified_single_tatum_read_recorded_real_loop_not_run_final_acceptance_pending",
+  "codeCommit": "d2db0dac27ceaed9c7fd22a0e7b7f18e2b11cabc",
+  "providerMode": "synthetic_teaching_events_live_walrus_storage_and_one_read_only_tatum_lookup",
+  "gates": {
+    "E1": "PASS_LOCAL",
+    "E2": "READ_ONLY_TATUM_PROBE_RECORDED_FULL_GATE_NOT_CERTIFIED",
+    "E3": "PASS_LIVE_TEACHING_FRESH_RESTORE_ONLY",
+    "E4": "PASS_LOCAL_SCOPED_NOT_FULL_LIVE_MATRIX",
+    "E5": "BLOCKED_PUBLIC_ARTIFACTS_AND_OWNER_REVIEW",
+    "E6": "PASS_LABELING_LOCAL"
+  },
+  "actualMainnetMemoryCount": 12,
+  "actualMainnetReceipts": [
+    {
+      "eventId": "M01",
+      "blobId": "x9iB_rTAe5JQZXRki38KOY7lAfVFwH26DpeS--7aFzU"
+    },
+    {
+      "eventId": "M02",
+      "blobId": "lRk5LENp6C2sGjI-65cRd3hC2d79ziBbD3cwpN-IZvs"
+    },
+    {
+      "eventId": "M03",
+      "blobId": "anw62RUI9rj8-DblAAVs_cEBwFC4lnlgvBZWK9lut28"
+    },
+    {
+      "eventId": "M04",
+      "blobId": "-ofGFuN5B_cq3XCRd3HfQCkO94oXj9zoBO025Pj_YJM"
+    },
+    {
+      "eventId": "M05",
+      "blobId": "k8erNUZGjhSkVtlIGDLakeGVZlo2gRlQSqBO0MfC7EQ"
+    },
+    {
+      "eventId": "M06",
+      "blobId": "fUmQbgw7JG8JvWXbM_EFp1JElD-fUfMjJB8L_KB7KY0"
+    },
+    {
+      "eventId": "M07",
+      "blobId": "4JBEDJczvP_Yi0s-_Fkh2tDI62Mx55MsLZgKZtemdBE"
+    },
+    {
+      "eventId": "M08",
+      "blobId": "brUOKJ17kPVGuHZxG6EZA4OnTC1d2ROHpproqOBGrUI"
+    },
+    {
+      "eventId": "M09",
+      "blobId": "59Bo9eCPb0ZLruZYUAt6W_juAAbaFE6KB3XEMBGEs7A"
+    },
+    {
+      "eventId": "M10",
+      "blobId": "1VLpL2IwdOy4sjGkoA_2O9N2HO5JcuZ7cMNP-856WEc"
+    },
+    {
+      "eventId": "M11",
+      "blobId": "Y3ygZQo5rI4BZCvuaBJgC5_FrOnv_Hh9u6UqV-2rD0c"
+    },
+    {
+      "eventId": "M12",
+      "blobId": "3UyydPggOWfY-m1mYwjZTGSp_Ovv707TzFERXKGhihY"
+    }
+  ],
+  "browserEvidence": [
+    "evidence/browser-cua/core-results.json",
+    "evidence/browser-cua/validation-fix-and-responsive-results.json",
+    "evidence/browser-cua/screenshot-content-notes.md"
+  ],
+  "blockers": [
+    "Real-transfer operator loop NOT_RUN under owner t209u1B; the separately authorized single Tatum lookup is not operator-loop or eligibility acceptance",
+    "Clean export/final acceptance pending; public repository creation/push and preview are later orchestration work; blog/upload/submission and owner identity sign-off remain gated",
+    "Model path not configured or claimed; manual structured core retained"
+  ],
+  "executedAt": "2026-10-26T05:25:46Z",
+  "testSummary": {
+    "passed": 51,
+    "files": 9,
+    "skipped": 0,
+    "database": "PostgreSQL18.4 actual local",
+    "log": "historical private artifact omitted from public export"
+  },
+  "initialRemoteCommit": "3149a9f94a01288b1be35c79721d83f21a6f8cfe",
+  "browserAttemptEvidence": [
+    "historical private artifact omitted from public export",
+    "historical private artifact omitted from public export"
+  ],
+  "browserAuthorizationStatus": "Approved 2026-10-26 07:08 UTC: original retry then same-environment fallback",
+  "lastUpdatedAt": "2026-11-02T15:42:20.589+08:00",
+  "codeCommitReason": "Historical executed application source checkpoint; current final-job edits are uncommitted. Earlier source baselines, run counts and missing-digest statuses below remain historical. Final source/export bindings await parent integration.",
+  "sourceBaseline": "11d2af35ce9bb665a0f3de3d695582c237020825",
+  "sourceHashes": "evidence/browser-cua/validation-fix/source-build-sha256.txt",
+  "videoEvidence": "evidence/video/metadata.json",
+  "continuation20261028": {
+    "runId": "recallledger-core-20261028T030359Z",
+    "baseline": "4c97f3e17b072eb2e7324ec11d302281c598e955",
+    "report": "evidence/20261028/REPORT.md",
+    "testSummary": {
+      "passed": 54,
+      "files": 10,
+      "skipped": 0,
+      "database": "actual PostgreSQL 18.4",
+      "log": "historical private artifact omitted from public export"
+    },
+    "protocolTests": 32,
+    "browserStatus": "NOT_RUN_BLOCKED_ENVIRONMENT",
+    "remoteCommit": null,
+    "mainnetMemoryCount": 0,
+    "independentHttpChecks": {
+      "passed": 11,
+      "log": "historical private artifact omitted from public export"
+    },
+    "argonStatus": "BLOCKED_EXTERNAL_NO_REQUEST_SENT",
+    "sourceReview": "NO_CONFIRMED_NEW_P0_P1_BOUNDED_SLICE"
+  },
+  "operatorLoop20261028": {
+    "runId": "recallledger-operator-loop-20261028T033219Z",
+    "sourceBaseline": "4b10518af31e90f31095c6017c554f054ca9edfd",
+    "report": "evidence/20261028-operator-loop/REPORT.md",
+    "tests": {
+      "passed": 60,
+      "files": 13,
+      "skipped": 0,
+      "database": "actual PostgreSQL18.4; synthetic providers only",
+      "log": "historical private artifact omitted from public export",
+      "startedAt": "2026-10-28T03:40:20Z"
+    },
+    "protocolTestsPassed": 32,
+    "sourceReview": "no confirmed remaining P0/P1 in bounded slice",
+    "browser": "NOT_RUN_ENVIRONMENT_BLOCKED",
+    "argon": "BLOCKED_NO_MODEL_REQUEST",
+    "mainnetMemoryCount": 0,
+    "remoteCommit": null,
+    "coldRestore": "NOT_RUN_LIVE; read-only UI manifest check is not independent cold restore"
+  },
+  "browserContinuation20261030": {
+    "runId": "recallledger-browser-20261030T111322Z",
+    "sourceBaseline": "3f8a82bdd3a56b4939820772718ce2ff2983e8a2",
+    "report": "evidence/20261030-browser/REPORT.md",
+    "publicBrowser": "PASS_SCOPED_SYNTHETIC",
+    "operatorBrowser": "DEFERRED_LOGIN_FREE_SCOPE",
+    "pgTestsPassed": 60,
+    "pgTestsSkipped": 0,
+    "protocolTestsPassed": 32,
+    "httpChecksPassed": 11,
+    "mainnetMemoryCount": 0,
+    "coldRestore": "NOT_TESTED",
+    "completedAt": "2026-10-30T11:23:43Z"
+  },
+  "offlineExecution20261102": {
+    "sourceBaseline": "52db568",
+    "implementationCommit": "containing WP2 checkpoint; not self-referential",
+    "checkedAt": "2026-11-01T19:30:28Z",
+    "wp1": {
+      "status": "SUCCEEDED",
+      "commit": "52db568",
+      "passed": 48,
+      "skipped": 12,
+      "runtime": "v24.22.1",
+      "pnpm": "11.25.0",
+      "baselineAndRryPreserved": true
+    },
+    "wp2": {
+      "status": "SUCCEEDED_OFFLINE",
+      "passed": 96,
+      "skipped": 12,
+      "adapterDomainPassed": 66,
+      "adapterDomainSkipped": 0,
+      "structuralCases": 48,
+      "browserChecks": 18,
+      "browserErrors": 0,
+      "contract": "evidence/g0/tatum-proof-contract.md",
+      "log": "historical private artifact omitted from public export",
+      "browserReport": "historical private artifact omitted from public export"
+    },
+    "mainnetWrites": 0,
+    "liveProviderRequests": 0,
+    "deployment": "NOT_RUN_FORBIDDEN",
+    "wp3": {
+      "status": "PASS_OFFLINE_ACCEPTANCE",
+      "sourceBaseline": "b7755621ce9da4d40479f460ff46095e6067fa37",
+      "implementationCommit": "containing WP3 checkpoint",
+      "checkedAt": "2026-11-02T03:28:01Z",
+      "passed": 126,
+      "files": 15,
+      "skipped": 0,
+      "serverPrefixPassed": 33,
+      "serverPrefixSkipped": 0,
+      "requiredPrefixCases": 12,
+      "standaloneSmokeChecks": 7,
+      "database": "reused job-local PostgreSQL18.1 at127.0.0.1:55432",
+      "log": "historical private artifact omitted from public export",
+      "prefixResults": "historical private artifact omitted from public export",
+      "smokeResult": "historical private artifact omitted from public export",
+      "providerMode": "synthetic_test_only"
+    },
+    "ownerSteering1": "Tatum provisioning reported set; no secret file read/use. Walrus/operator config remains pending; no live approval in this job.",
+    "wp4": {
+      "status": "SUCCEEDED_OFFLINE",
+      "sourceBaseline": "013eb97",
+      "implementationCommit": "containing WP4 checkpoint",
+      "checkedAt": "2026-11-02T03:53:10.560Z",
+      "passed": 196,
+      "files": 17,
+      "skipped": 0,
+      "recordedHandlerCases": 57,
+      "browserLocalCases": 13,
+      "browserChecks": 21,
+      "browserErrors": 0,
+      "httpSmokeChecks": 9,
+      "regression": "F03 pre-enqueue validation restored; prior195pass1fail retained",
+      "log": "historical private artifact omitted from public export",
+      "browserReport": "historical private artifact omitted from public export",
+      "httpReport": "historical private artifact omitted from public export",
+      "deployment": "NOT_RUN_FORBIDDEN",
+      "testPg": "stopped; both clusters preserved"
+    },
+    "wp5": {
+      "status": "OFFLINE_PREP_VERIFIED",
+      "sourceBaseline": "541de160b5eab7db20172587ce7fe263bb3847e9",
+      "implementationCommit": "containing WP5 checkpoint; full SHA in job WP5.json",
+      "branch": "wp/recallledger-20261102-wp5",
+      "checkedAt": "2026-11-02T04:45:12.671Z",
+      "placeholderFiles": 4,
+      "semanticSmokePassed": 11,
+      "officialFields": 14,
+      "ownerOnlyOpen": 9,
+      "storyboardSeconds": 165,
+      "license": "MIT",
+      "mainnetMemoryCount": 0,
+      "parentReport": "historical private artifact omitted from public export",
+      "jobResult": "historical private artifact omitted from public export",
+      "rendering": "five HTML previews; heading/schedule checks; visual layout unverified (Eval denied, PNG invalid)",
+      "newBuildTestsBrowserVideoProbe": "NOT_RUN",
+      "finalOwnerAudit": "UNSIGNED_OPEN",
+      "livePublicationFinalPass": "OPEN_WP6a_WP6b"
+    },
+    "next": "Outer-session WP5 difference review; WP6a/WP6b/WP7 not started or authorized here"
+  },
+  "wp6aTeaching20261102": {
+    "status": "SUCCEEDED_TEACHING",
+    "branch": "wp/recallledger-20261102-wp5",
+    "sourceHead": "d2db0dac27ceaed9c7fd22a0e7b7f18e2b11cabc",
+    "checkedAt": "2026-11-02T05:46:08.817Z",
+    "ownerGates": "t205u 1B 2A 3A 4A",
+    "dataOrigin": "synthetic",
+    "storage": "live_mainnet_walrus",
+    "mainnetWritesPerformed": 12,
+    "applyInvocations": 1,
+    "verifiedCount": 12,
+    "exactSet": true,
+    "hashes": true,
+    "restore": "verified",
+    "stateHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04",
+    "unresolvedOperations": 0,
+    "tatum": "SKIPPED_NO_DIGEST",
+    "realLoop": "DEFERRED_OWNER_4A",
+    "jobResult": "historical private artifact omitted from public export",
+    "writeLog": "historical private artifact omitted from public export",
+    "deployLog": "historical private artifact omitted from public export",
+    "audit": "historical private artifact omitted from public export",
+    "countReport": "evidence/mainnet-manifest.json",
+    "restoreReport": "evidence/restore-report.json",
+    "processes": "Only existing outer-owned PG18.1 at55433 retained; no new product service/browser/poller",
+    "next": "Owner evidence review; any real-loop or later phase requires separate inputs/approval"
+  },
+  "wp6b": {
+    "status": "PARTIAL_NEEDS_OWNER_SECURITY_TRIAGE",
+    "recordScope": "Historical WP6b run completed before t211u decisions and the single successful Tatum probe; latest scope/results are in wp6bFinal",
+    "branch": "wp/recallledger-20261102-wp6b",
+    "baseHead": "3858aadfcecfb37b2c5cad2b626283298587ff52",
+    "applicationSourceHead": "d2db0dac27ceaed9c7fd22a0e7b7f18e2b11cabc",
+    "ownerGates": "t209u Real-loop + WP6b, 2026-11-02 14:03 Asia/Shanghai: 1B no real-loop; 2A offline/preview only",
+    "realLoop": "NOT_RUN_OWNER_1B",
+    "mainnetMemoryCount": 12,
+    "dataOrigin": "synthetic teaching data, not real user transactions",
+    "tatum": "BLOCKED (evidence/live-acceptance.json checks[name=tatum])",
+    "aiBuilder": "not used; owner final form review remains unsigned",
+    "build": {
+      "status": "PASS",
+      "exitCode": 0
+    },
+    "offline": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 166,
+      "skipped": 30,
+      "passedFiles": 13,
+      "skippedFiles": 4,
+      "database": "not configured; DB suites skipped",
+      "fixtureEvaluatedAt": "2026-11-02T06:10:58.360Z"
+    },
+    "recordedLive": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 57,
+      "skipped": 0
+    },
+    "packAssertions": {
+      "status": "PASS_BEFORE_SCAN_REPORT",
+      "exitCode": 0,
+      "checkedAt": "2026-11-02T06:23:27.649Z",
+      "formRows": 14,
+      "ownerOnlyOpen": 9,
+      "blogSections": 3,
+      "claimsVerdicts": "supported or removed only",
+      "hashes": "job pack-assertions.json; generated SECRET_SCAN.md was not part of this earlier assertion run"
+    },
+    "testMaintenance": "Removed stale zero/fixture public-evidence assertion from sandbox transport test; dedicated evidence validation unchanged",
+    "preview": {
+      "status": "BLOCKED_AUTH",
+      "whoamiExitCode": 1,
+      "cliVersion": "65.9.0",
+      "url": null,
+      "deployed": false,
+      "localStatus": "PASS",
+      "localCheckedAt": "2026-11-02T06:11:49.322Z",
+      "localChecks": 18,
+      "operatorEnabled": false,
+      "writesEnabled": false,
+      "mode": "recorded_live",
+      "verifiedCount": 12,
+      "platformVerified": false
+    },
+    "newBrowser": "NOT_RUN_EVAL_POLICY_DENIED; no unapproved fallback",
+    "newVideo": "NOT_RECORDED_NOT_UPLOADED; storyboard and narration only",
+    "providerRequests": 0,
+    "mainnetWritesPerformed": 0,
+    "externalPublications": 0,
+    "ownerReview": "UNSIGNED_OPEN",
+    "secretScan": {
+      "status": "FINDINGS_NEEDS_OWNER_TRIAGE",
+      "exitCode": 1,
+      "checkedAt": "2026-11-02T06:44:16.140Z",
+      "findings": 144,
+      "piiEmail": 78,
+      "piiHomePath": 12,
+      "credentialShapes": 54,
+      "realSecretConfirmed": false,
+      "credentialAwareRun": "NOT_RUN_AFTER_SECURITY_STOP",
+      "historyCommits": 20,
+      "localRefs": 9,
+      "worktreeFiles": 396,
+      "report": "submission/SECRET_SCAN.md",
+      "syntheticSmoke": "PASS clean0/findings1 and matched-value redaction",
+      "publicReadiness": "BLOCKED"
+    },
+    "checkpoint": {
+      "newCommits": 0,
+      "pushed": false,
+      "reason": "Stopped for private triage of credential-shaped history and PII before commit/push; no history rewrite"
+    },
+    "scannerReview": {
+      "status": "TWO_STATIC_BLOCKERS_NOT_FIXED_AFTER_SECURITY_STOP",
+      "reviewer": "independent read-only reviewer, not astra",
+      "findings": [
+        "slash-prefixed unquoted base64 literal can be excluded as a source reference",
+        "tracked descendants may follow a symlinked ancestor outside worktree"
+      ],
+      "runtimeCounterexamples": "not executed; static review only",
+      "review": "job scanner-review.json"
+    },
+    "jobRecords": [
+      "preview-auth.json",
+      "preview-local.json",
+      "acceptance-wp6b.log"
+    ],
+    "externalActsPending": [
+      "repo visibility",
+      "Vercel prod/public demo",
+      "blog publish",
+      "video unlisted upload",
+      "form submit",
+      "optional X/LinkedIn post"
+    ]
+  },
+  "wp6bCopy": {
+    "status": "OFFLINE_TOOLS_SMOKE_PASS_NOT_PUBLIC_CLEARANCE",
+    "recordScope": "Historical WP6b-copy offline run before t211u; its Q13/Q15/Q16 and no-live-read statements are not current status",
+    "baseHead": "3858aadfcecfb37b2c5cad2b626283298587ff52",
+    "committed": false,
+    "jobName": "recallledger-20261102-exec-wp6b-copy",
+    "environment": "CLEAN Node24.22.1/pnpm11.25.0; no provider or DB configuration",
+    "verifiedAt": "2026-11-02T07:30:34.573Z",
+    "build": {
+      "status": "PASS",
+      "exitCode": 0
+    },
+    "offline": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 166,
+      "skipped": 30,
+      "passedFiles": 13,
+      "skippedFiles": 4,
+      "skipReason": "DB configuration absent"
+    },
+    "recordedLive": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 57,
+      "skipped": 0
+    },
+    "probe": {
+      "path": "scripts/tatum-probe.mjs",
+      "helpExitCode": 0,
+      "dryRunExitCode": 0,
+      "missingKeyExitCode": 2,
+      "adapterImportExitCode": 0,
+      "invalidDigestExitCode": 2,
+      "liveExecuted": false
+    },
+    "render": {
+      "path": "scripts/render-video.mjs",
+      "docs": "submission/VIDEO_RENDER.md",
+      "helpExitCode": 0,
+      "dryRunExitCode": 0,
+      "durationSeconds": 165,
+      "scenes": 16,
+      "captionCues": 38,
+      "manifestSources": 25,
+      "completeVerbatimCaptions": true,
+      "ffmpegPresent": false,
+      "ffmpegInvoked": false,
+      "mp4Produced": false
+    },
+    "claims": "Four evidence-bound lifecycle cases, not four paired flips; Tatum remains BLOCKED; synthetic label visible before final Audit & Provenance sections",
+    "finalGateRecords": [
+      "acceptance-wp6b-copy.log",
+      "pack-assertions.json",
+      "render-plan-checks.json",
+      "final-checks.json",
+      "WP6b-copy.json"
+    ],
+    "securityDisposition": "Q13 undecided; final-checks.json records the CLEAN heuristic scan differential. No public clearance or credential-aware scan is claimed; prior scanner limitations remain.",
+    "providerRequests": 0,
+    "mainnetWritesPerformed": 0,
+    "renderUploadPublishActs": 0,
+    "ownerQuestions": "No new question; Q13–Q16 unchanged",
+    "processes": "No product service/browser/poller started; outer-owned PostgreSQL untouched",
+    "next": "Owner resolves existing Q13–Q16 gates before any later credentialed probe, rendering, commit or public act"
+  },
+  "wp6bFinal": {
+    "status": "PASS_LOCAL_SOURCE_GATES",
+    "jobName": "recallledger-20261102-exec-wp6b-final",
+    "ownerDecision": "t211u WP6b blockers, 2026-11-02T15:18:00+08:00: Q13=B′ cleaned export; Q14=A preview later Dev/Rio; Q15=A exactly one read-only Tatum probe; Q16=A local narrated render, no upload",
+    "branch": "wp/recallledger-20261102-wp6b",
+    "baseHead": "3858aadfcecfb37b2c5cad2b626283298587ff52",
+    "sourceCheckpoint": "d2db0dac27ceaed9c7fd22a0e7b7f18e2b11cabc",
+    "checkpointBinding": "Containing private WP6b commit binds this source pack; exact private/export SHAs and later export outcomes are recorded in the job WP6b-final.json, avoiding self-referential commit hashes",
+    "evidenceRecordedAt": "2026-11-02T15:42:20.589+08:00",
+    "verifiedAt": "2026-11-02T08:14:13.554Z",
+    "realLoop": "NOT_RUN_OWNER_1B",
+    "mainnetMemoryCount": 12,
+    "dataOrigin": "synthetic teaching data; the queried public transaction is separate evidence, not a real-user teaching story",
+    "tatum": "PASS_READ_ONLY_SINGLE_LOOKUP",
+    "tatumProbe": {
+      "time": "2026-11-02T15:42:20.589+08:00",
+      "digest": "J91TcZuhTUphac9wS1TL2uCE3mNCafmbCmyLK3euayEq",
+      "method": "/sui.rpc.v2.LedgerService/GetTransaction",
+      "transport": "grpc",
+      "ok": true,
+      "httpStatus": null,
+      "httpStatusReason": "The gRPC adapter does not expose an HTTP status",
+      "checkpoint": "340709151",
+      "transactionStatus": "success",
+      "responseSha256": "8bd877ab1138a5142de2d79b9dddd18bcb73c9156e0dac95ee724abca4f4cd67",
+      "responseHashScope": "RFC 8785 canonical adapter-envelope JSON, including local fetchedAt; not raw gRPC wire bytes or a stable chain-content hash",
+      "evidencePath": "evidence/tatum-probe-J91TcZuh.json",
+      "liveCalls": 1,
+      "retries": 0
+    },
+    "video": {
+      "status": "PASS_LOCAL_NARRATED_VIDEO",
+      "targetDurationSeconds": 165,
+      "finalPath": "out/recallledger-demo.mp4",
+      "durationSeconds": 165,
+      "sha256": "c36e8af5a55d48792971ed059695f50b531361e50ee6d9e2b3c585794f7780ba",
+      "bytes": 5406462,
+      "audioVideoVerified": true,
+      "captionsVerified": true,
+      "captionCues": 38,
+      "receiptPath": "evidence/video-final/video-receipt.json",
+      "captureManifest": "evidence/video-final/capture-manifest.json",
+      "subjectiveListeningPerformed": false,
+      "renderProvenance": "Render-time source snapshots are hashed in the local render manifest; this mutable acceptance index is subsequently updated with verification results",
+      "upload": "NOT_RUN_FORBIDDEN",
+      "publicUrl": null
+    },
+    "export": {
+      "status": "SEPARATE_POST_COMMIT_EXPORT_GATE",
+      "oldRepository": "private; visibility and history unchanged",
+      "futureRepository": "fresh cleaned tree, single-commit public repository; creation/push later by Dev-Orchestrator, not this job",
+      "scan": "Exact export scan/results are recorded separately in job WP6b-final.json; this source checkpoint precedes export and does not clear old private history",
+      "publicUrl": null,
+      "releaseCommit": null
+    },
+    "preview": {
+      "status": "LATER_DEV_RIO_NOT_RUN_THIS_JOB",
+      "url": null,
+      "deployed": false
+    },
+    "sourceChanges": [
+      "Probe-backed claims and latest decisions/tracker records",
+      "Completed local narrated video, fresh loopback screenshots and evidence cards; no upload or remote playback",
+      "Portable temporary prefix-fixture roots retain isolation guards; local synthetic launchers resolve Node normally and require an explicit PostgreSQL bin directory",
+      "Strict scanner repairs slash-prefixed literal detection and ancestor-symlink refusal; exact justified allowlist retains unwaivable active-environment matching"
+    ],
+    "build": {
+      "status": "PASS",
+      "exitCode": 0,
+      "environment": "CLEAN Node24.22.1/pnpm11.25.0"
+    },
+    "offline": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 166,
+      "skipped": 30,
+      "filesPassed": 13,
+      "filesSkipped": 4,
+      "skipReason": "No database configuration in CLEAN shell"
+    },
+    "recordedLive": {
+      "status": "PASS",
+      "exitCode": 0,
+      "passed": 57,
+      "skipped": 0
+    },
+    "scannerRegression": {
+      "status": "PASS",
+      "exitCode": 0,
+      "runtime": "CLEAN Node24.22.1",
+      "cases": 9,
+      "nodeTestResultsIncludingWrapper": 10
+    },
+    "fixturePathGuards": {
+      "status": "PASS",
+      "exitCode": 0,
+      "acceptedAndRejectedRoots": 4,
+      "launcherSyntaxChecks": 2,
+      "missingPostgresRefused": true
+    },
+    "packAssertions": {
+      "status": "PASS",
+      "exitCode": 0,
+      "formRows": 14,
+      "ownerOnlyOpen": 9,
+      "requiredBlogHeadings": 3,
+      "claimsVerdicts": "supported or removed only"
+    },
+    "verificationEvidence": "Job acceptance-wp6b-final.log and private-checks.json; generated fixture evaluation saved separately and recorded video input restored byte-for-byte",
+    "providerRequests": 1,
+    "mainnetWritesPerformed": 0,
+    "externalPublications": 0,
+    "publicRepositoryCreationOrPush": "NOT_RUN_THIS_JOB; only the existing private wp branch is authorized for push",
+    "ownerReview": "UNSIGNED_OPEN",
+    "eligibility": "NOT_CERTIFIED; single lookup and teaching memory count do not establish relevant-use sufficiency or overall eligibility",
+    "next": "Post-commit cleaned export, strict credential-aware scan and independent export gates are bound in job WP6b-final.json; later Dev-Orchestrator/Dev/Rio handles repository creation/push and preview. No old-history change or real-loop."
+  }
+}

@@ -1,0 +1,80 @@
+- banner:
+  - heading "Real browser iframe viewport acceptance" [level=1]
+  - paragraph: Test fixture only. The unchanged RecallLedger app runs inside an ordinary same-origin iframe. This is not DevTools or device emulation, and it does not test mobile hardware or network conditions. Business data remains explicitly synthetic.
+  - navigation "Frame viewport width":
+    - button "375 CSS px" [pressed]
+    - button "768 CSS px"
+    - button "1440 CSS px"
+    - button "Measure rendered frame" [active]
+  - status: "{ \"requestedFrameWidth\": 375, \"actualInnerWidth\": 375, \"actualClientWidth\": 360, \"actualScrollWidth\": 360, \"actualHeight\": 900, \"horizontalOverflow\": false, \"appTitle\": \"RecallLedger · Remembered context\", \"observedAt\": \"2026-10-26T10:14:40.335Z\", \"scope\": \"ORDINARY_IFRAME_NOT_DEVICE_EMULATION\" }"
+- main:
+  - iframe [id="frame"]:
+    - banner:
+      - link "RecallLedger Your wallet facts. Your remembered context.":
+        - /url: "#"
+        - strong: RecallLedger
+        - generic: Your wallet facts. Your remembered context.
+      - navigation "Main navigation":
+        - button "Inbox"
+        - button "Memory"
+        - button "Replay"
+      - generic: Temporary sandbox
+      - strong: Synthetic inputs
+    - main:
+      - status: Temporary sandbox opened. No mainnet writes.
+      - heading "Your transfers, understood." [level=1]
+      - paragraph: A clear record of what moved, and what it meant.
+      - button "Compare saved context"
+      - region "Ledger summary":
+        - generic: Tools spend
+        - strong:
+          - text: —
+          - generic: TEST_USDC
+        - generic: Needs context
+        - strong:
+          - text: —
+          - generic: TEST_USDC
+        - generic: Active rules
+        - strong: "0"
+      - text: "Tools budget:"
+      - strong: Not set
+      - generic: Synthetic amounts · unknown ≠ expense
+      - generic: Teaching session · 0 of 12 changes confirmed
+      - button "Leave sandbox"
+      - generic: SANDBOX · STEP 1 / 12
+      - heading "Set your Tools budget" [level=2]
+      - generic: Manual review
+      - paragraph: These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+      - text: Tools budget (atomic units)
+      - textbox "Tools budget (atomic units)"
+      - text: Reminder threshold (atomic units)
+      - textbox "Reminder threshold (atomic units)"
+      - paragraph: TEST_USDC · 6 decimal places. Unknown transfers and reimbursements are excluded. Refunds require a link.
+      - checkbox "I reviewed and confirm this change." [checked]
+      - text: I reviewed and confirm this change.
+      - button "Confirm and prepare"
+      - heading "Transfer inbox" [level=2]
+      - paragraph: No transfers recorded. Confirm the budget, then inspect your first synthetic transfer.
+      - heading "Transfer A" [level=2]
+      - paragraph: 12.00 TEST_USDC
+      - generic: Needs context
+      - paragraph: Synthetic transfer · 2026-10-26
+      - heading "Onchain facts" [level=3]
+      - term: Direction
+      - definition: Outgoing
+      - term: Counterparty alias
+      - definition: COUNTERPARTY_R
+      - term: Network
+      - definition: Fixture · not verified onchain
+      - heading "Your context" [level=3]
+      - paragraph: Needs context
+      - paragraph: A transfer alone does not tell us its purpose.
+      - heading "Why this result" [level=3]
+      - paragraph: No recorded context. This amount is not counted as an expense.
+      - button "View evidence"
+      - button "Add context" [disabled]
+      - paragraph: Use the reviewed step above to make a change.
+      - generic "Operator tools · protected local session"
+    - contentinfo:
+      - generic: Fixture provider · No mainnet writes
+      - generic: Your context is yours to confirm.

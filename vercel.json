@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "framework": null,
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist/web",
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "src/server/generated/public-evidence.json",
+      "excludeFiles": "evidence/**"
+    }
+  },
+  "routes": [
+    {"src": "/api(?:/.*)?", "dest": "/api/index.ts"},
+    {"handle": "filesystem"},
+    {"src": "/.*", "dest": "/index.html"}
+  ]
+}

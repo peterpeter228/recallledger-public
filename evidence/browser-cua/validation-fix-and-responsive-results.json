@@ -1,0 +1,61 @@
+{
+  "status": "PASS_WITH_LIMITED_SCOPE",
+  "observedAt": "2026-10-26T10:18:27Z",
+  "source": "11d2af35ce9bb665a0f3de3d695582c237020825 plus uncommitted Composer scope-validation fix",
+  "bundle": "index-xNVfoH-z.js",
+  "browser": "existing Chromium through supported CUA; no DevTools; no new browser process",
+  "validationRegression": {
+    "M01ThroughM04ActualClicks": true,
+    "maxBelowMinErrorClear": true,
+    "ariaInvalid": "true",
+    "ariaDescribedbyPresent": true,
+    "confirmDisabledEvenWhenChecked": true,
+    "emptyAndDecimalNoCrash": true,
+    "correctedMax30RequiresReack": true,
+    "pendingSummaryUnchanged": true,
+    "completedActiveRules": 1
+  },
+  "responsive": {
+    "method": "ordinary same-origin HTML iframe; NOT device emulation or physical mobile",
+    "height": 900,
+    "widths": [
+      {
+        "innerWidth": 375,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "horizontalOverflow": false,
+        "tested": "Inbox; budget edit61 then60, checkbox, prepare and complete; Memory/Replay navigation and M08 select; scope max4 invalid, full-width Evidence and Escape focus restore"
+      },
+      {
+        "innerWidth": 768,
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "horizontalOverflow": false,
+        "tested": "Observation checkbox, prepare and complete; Memory/Inbox; keyboard Tab to View evidence with visible focus"
+      },
+      {
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "horizontalOverflow": false,
+        "tested": "Purpose income then expense; save label prepare and complete; scope form visible; Replay navigation"
+      }
+    ]
+  },
+  "limitations": [
+    "Not all12steps at every width",
+    "Outer harness scrolls horizontally when1440 frame exceeds desktop width; app itself did not overflow",
+    "One wide-frame Replay locator click was ineffective with header clipped; inspected DOM and screenshot then ordinary scroll and visible coordinate click succeeded",
+    "No real provider, failed remote outbox, rate-limited, conflict or incomplete remote restore exercised",
+    "No video recorded by this agent"
+  ],
+  "screenshotsPersonallyInspected": [
+    "validation-fix/invalid-max-stable.jpg",
+    "viewport-375-inbox.jpg",
+    "viewport-375-invalid-stable.jpg",
+    "viewport-375-evidence-stable.jpg",
+    "viewport-768-form.jpg",
+    "viewport-1440-scope.jpg",
+    "viewport-1440-measured.jpg"
+  ]
+}

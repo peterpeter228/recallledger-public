@@ -1,0 +1,85 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay"
+  - generic: Recorded scenario · Read only
+  - strong: Synthetic inputs
+- main:
+  - heading "Your transfers, understood." [level=1]
+  - paragraph: A clear record of what moved, and what it meant.
+  - button "Replay the correction"
+  - region "Ledger summary":
+    - generic: Tools spend
+    - strong: 12.00 TEST_USDC
+    - generic: Needs context
+    - strong: 25.00 TEST_USDC
+    - generic: Active rules
+    - strong: "0"
+  - text: "Tools budget:"
+  - strong: "60.00"
+  - text: TEST_USDC
+  - generic: Synthetic amounts · unknown ≠ expense
+  - heading "Transfer inbox" [level=2]
+  - button "A Transfer A Outgoing · Synthetic Expense −12.00 TEST_USDC":
+    - generic: A
+    - strong: Transfer A
+    - generic: Outgoing · Synthetic
+    - generic: Expense
+    - text: −12.00
+    - generic: TEST_USDC
+  - button "B Transfer B Outgoing · Synthetic Expense −12.00 TEST_USDC":
+    - generic: B
+    - strong: Transfer B
+    - generic: Outgoing · Synthetic
+    - generic: Expense
+    - text: −12.00
+    - generic: TEST_USDC
+  - button "C Transfer C Outgoing · Synthetic Reimbursement −25.00 TEST_USDC":
+    - generic: C
+    - strong: Transfer C
+    - generic: Outgoing · Synthetic
+    - generic: Reimbursement
+    - text: −25.00
+    - generic: TEST_USDC
+  - button "D Transfer D Incoming · Synthetic Refund +12.00 TEST_USDC":
+    - generic: D
+    - strong: Transfer D
+    - generic: Incoming · Synthetic
+    - generic: Refund
+    - text: "+12.00"
+    - generic: TEST_USDC
+  - button "E Transfer E Outgoing · Synthetic Needs context −25.00 TEST_USDC":
+    - generic: E
+    - strong: Transfer E
+    - generic: Outgoing · Synthetic
+    - generic: Needs context
+    - text: −25.00
+    - generic: TEST_USDC
+  - heading "Transfer E" [level=2]
+  - paragraph: 25.00 TEST_USDC
+  - generic: Needs context
+  - paragraph: Synthetic transfer · 2026-10-26
+  - heading "Onchain facts" [level=3]
+  - term: Direction
+  - definition: Outgoing
+  - term: Counterparty alias
+  - definition: COUNTERPARTY_R
+  - term: Network
+  - definition: Fixture · not verified onchain
+  - heading "Your context" [level=3]
+  - paragraph: Needs context
+  - paragraph: A transfer alone does not tell us its purpose.
+  - heading "Why this result" [level=3]
+  - paragraph: Amount above maximum · No matching rule
+  - button "View evidence"
+  - button "Add context"
+  - paragraph: Open a temporary sandbox to try explaining and correcting transfers.
+  - generic "Operator tools · protected local session"
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

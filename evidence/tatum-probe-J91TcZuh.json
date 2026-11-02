@@ -1,0 +1,19 @@
+{
+  "digest": "J91TcZuhTUphac9wS1TL2uCE3mNCafmbCmyLK3euayEq",
+  "endpointHost": "sui-mainnet-grpc.gateway.tatum.io:443",
+  "method": "/sui.rpc.v2.LedgerService/GetTransaction",
+  "requestedAt": "2026-11-02T15:42:20.589+08:00",
+  "transport": "grpc",
+  "httpStatus": null,
+  "httpStatusReason": "The gRPC adapter does not expose an HTTP status.",
+  "ok": true,
+  "summary": {
+    "network": "mainnet",
+    "status": "success",
+    "checkpoint": "340709151",
+    "timestampMs": 1793589001470,
+    "balanceChangeCount": 1
+  },
+  "responseSha256": "8bd877ab1138a5142de2d79b9dddd18bcb73c9156e0dac95ee724abca4f4cd67",
+  "responseHashScope": "SHA-256 of UTF-8 RFC 8785 canonical JSON of the adapter-returned envelope (evidence, transaction, objectTypes); not raw gRPC wire bytes. Includes local evidence.fetchedAt, so repeated lookups may hash differently."
+}

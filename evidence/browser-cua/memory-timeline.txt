@@ -1,0 +1,81 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory" [active]
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "Context with a history." [level=1]
+  - paragraph: See what you confirmed, what changed, and why.
+  - button "Check fixture restoration"
+  - strong: "Mainnet memories: Not verified"
+  - generic: "Planned scenario events: 12 · Current sandbox events: 12"
+  - heading "Remembered rules" [level=2]
+  - heading "Tools · rule-tools-v1" [level=3]
+  - paragraph: Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–30.00.
+  - paragraph: 2026-10-26 to 2026-11-25 · confirmed in 0ade39fc-2f5f-46ef-bdd9-4e64f855a31b
+  - generic: Superseded
+  - heading "Tools · rule-tools-v2" [level=3]
+  - paragraph: Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–20.00.
+  - paragraph: 2026-10-26 to 2026-11-25 · confirmed in 697a5086-4dd2-41a6-8d6a-082d3af516e7
+  - generic: Revoked
+  - heading "Your memory timeline" [level=2]
+  - list:
+    - generic: 99716c4a-a25b-499d-ae12-637eb5a85f06
+    - heading "Set your Tools budget" [level=3]
+    - paragraph: Preference confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 35b0e3c5-77f1-4744-9e49-f56d50d445d8
+    - heading "Inspect transfer A" [level=3]
+    - paragraph: Observation recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: b57887f5-c30b-4a01-90c8-1b731759f7a7
+    - heading "Explain transfer A" [level=3]
+    - paragraph: Label confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 0ade39fc-2f5f-46ef-bdd9-4e64f855a31b
+    - heading "Teach a reusable rule" [level=3]
+    - paragraph: Rule confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 8fda9e47-c484-4408-bfea-03c30b22e461
+    - heading "Apply context to transfer B" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 01e128f0-c0c6-4e73-957c-40eb24132448
+    - heading "Review transfer C" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: a2c7dc74-a452-4e6b-b28e-c4069658a89f
+    - heading "Correct this transfer" [level=3]
+    - paragraph: Correction confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 697a5086-4dd2-41a6-8d6a-082d3af516e7
+    - heading "Narrow the matching range" [level=3]
+    - paragraph: Rule confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 82e206a0-ce12-4fb0-8fd2-d98537dfbd51
+    - heading "Inspect incoming transfer D" [level=3]
+    - paragraph: Observation recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 09cf31a9-f44b-4b84-9658-fd6a4ffb20bc
+    - heading "Link an explicit refund" [level=3]
+    - paragraph: Refund link confirmed · Synthetic event
+    - generic "View event and exact scope"
+    - generic: fb25db75-839e-47f6-9086-6fc0b7736939
+    - heading "Review the next transfer" [level=3]
+    - paragraph: Decision recorded · Synthetic event
+    - generic "View event and exact scope"
+    - generic: 20263466-512a-4858-819f-955929bdbf9a
+    - heading "Stop using this rule" [level=3]
+    - paragraph: Rule revoked · Synthetic event
+    - generic "View event and exact scope"
+  - generic "Operator tools · protected local session"
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

@@ -1,0 +1,611 @@
+{
+  "reportStatus": "PARTIAL",
+  "executedAt": "2026-10-26T05:25:57.009921+00:00",
+  "codeCommit": null,
+  "codeCommitReason": "Repository HEAD has no commit; source SHA256 recorded instead.",
+  "sourceSha256": {
+    "tests/domain/domain.test.ts": "9ceaf2c353914ad32cec0b10803111636a79c84edbb43d7f5f1f99709908f80a",
+    "tests/adapters/adapters.test.ts": "8260bd81f647bde00f2a5db739ef74ee220f1a0adba4d96083d89bdc23e3b6f4",
+    "tests/server/api.test.ts": "24a165bbcf1c085f7d8003aff7517e98888d1d47d0c04e9ad68cd4a9808e7c4f",
+    "tests/server/postgres.test.ts": "223bdaa5ebb8df742c5f07c2dd559723434d967d6659b3cd3d1caa5b2bf46415",
+    "tests/independent/correctness.test.ts": "37049303781a9af9bf408b528925c7ed74548734abc1d12ad53bdf254f249108",
+    "tests/acceptance/gaps.test.ts": "5129712f9b50f7d083e83c2b204e59f17ea62fc15a0f1427360aaa943f0216f6",
+    "tests/web/contracts.test.ts": "570afed39b7798e40cc35961293a664374ae6b1a87f822698d3991a619986ac4",
+    "tests/acceptance/recovery-child.ts": "b54ec3d546c11a6c9ff7ecb92b705cb862fedb34a99617f94de74d587adc5d97",
+    "src/domain/ledger.ts": "b35af9406e53df0ed2762c971346dbc3793fe95b49460286311cac350b8e4722",
+    "src/server/app.ts": "69dff0f0e46cb814ca9e51813d9a1a6a0910a61af376118a00b1806632b8afeb"
+  },
+  "providerMode": "synthetic_local; PostgreSQL original suite evidence supplied by parent",
+  "commands": [
+    {
+      "command": "./node_modules/.bin/vitest run tests/acceptance",
+      "exitCode": 0,
+      "passed": 7,
+      "log": "historical private artifact omitted from public export"
+    },
+    {
+      "command": "./node_modules/.bin/tsc --noEmit",
+      "exitCode": 0,
+      "log": "historical private artifact omitted from public export"
+    }
+  ],
+  "priorFailures": {
+    "log": "historical private artifact omitted from public export",
+    "failed": 2,
+    "explanation": "Harness only: missing injected PostgreSQL-like store prevented session; bundle path used dist/assets instead of dist/web/assets. Corrected and rerun."
+  },
+  "caseResults": [
+    {
+      "id": "F01",
+      "title": "支持的成功转账仍不自动推断用途",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F01/F02 normalizes synthetic SDK-shaped evidence without inventing purpose and uses full coin identity",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Synthetic SDK-shaped response normalizes owner, direction, full asset and atomic amount; no rule yields needs_context. No real Tatum request."
+    },
+    {
+      "id": "F02",
+      "title": "同symbol不同资产不匹配",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F01/F02 normalizes synthetic SDK-shaped evidence without inventing purpose and uses full coin identity",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Same USDC struct name under a different package cannot match the rule; full coin type used."
+    },
+    {
+      "id": "F03",
+      "title": "失败交易不计支出",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F03/F04/F05/F06 refuses failed expense labels, wrong network/owner and unsupported or pending facts",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F03 failed chain inspection stays viewable but HTTP import rejects before enqueue",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Failed inspection remains viewable, classification reports transaction_failed, expense label and HTTP ledger import denied; no enqueue. Pure observation reducer still permits storing evidence, distinct from admitting it as expense."
+    },
+    {
+      "id": "F04",
+      "title": "错误网络不能成为主网证据",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F03/F04/F05/F06 refuses failed expense labels, wrong network/owner and unsupported or pending facts",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Wrong network rejected by evidence schema. Actual provider wrong-network transport response not exercised; no typed network_mismatch error assertion."
+    },
+    {
+      "id": "F05",
+      "title": "无关owner交易不能归入账本",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F03/F04/F05/F06 refuses failed expense labels, wrong network/owner and unsupported or pending facts",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Unrelated wallet rejected by normalizer and rule wallet mismatch denied. Normalizer uses WALLET_ASSET_NOT_AFFECTED rather than planned owner_mismatch."
+    },
+    {
+      "id": "F06",
+      "title": "复杂交易与待确认状态明确拒绝自动解释",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F03/F04/F05/F06 refuses failed expense labels, wrong network/owner and unsupported or pending facts",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Unverified complex shape cannot auto-classify; pending rejected by schema. No pending provider DTO/visible proof_pending state tested."
+    },
+    {
+      "id": "F07",
+      "title": "provider故障不伪造验证成功",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F07/A04 synthetic provider faults sanitize HTTP error bodies and do not verify facts",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Synthetic timeout/code8/malformed thrown faults return sanitized HTTP error, no data and one inspect call. Does not exercise actual gRPC retry exhaustion, literal HTTP429, malformed SDK response or visible retryable UI."
+    },
+    {
+      "id": "F08",
+      "title": "整数最小单位精确运算",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "strict schema, immutable state and exact money",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "BigInt decimal parsing above JS safe integer and precision rejection pass; literal planned 10000001+20000002 case not asserted."
+    },
+    {
+      "id": "R01",
+      "title": "未知counterparty保持未知",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Changed counterparty cannot classify as expense."
+    },
+    {
+      "id": "R02",
+      "title": "只有确认且持久化的范围内规则可用",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "conflicts and proposals never choose a random winner",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/server/api.test.ts",
+          "test": "constructs all twelve events with pending gating and isolated no-remote sessions",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/server/postgres.test.ts",
+          "test": "serializes concurrent confirmation and preserves uncertain job across new store instance",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Proposed rule denied, active demo rule matches; sandbox pending gating and PostgreSQL durable prefix demonstrated. Individual confirmed-pending rule classification not asserted."
+    },
+    {
+      "id": "R03",
+      "title": "规则硬条件逐项匹配",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Direction, counterparty, owner hard predicate outcomes exercised. New granular mismatch reason codes not individually asserted."
+    },
+    {
+      "id": "R04",
+      "title": "区间边界包含语义精确",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "All four planned inclusive atomic boundaries asserted."
+    },
+    {
+      "id": "R05",
+      "title": "到期规则停止未来使用",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "inclusive amount boundaries and every hard scope predicate",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Explicit post-expiry evaluation yields rule_expired."
+    },
+    {
+      "id": "R06",
+      "title": "撤销保留历史但停止未来使用",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "memory ablation fixed input, narrowing and revocation",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "compiles 12 synthetic events and preserves historical totals",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Revocation denies new input and old recorded B stays expense. No explicit event count before/after preview assertion."
+    },
+    {
+      "id": "R07",
+      "title": "单笔纠正优先且不扩大作用范围",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "compiles 12 synthetic events and preserves historical totals",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "M07 tools total correct and original C recorded decision remains expense. Current C reimbursement and unchanged rule range not all individually asserted."
+    },
+    {
+      "id": "R08",
+      "title": "显式supersession而非时间排序",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "memory ablation fixed input, narrowing and revocation",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "replays shuffled duplicate delivery deterministically",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Fixed E changes at supersession and shuffled event reconstruction hash remains identical."
+    },
+    {
+      "id": "R09",
+      "title": "有效规则冲突必须澄清",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "conflicts and proposals never choose a random winner",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Conflicting expense/internal_transfer returns needs_context with conflicting_rules."
+    },
+    {
+      "id": "R10",
+      "title": "退款需显式关联和金额边界",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "refund cap, duplicate prevention and target correction review",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "R10 rejects wrong refund owner and cumulative allocation over original across distinct inflows",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "compiles 12 synthetic events and preserves historical totals",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Wrong asset/owner, duplicate, original cap and distinct-inflow cumulative cap denied; valid totals and reclassified target review pass. Allocation exceeding inflow alone and unlinked incoming classification not individually asserted."
+    },
+    {
+      "id": "M01",
+      "title": "固定输入记忆消融",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "memory ablation fixed input, narrowing and revocation",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Same input hash and memory off/on classifications asserted. Event count/no-write assertion not explicit."
+    },
+    {
+      "id": "M02",
+      "title": "空状态进程从精确manifest恢复",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "M02 separate empty process restores strict manifest from synthetic fake remote, never Walrus",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "restarts from manifest and remote payloads, permits changed index ids",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Independent Node process, no database env, metadata-only manifest, strict hashes, missing/tamper reject, warm/cold hash equal. SYNTHETIC FAKE REMOTE bodies generated inside child; not actual remote Walrus recovery nor proof only manifest+remote sufficient in production."
+    },
+    {
+      "id": "M03",
+      "title": "Web与CLI同一结果",
+      "status": "NOT_RUN",
+      "providerMode": "synthetic_local",
+      "tests": [],
+      "observedScopeAndRemaining": "No comparison of real Web and CLI surfaces loading one manifest. Shared domain use is not evidence of this case."
+    },
+    {
+      "id": "M04",
+      "title": "相似度和返回顺序不充当权威状态",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "M02 separate empty process restores strict manifest from synthetic fake remote, never Walrus",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "replays shuffled duplicate delivery deterministically",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Fake recall reversed with misleading distances produces same projection; index ids changed. Synthetic adapter contract only."
+    },
+    {
+      "id": "M05",
+      "title": "重复事件只作用一次",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "replays shuffled duplicate delivery deterministically",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Duplicate M10 delivery leaves full final state hash unchanged."
+    },
+    {
+      "id": "M06",
+      "title": "缺失记录不称完整恢复",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "M02 separate empty process restores strict manifest from synthetic fake remote, never Walrus",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "missing, extra and tampered bodies fail exact recovery",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Missing M08 in child fake recall and missing/extra payloads rejected. User-visible restoreStatus incomplete not asserted."
+    },
+    {
+      "id": "M07",
+      "title": "异步写入未完成不能激活",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "uploaded, failed and missing jobs cannot become done",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/server/api.test.ts",
+          "test": "constructs all twelve events with pending gating and isolated no-remote sessions",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/server/postgres.test.ts",
+          "test": "serializes concurrent confirmation and preserves uncertain job across new store instance",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/server/postgres.test.ts",
+          "test": "blocks at bounded polling attempts, preserving original job and prefix",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Fake job non-done statuses cannot become done; sandbox prefix blocks next write; real PostgreSQL uncertain job and bounded polling retain prefix. Visible badge, all queued/running/failed UI variants and preview during pending not tested."
+    },
+    {
+      "id": "M08",
+      "title": "内容或链路篡改必须失败",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "replays shuffled duplicate delivery deterministically",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "missing, extra and tampered bodies fail exact recovery",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "M02 separate empty process restores strict manifest from synthetic fake remote, never Walrus",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Payload/hash alteration and missing chain event rejected. Wrong previous hash, wrong manifest hash and missing supersedes target not all separately exercised."
+    },
+    {
+      "id": "A01",
+      "title": "输入提示词注入不改规则",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "strict proposal cannot smuggle broad scope; missing provider is manual",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/adapters/adapters.test.ts",
+          "test": "structured model transport validates response and keeps confirmation mandatory",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Overbroad structured proposal rejected, confirmation remains mandatory. Literal malicious memo and budget/active-policy unchanged assertions not exercised."
+    },
+    {
+      "id": "A02",
+      "title": "客户端改金额或来源标签无效",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/server/api.test.ts",
+          "test": "rejects public writes, CSRF, forged chain facts and origin",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Forged client observation is rejected as OBSERVATION_NOT_FOUND. Exact trusted existing-B amount/evidenceKind substitution variant not independently asserted."
+    },
+    {
+      "id": "A03",
+      "title": "公开demo不能写",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/server/api.test.ts",
+          "test": "rejects public writes, CSRF, forged chain facts and origin",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Unauthenticated label route, bad CSRF and origin denied. Public rule/revoke/persist route matrix not fully called."
+    },
+    {
+      "id": "A04",
+      "title": "凭据不出现在前端或错误",
+      "status": "PARTIAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "A04 built frontend omits server credential symbols (static artifact check only)",
+          "runLog": "historical private artifact omitted from public export"
+        },
+        {
+          "path": "tests/acceptance/gaps.test.ts",
+          "test": "F07/A04 synthetic provider faults sanitize HTTP error bodies and do not verify facts",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "Actual built JS/CSS scanned for server credential symbols; dedicated fake secret absent from three HTTP fault bodies. Browser network/client state and log capture with secret canary not tested."
+    },
+    {
+      "id": "U01",
+      "title": "因果序列汇总与未知金额",
+      "status": "PASS_LOCAL",
+      "providerMode": "synthetic_local",
+      "tests": [
+        {
+          "path": "tests/domain/domain.test.ts",
+          "test": "compiles 12 synthetic events and preserves historical totals",
+          "runLog": "historical private artifact omitted from public export"
+        }
+      ],
+      "observedScopeAndRemaining": "All six checkpoint totals and M06/M07 warning transition asserted; final unknown E asserted."
+    },
+    {
+      "id": "U02",
+      "title": "实际按钮与状态可用",
+      "status": "BLOCKED",
+      "providerMode": "not_run",
+      "tests": [],
+      "observedScopeAndRemaining": "Actual browser interaction requires user approval per parent; no browser was used. API/view contracts do not prove responsive buttons/keyboard/console."
+    }
+  ],
+  "statusCounts": {
+    "PASS_LOCAL": 11,
+    "PARTIAL": 19,
+    "BLOCKED": 1,
+    "NOT_RUN": 1
+  },
+  "actualMainnetMemoryCount": 0,
+  "actualMainnetReceipts": [],
+  "browserEvidence": [],
+  "limitations": [
+    "PASS_LOCAL only covers stated synthetic assertions, not live provider acceptance.",
+    "M02 fixture generator is inside separate child and fake remote injected; not actual Walrus remote persistence.",
+    "No credentials read, no external requests, no browser.",
+    "Original 31-test suite execution evidence accepted from parent; PostgreSQL not rerun by this agent."
+  ],
+  "blockers": [
+    {
+      "action": "Run real responsive browser acceptance",
+      "target": "U02 / Inbox Memory Replay at 375,768,1440",
+      "reason": "Explicit browser approval pending per parent",
+      "completed": "API/view contract checks only",
+      "status": "BLOCKED"
+    },
+    {
+      "action": "Run Tatum/Walrus live verification and cold restore",
+      "target": "E2/E3 actual providers",
+      "reason": "Live credentials unavailable per parent; no external calls authorized in delegated task",
+      "completed": "Synthetic SDK/adapter/independent process tests",
+      "status": "BLOCKED"
+    }
+  ],
+  "followup20261026": {
+    "observedAt": "2026-10-26T11:10:00Z",
+    "U02": "PASS_LOCAL_SCOPED",
+    "evidence": [
+      "evidence/browser-cua/core-results.json",
+      "evidence/browser-cua/validation-fix-and-responsive-results.json",
+      "evidence/browser-cua/screenshot-content-notes.md"
+    ],
+    "remaining": "Not all planned failure/live cases or full12 at every width. Earlier results and blockers below describe the historical run, not current browser availability."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED_OR_FAILED",
+  "checkedAt": "2026-10-26T05:18:29.408Z",
+  "checks": [
+    {
+      "name": "tatum",
+      "status": "BLOCKED",
+      "reason": "Dedicated TATUM_API_KEY and --digest=<designated existing transaction> required"
+    },
+    {
+      "name": "walrus_inventory",
+      "status": "BLOCKED",
+      "reason": "Dedicated account/delegate/owner/namespace required"
+    }
+  ],
+  "mainnetWritesPerformed": 0,
+  "notice": "These read-only probes do not complete G4. Use exact-manifest restore and verified done receipts for that gate."
+}

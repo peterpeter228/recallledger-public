@@ -1,0 +1,26 @@
+# Deployment candidate only. Not applied. Review workspace, costs and public access first.
+services:
+  - type: web
+    name: recallledger-demo
+    runtime: node
+    region: oregon
+    plan: free
+    autoDeployTrigger: "off"
+    buildCommand: corepack pnpm install --frozen-lockfile --prod=false && corepack pnpm run build
+    startCommand: corepack pnpm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: APP_BASE_URL
+        sync: false
+      - key: ALLOW_MAINNET_MEMORY_WRITES
+        value: "false"
+      - key: PUBLIC_DEMO_READ_ONLY
+        value: "true"
+# This $0 candidate serves only ephemeral synthetic sandbox, without PostgreSQL or live integration.
+# Production persistence requires a separately approved database and dedicated secrets, not automatic provisioning.

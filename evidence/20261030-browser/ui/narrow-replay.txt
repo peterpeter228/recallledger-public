@@ -1,0 +1,28 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay" [active]
+  - generic: Recorded scenario · Read only
+  - strong: Synthetic inputs
+- main:
+  - heading "The same transfer. Different context." [level=1]
+  - paragraph: Replay never changes your memories.
+  - text: Fixed synthetic input
+  - combobox "Fixed synthetic input":
+    - option "Transfer B · 12.00 TEST_USDC" [selected]
+    - option "Transfer E · 25.00 TEST_USDC"
+  - text: Memory snapshot
+  - combobox "Memory snapshot":
+    - option "As of M04 · Original scope"
+    - option "As of M08 · Narrowed scope"
+    - option "As of M12 · Revoked" [selected]
+  - paragraph: Replaying the same input…
+  - generic "Operator tools · protected local session"
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

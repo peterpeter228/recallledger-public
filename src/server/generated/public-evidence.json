@@ -1,0 +1,10 @@
+{
+  "dataOrigin": "synthetic",
+  "mainnetMemoryCount": 12,
+  "liveVerification": "verified",
+  "mode": "recorded_live",
+  "verifiedAt": "2026-11-02T05:45:02.234Z",
+  "manifestVersion": "recallledger-teaching-v1-demo-recallledger-n12",
+  "stateHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04",
+  "note": "Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions."
+}

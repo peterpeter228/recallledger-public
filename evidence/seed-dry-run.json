@@ -1,0 +1,93 @@
+{
+  "mode": "dry_run",
+  "dataOrigin": "synthetic",
+  "eventCount": 12,
+  "events": [
+    {
+      "sequence": 1,
+      "kind": "preference_confirmed",
+      "eventId": "M01",
+      "eventHash": "6b50aabb8a973969370f3403930cbcc0c5350948d262cc951250c693c62229be",
+      "textSha256": "2f14503e50b28d64a947b470e6f88e81186e31dad8884d599cf0ce2e9f267e9f"
+    },
+    {
+      "sequence": 2,
+      "kind": "observation_recorded",
+      "eventId": "M02",
+      "eventHash": "efe8e202c87a2e05d56ac50a6dc299f08e6cd1df45d4349de1d8fc7f8ca0f0f2",
+      "textSha256": "a48685cfdab5fe123f74a42abe5d7f15ec8c72497a423fe334f4cb938ec28d1e"
+    },
+    {
+      "sequence": 3,
+      "kind": "label_confirmed",
+      "eventId": "M03",
+      "eventHash": "a94743db3d54a599041cb3682901f223572b226fecfeb2ea9d3fde63abd6f371",
+      "textSha256": "a394a758bbf69b34a6f33d5ec16fb309def7b9b8712e382234fcfae921ccfe4d"
+    },
+    {
+      "sequence": 4,
+      "kind": "rule_confirmed",
+      "eventId": "M04",
+      "eventHash": "71c5338eb05ffc9c4541cf2655efce164c29258a238101b78e34b0eed645a9eb",
+      "textSha256": "74af09e8ae9946d5efecde51009b36ec5d6e1a657ea772153fb1bc7e34be27c7"
+    },
+    {
+      "sequence": 5,
+      "kind": "decision_recorded",
+      "eventId": "M05",
+      "eventHash": "90842f95938e4baa54c5a1b2a26679521ca9c8c71c031fcff25792d87183bab4",
+      "textSha256": "a438abcef10549f42f6544cd447d7eb4dc4d668fdfe6bb5880a44ecc251014b0"
+    },
+    {
+      "sequence": 6,
+      "kind": "decision_recorded",
+      "eventId": "M06",
+      "eventHash": "b1657f3e2924ea8cfb558b6f12e611c7e2d5c5cc801c2e61ec391b9c26511044",
+      "textSha256": "bcfee304ba6165c917f9b22c418d07aa50196c47b3d432fcbc242ad0ca431c5c"
+    },
+    {
+      "sequence": 7,
+      "kind": "correction_confirmed",
+      "eventId": "M07",
+      "eventHash": "657550bcae58dd7c1529b6eab30f98941192d4552e175192409fefaf4db04a6a",
+      "textSha256": "e95b0879ae58d052af2c210a2cf57ea740553509bc1d2f4f593d6b2546859322"
+    },
+    {
+      "sequence": 8,
+      "kind": "rule_confirmed",
+      "eventId": "M08",
+      "eventHash": "8242ee661eec01c528f177122a571bb37f2a79e3cea443124db7492bbc951a12",
+      "textSha256": "95744004aa5816457ab1e65510725c5333ec8dbfe4385f1831d568d261053647"
+    },
+    {
+      "sequence": 9,
+      "kind": "observation_recorded",
+      "eventId": "M09",
+      "eventHash": "d7b92e8a3ef8087c0863d42d2d572d5906c4df79def0119caad71dc4a43be6dc",
+      "textSha256": "31bedb5ad93f5a0ff84826108eec90578a26b706afcbf3ceedd7987f9982f813"
+    },
+    {
+      "sequence": 10,
+      "kind": "refund_link_confirmed",
+      "eventId": "M10",
+      "eventHash": "d782447d5667a3e6c29dc5448a00e700b1f510357395142f284be547f7009f26",
+      "textSha256": "ca4125b0c453e9a24fec52646c301e43f9932c05b85248e8be289e9be991e5ed"
+    },
+    {
+      "sequence": 11,
+      "kind": "decision_recorded",
+      "eventId": "M11",
+      "eventHash": "64813fb78e43c0f699d798929ce39b7ff331f5cab9d68d08fb05db27d34188ef",
+      "textSha256": "530b4ef478e3c037e5f1c9c4ee5f325fb4184d75e202e6991d90b49b2f9573fb"
+    },
+    {
+      "sequence": 12,
+      "kind": "rule_revoked",
+      "eventId": "M12",
+      "eventHash": "b3409056419eb33faf0c15a3ab42bdd82626287741c8d30828a5a2a99c7f44ca",
+      "textSha256": "73c39248c421186a33271b897abb2882515d81798b865d958cb69e7daf5efebe"
+    }
+  ],
+  "mainnetWritesPerformed": 0,
+  "notice": "Plan only, not mainnet memory receipts. Reuses stable event IDs, payloads and operation keys."
+}

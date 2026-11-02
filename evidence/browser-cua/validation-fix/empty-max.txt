@@ -1,0 +1,88 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "Your transfers, understood." [level=1]
+  - paragraph: A clear record of what moved, and what it meant.
+  - button "Compare saved context"
+  - region "Ledger summary":
+    - generic: Tools spend
+    - strong: 12.00 TEST_USDC
+    - generic: Needs context
+    - strong: 0.00 TEST_USDC
+    - generic: Active rules
+    - strong: "0"
+  - text: "Tools budget:"
+  - strong: "60.00"
+  - text: TEST_USDC
+  - generic: Synthetic amounts · unknown ≠ expense
+  - generic: Teaching session · 3 of 12 changes confirmed
+  - button "Leave sandbox"
+  - generic: SANDBOX · STEP 4 / 12
+  - heading "Teach a reusable rule" [level=2]
+  - generic: Manual review
+  - paragraph: These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+  - text: Your explanation
+  - textbox "Your explanation":
+    - /placeholder: Explain what you want to remember…
+  - paragraph: AI proposals are unavailable. Use the manual scope below; text alone never activates a rule.
+  - text: For outgoing TEST_USDC to COUNTERPARTY_R, from
+  - strong: "5.00"
+  - text: to
+  - strong: Invalid amount
+  - text: ", classify as"
+  - strong: Tools expense
+  - text: .
+  - text: Minimum (atomic units)
+  - textbox "Minimum (atomic units)": "5000000"
+  - text: Maximum (atomic units)
+  - textbox "Maximum (atomic units)" [active]
+  - text: Valid from (UTC)
+  - textbox "Valid from (UTC)": 2026-10-26T00:00:00.000Z
+  - text: Valid until (UTC)
+  - textbox "Valid until (UTC)": 2026-11-25T00:00:00.000Z
+  - alert: Enter minimum and maximum as non-negative whole atomic units (digits only, no leading zeros).
+  - generic "Exact scope · review every condition"
+  - checkbox "I reviewed and confirm this exact scope."
+  - text: I reviewed and confirm this exact scope.
+  - button "Confirm this rule" [disabled]
+  - heading "Transfer inbox" [level=2]
+  - button "A Transfer A Outgoing · Synthetic Expense −12.00 TEST_USDC":
+    - generic: A
+    - strong: Transfer A
+    - generic: Outgoing · Synthetic
+    - generic: Expense
+    - text: −12.00
+    - generic: TEST_USDC
+  - heading "Transfer A" [level=2]
+  - paragraph: 12.00 TEST_USDC
+  - generic: Expense
+  - paragraph: Synthetic transfer · 2026-10-26
+  - heading "Onchain facts" [level=3]
+  - term: Direction
+  - definition: Outgoing
+  - term: Counterparty alias
+  - definition: COUNTERPARTY_R
+  - term: Network
+  - definition: Fixture · not verified onchain
+  - heading "Your context" [level=3]
+  - paragraph: Expense
+  - paragraph: Confirmed by you
+  - heading "Why this result" [level=3]
+  - paragraph: Explicit user label
+  - button "View evidence"
+  - button "Add context" [disabled]
+  - paragraph: Use the reviewed step above to make a change.
+  - generic "Operator tools · protected local session"
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

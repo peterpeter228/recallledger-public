@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-26T05:09:23.910829+00:00",
+  "environment": "Node24.22.1 / local container",
+  "codeSHA": null,
+  "codeSHAReason": "Repository not initialized when adapter verification ran",
+  "sourceHashes": {
+    "src/adapters/memory/index.ts": "43ee13ad9cec03ae45d2e9188d8da5191505057180d49df9c57309d14076b5be",
+    "src/adapters/model/index.ts": "e6b3f871461b9b625341a60e79ea6bde92423b2898e16b14ea84edb09d5399dc",
+    "src/adapters/tatum/index.ts": "8a2bbe39a9aa9d8a8d9352e9f240dee5d26d65eac965c1e64863773072701a9e",
+    "tests/adapters/adapters.test.ts": "8260bd81f647bde00f2a5db739ef74ee220f1a0adba4d96083d89bdc23e3b6f4"
+  },
+  "tests": {
+    "command": "node node_modules/vitest/vitest.mjs run tests/adapters",
+    "exitCode": 0,
+    "evidence": "historical private artifact omitted from public export",
+    "origin": "fake providers; no live integration"
+  },
+  "publicEvidence": "*-meta.json has HTTP status, URL and observed UTC timestamp"
+}

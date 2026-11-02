@@ -1,0 +1,34 @@
+{
+  "observation": {
+    "observationId": "fixture:tx-E",
+    "dataOrigin": "synthetic",
+    "chain": "sui:fixture",
+    "transactionRef": "fixture:tx-E",
+    "walletRef": "DEMO_OWNER",
+    "counterpartyRef": "COUNTERPARTY_R",
+    "coinType": "fixture:TEST_USDC",
+    "decimals": 6,
+    "direction": "out",
+    "amountAtomic": "25000000",
+    "eventTime": "2026-10-26T10:00:00.000Z",
+    "complexity": "simple",
+    "evidence": null
+  },
+  "decision": {
+    "observationId": "fixture:tx-E",
+    "classification": "needs_context",
+    "category": null,
+    "basis": "needs_context",
+    "matchedRuleVersionIds": [],
+    "matchedEventIds": [],
+    "memoryVersion": 10,
+    "evaluatedAt": "2026-10-26T10:00:00.000Z",
+    "reasonCodes": [
+      "amount_above_maximum",
+      "no_matching_rule"
+    ],
+    "dataOrigin": "synthetic"
+  },
+  "memoryReceipt": null,
+  "notice": "Synthetic fixture. No mainnet transaction or storage receipt."
+}

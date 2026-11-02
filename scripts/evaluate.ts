@@ -1,0 +1,10 @@
+import {mkdirSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {buildDemo,replayDemo,compileDemoEvents} from '../src/domain/demo';
+import {replayEvents,stateHash,summarize} from '../src/domain';
+const rows=[...Array(12)].map((_,i)=>{const d=buildDemo(i+1);return {sequence:i+1,summary:d.summary,stateHash:d.stateHash}});
+assert.equal(rows[5].summary.assets[0].toolsSpendAtomic,'49000000');assert.equal(rows[6].summary.assets[0].toolsSpendAtomic,'24000000');assert.equal(rows[9].summary.assets[0].toolsSpendAtomic,'12000000');assert.equal(rows[11].summary.assets[0].toolsSpendAtomic,'12000000');
+const ablation=[['B',4],['E',4],['E',8],['F-preview',12]].map(([id,seq])=>{const off=replayDemo(String(id),Number(seq),'off'),on=replayDemo(String(id),Number(seq),'on');assert.equal(off.inputHash,on.inputHash);return {inputId:id,sequence:seq,off,on}});
+assert.equal(ablation[0].on.decision.classification,'expense');assert.equal(ablation[0].off.decision.classification,'needs_context');assert.equal(ablation[2].on.decision.classification,'needs_context');assert.equal(ablation[3].on.decision.classification,'needs_context');
+const events=compileDemoEvents();const coldLocal=replayEvents(JSON.parse(JSON.stringify(events)));assert.equal(stateHash(coldLocal),buildDemo().stateHash);
+const report={executedAt:new Date().toISOString(),providerMode:'synthetic_local',status:'PASS',eventCount:events.length,rows,ablation,localReplayHash:stateHash(coldLocal),summary:summarize(coldLocal),limits:['Local serialized replay is not Walrus cold recovery','No live Tatum query or mainnet memory written','No external user study']};mkdirSync('evidence',{recursive:true});writeFileSync('evidence/fixture-evaluation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

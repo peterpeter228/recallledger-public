@@ -1,0 +1,81 @@
+- banner:
+  - link "RecallLedger Your wallet facts. Your remembered context.":
+    - /url: "#"
+    - strong: RecallLedger
+    - generic: Your wallet facts. Your remembered context.
+  - navigation "Main navigation":
+    - button "Inbox"
+    - button "Memory"
+    - button "Replay"
+  - generic: Temporary sandbox
+  - strong: Synthetic inputs
+- main:
+  - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+  - heading "Your transfers, understood." [level=1]
+  - paragraph: A clear record of what moved, and what it meant.
+  - button "Compare saved context"
+  - region "Ledger summary":
+    - generic: Tools spend
+    - strong: 0.00 TEST_USDC
+    - generic: Needs context
+    - strong: 12.00 TEST_USDC
+    - generic: Active rules
+    - strong: "0"
+  - text: "Tools budget:"
+  - strong: "60.00"
+  - text: TEST_USDC
+  - generic: Synthetic amounts · unknown ≠ expense
+  - generic: Teaching session · 2 of 12 changes confirmed
+  - button "Leave sandbox"
+  - generic: SANDBOX · STEP 3 / 12
+  - heading "Explain transfer A" [level=2]
+  - generic: Manual review
+  - paragraph: These are synthetic inputs. Your confirmation changes only this temporary teaching session.
+  - paragraph:
+    - strong: fixture:tx-A
+    - text: · this change applies only to this transfer.
+  - text: Purpose
+  - combobox "Purpose":
+    - option "Expense" [selected]
+    - option "Internal transfer"
+    - option "Reimbursement"
+    - option "Income"
+    - option "Needs context"
+  - text: Expense category
+  - combobox "Expense category":
+    - option "Tools" [selected]
+  - paragraph: This describes the transfer’s purpose. The blockchain does not verify this context.
+  - checkbox "I reviewed and confirm this change."
+  - text: I reviewed and confirm this change.
+  - button "Save label" [disabled]
+  - heading "Transfer inbox" [level=2]
+  - button "A Transfer A Outgoing · Synthetic Needs context −12.00 TEST_USDC":
+    - generic: A
+    - strong: Transfer A
+    - generic: Outgoing · Synthetic
+    - generic: Needs context
+    - text: −12.00
+    - generic: TEST_USDC
+  - heading "Transfer A" [level=2]
+  - paragraph: 12.00 TEST_USDC
+  - generic: Needs context
+  - paragraph: Synthetic transfer · 2026-10-26
+  - heading "Onchain facts" [level=3]
+  - term: Direction
+  - definition: Outgoing
+  - term: Counterparty alias
+  - definition: COUNTERPARTY_R
+  - term: Network
+  - definition: Fixture · not verified onchain
+  - heading "Your context" [level=3]
+  - paragraph: Needs context
+  - paragraph: A transfer alone does not tell us its purpose.
+  - heading "Why this result" [level=3]
+  - paragraph: No recorded context
+  - button "View evidence"
+  - button "Add context" [disabled]
+  - paragraph: Use the reviewed step above to make a change.
+  - generic "Operator tools · protected local session"
+- contentinfo:
+  - generic: Fixture provider · No mainnet writes
+  - generic: Your context is yours to confirm.

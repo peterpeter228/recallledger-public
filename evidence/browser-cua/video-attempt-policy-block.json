@@ -1,0 +1,16 @@
+{
+  "status":"BLOCKED_NO_DEMONSTRATION_ACTION_EXECUTED",
+  "recordingStartReportedByRoot":"2026-10-26T10:31:39Z",
+  "firstActionAttemptUtc":"2026-10-26T10:31:54Z",
+  "action":"Check confirmation checkbox through previously bound CUA vidqa tab",
+  "target":"existing tab17 at http://localhost:3000/",
+  "outcome":"Auto-review denied origin authority before checkbox action; subsequent sequence did not execute",
+  "readOnlyVerificationUtc":"2026-10-26T10:32:38Z",
+  "verifiedBoundTabId":"17",
+  "observationOutcome":"Read-only getAXState also denied origin authority",
+  "reasonReported":"Origin access interpreted as contrary to instruction to stay on existing tab17 although no new tab or switching was requested",
+  "recovery":"Stopped. No native workaround, alternate browser, origin change or policy bypass attempted.",
+  "preparedStateBeforeCapture":"Four events explicitly confirmed before recording; Tools12, unknown0,active1; captured in video-prepared-M04.jpg/txt",
+  "stepsDuringCapture":[],
+  "videoClaim":"Recording artifact controlled by root; cannot claim remaining workflow demonstrated. Existing earlier core UI acceptance remains separate valid evidence."
+}

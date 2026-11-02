@@ -1,0 +1,469 @@
+{
+  "executedAt": "2026-11-02T07:29:23.962Z",
+  "providerMode": "synthetic_local",
+  "status": "PASS",
+  "eventCount": 12,
+  "rows": [
+    {
+      "sequence": 1,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "0",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "8ea6aac7a6f663d111c9e8f40afc81067489d9d69b3e5a7b86957f887ad55bd8"
+    },
+    {
+      "sequence": 2,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "0",
+            "unknownAtomic": "12000000",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [
+          "fixture:tx-A"
+        ],
+        "refundLinks": []
+      },
+      "stateHash": "32dee2fb02b9e857e996555bea46be79cc538bc351befb1c52241c1b02339bad"
+    },
+    {
+      "sequence": 3,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "12000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "5a718b62e2c46ee8d826cb9c7e65db73fb060d2e7ddc04fa293dcf55b53d8901"
+    },
+    {
+      "sequence": 4,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "12000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "bfb2b3e1cd0b39425170346d5065d924fc1db604572a51cec0a1fc057e3f3a81"
+    },
+    {
+      "sequence": 5,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "24000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "34e01591d4fdbcc126d7eb6329f439b27782c55a4eaa530f898b2f7664b0dc85"
+    },
+    {
+      "sequence": 6,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "49000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": true
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "4398a2dd9b1c9a5197a8186a5a70544dcca8426da5002bc595128452cf43c2e6"
+    },
+    {
+      "sequence": 7,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "24000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "144b1ab2c9d6229550bd569ada56e4f593d26e655575518c987a3bcc878b5966"
+    },
+    {
+      "sequence": 8,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "24000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": []
+      },
+      "stateHash": "9ec2641d73a782eb32c71b44795a825c6cdcf1fde67bb1444cde699a21d979bf"
+    },
+    {
+      "sequence": 9,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "24000000",
+            "unknownAtomic": "12000000",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [
+          "fixture:tx-D"
+        ],
+        "refundLinks": []
+      },
+      "stateHash": "32de6ee53fc17333c5250d9bd5b5f01aab01a053ca729d92f8349003f57ef61c"
+    },
+    {
+      "sequence": 10,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "12000000",
+            "unknownAtomic": "0",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [],
+        "refundLinks": [
+          {
+            "refundObservationId": "fixture:tx-D",
+            "originalObservationId": "fixture:tx-B",
+            "coinType": "fixture:TEST_USDC",
+            "amountAtomic": "12000000",
+            "eventId": "M10",
+            "status": "active"
+          }
+        ]
+      },
+      "stateHash": "fcca7dc1dacb21605e6a6969f6a16c48750c4570d803e00761d5e17dbe0664c9"
+    },
+    {
+      "sequence": 11,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "12000000",
+            "unknownAtomic": "25000000",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [
+          "fixture:tx-E"
+        ],
+        "refundLinks": [
+          {
+            "refundObservationId": "fixture:tx-D",
+            "originalObservationId": "fixture:tx-B",
+            "coinType": "fixture:TEST_USDC",
+            "amountAtomic": "12000000",
+            "eventId": "M10",
+            "status": "active"
+          }
+        ]
+      },
+      "stateHash": "9073c88f658f1aa1af2e0bc9521041ab20bc88897c5e3e1653cb535eef89770e"
+    },
+    {
+      "sequence": 12,
+      "summary": {
+        "assets": [
+          {
+            "coinType": "fixture:TEST_USDC",
+            "toolsSpendAtomic": "12000000",
+            "unknownAtomic": "25000000",
+            "budgetAtomic": "60000000",
+            "warnAtAtomic": "45000000",
+            "budgetWarning": false
+          }
+        ],
+        "needsContextRefs": [
+          "fixture:tx-E"
+        ],
+        "refundLinks": [
+          {
+            "refundObservationId": "fixture:tx-D",
+            "originalObservationId": "fixture:tx-B",
+            "coinType": "fixture:TEST_USDC",
+            "amountAtomic": "12000000",
+            "eventId": "M10",
+            "status": "active"
+          }
+        ]
+      },
+      "stateHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04"
+    }
+  ],
+  "ablation": [
+    {
+      "inputId": "B",
+      "sequence": 4,
+      "off": {
+        "inputHash": "68cb9d42a26e175914bccffe5ecf0c9e0baaaa9acb003fc8fdf4cef753c34cd3",
+        "stateHash": "df1ae9a51b8da5ef4fa52a7fbf944928a5acbf5a74437799eb2d2f13208595ba",
+        "decision": {
+          "observationId": "fixture:tx-B",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 0,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      },
+      "on": {
+        "inputHash": "68cb9d42a26e175914bccffe5ecf0c9e0baaaa9acb003fc8fdf4cef753c34cd3",
+        "stateHash": "bfb2b3e1cd0b39425170346d5065d924fc1db604572a51cec0a1fc057e3f3a81",
+        "decision": {
+          "observationId": "fixture:tx-B",
+          "classification": "expense",
+          "category": "tools",
+          "basis": "confirmed_rule",
+          "matchedRuleVersionIds": [
+            "rule-tools-v1"
+          ],
+          "matchedEventIds": [
+            "M04"
+          ],
+          "memoryVersion": 4,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "confirmed_scope_match"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      }
+    },
+    {
+      "inputId": "E",
+      "sequence": 4,
+      "off": {
+        "inputHash": "075b137f9ef40c4bb9e96f5eeeb5ec57b4bd30b7ca8409078765fc88e7c7076b",
+        "stateHash": "df1ae9a51b8da5ef4fa52a7fbf944928a5acbf5a74437799eb2d2f13208595ba",
+        "decision": {
+          "observationId": "fixture:tx-E",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 0,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      },
+      "on": {
+        "inputHash": "075b137f9ef40c4bb9e96f5eeeb5ec57b4bd30b7ca8409078765fc88e7c7076b",
+        "stateHash": "bfb2b3e1cd0b39425170346d5065d924fc1db604572a51cec0a1fc057e3f3a81",
+        "decision": {
+          "observationId": "fixture:tx-E",
+          "classification": "expense",
+          "category": "tools",
+          "basis": "confirmed_rule",
+          "matchedRuleVersionIds": [
+            "rule-tools-v1"
+          ],
+          "matchedEventIds": [
+            "M04"
+          ],
+          "memoryVersion": 4,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "confirmed_scope_match"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      }
+    },
+    {
+      "inputId": "E",
+      "sequence": 8,
+      "off": {
+        "inputHash": "075b137f9ef40c4bb9e96f5eeeb5ec57b4bd30b7ca8409078765fc88e7c7076b",
+        "stateHash": "df1ae9a51b8da5ef4fa52a7fbf944928a5acbf5a74437799eb2d2f13208595ba",
+        "decision": {
+          "observationId": "fixture:tx-E",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 0,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      },
+      "on": {
+        "inputHash": "075b137f9ef40c4bb9e96f5eeeb5ec57b4bd30b7ca8409078765fc88e7c7076b",
+        "stateHash": "9ec2641d73a782eb32c71b44795a825c6cdcf1fde67bb1444cde699a21d979bf",
+        "decision": {
+          "observationId": "fixture:tx-E",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 8,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "amount_above_maximum",
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      }
+    },
+    {
+      "inputId": "F-preview",
+      "sequence": 12,
+      "off": {
+        "inputHash": "740a7aab1e2c741adb6ee6d434961c2cee4faf8cdc95b7c30c4ce04c784d2eee",
+        "stateHash": "df1ae9a51b8da5ef4fa52a7fbf944928a5acbf5a74437799eb2d2f13208595ba",
+        "decision": {
+          "observationId": "fixture:tx-F-preview",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 0,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      },
+      "on": {
+        "inputHash": "740a7aab1e2c741adb6ee6d434961c2cee4faf8cdc95b7c30c4ce04c784d2eee",
+        "stateHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04",
+        "decision": {
+          "observationId": "fixture:tx-F-preview",
+          "classification": "needs_context",
+          "category": null,
+          "basis": "needs_context",
+          "matchedRuleVersionIds": [],
+          "matchedEventIds": [],
+          "memoryVersion": 12,
+          "evaluatedAt": "2026-10-26T10:00:00.000Z",
+          "reasonCodes": [
+            "no_matching_rule"
+          ],
+          "dataOrigin": "synthetic"
+        },
+        "memoryEventsAdded": 0
+      }
+    }
+  ],
+  "localReplayHash": "b39c667d2a6edb16cf388766fd81c104f4cae8823178790e5da104ff3f883c04",
+  "summary": {
+    "assets": [
+      {
+        "coinType": "fixture:TEST_USDC",
+        "toolsSpendAtomic": "12000000",
+        "unknownAtomic": "25000000",
+        "budgetAtomic": "60000000",
+        "warnAtAtomic": "45000000",
+        "budgetWarning": false
+      }
+    ],
+    "needsContextRefs": [
+      "fixture:tx-E"
+    ],
+    "refundLinks": [
+      {
+        "refundObservationId": "fixture:tx-D",
+        "originalObservationId": "fixture:tx-B",
+        "coinType": "fixture:TEST_USDC",
+        "amountAtomic": "12000000",
+        "eventId": "M10",
+        "status": "active"
+      }
+    ]
+  },
+  "limits": [
+    "Local serialized replay is not Walrus cold recovery",
+    "No live Tatum query or mainnet memory written",
+    "No external user study"
+  ]
+}

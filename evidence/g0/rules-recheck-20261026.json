@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-26T11:10:00Z",
+  "url": "https://thewalrussessions.wal.app/tatum-total-recall/index.html",
+  "method": "web open official rules",
+  "status": "success",
+  "deadline": "2026-11-10T17:00:00Z",
+  "videoMinutes": [
+    2,
+    3
+  ],
+  "minimumMainnetMemories": 10,
+  "publicRepoAndWorkingDemo": true,
+  "publishedBlog": true,
+  "tatumWhereRelevant": true,
+  "AIBuilderOptional": true,
+  "acceptedTerms": false,
+  "earlier403": "Retained original evidence/g0/rules.meta.json"
+}

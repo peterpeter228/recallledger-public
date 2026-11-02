@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "status": "template_not_evidence",
+  "manifestVersion": null,
+  "generatedAt": null,
+  "project": "RecallLedger",
+  "codeCommit": null,
+  "network": "mainnet",
+  "accountId": null,
+  "ownerAddress": null,
+  "delegatePublicKey": null,
+  "namespace": null,
+  "contentOrigin": "synthetic",
+  "storageVerification": "not_run",
+  "expectedEventCount": 12,
+  "actualDoneCount": null,
+  "entries": [],
+  "stateHash": null,
+  "restoreReportPath": null,
+  "tatumEvidencePath": null,
+  "limitations": [
+    "This is a template. Null fields are not proof of any chain action.",
+    "A stored synthetic event does not prove a corresponding financial transaction.",
+    "Blob availability, decryption access and expiry must be checked separately.",
+    "Do not include private keys, API keys, sessions or non-public user data."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-30T08:57:52.798Z",
+  "synthetic": true,
+  "realBrowser": false,
+  "results": [
+    {
+      "name": "fresh real PG synthetic scope",
+      "status": "PASS"
+    },
+    {
+      "name": "202 lost after commit yields unknown transport",
+      "status": "PASS"
+    },
+    {
+      "name": "same-key readback finds committed operation",
+      "status": "PASS"
+    },
+    {
+      "name": "new authenticated session resumes same pending operation",
+      "status": "PASS"
+    },
+    {
+      "name": "same key identical body does not duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "same key changed body conflicts",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown different key does not fabricate operation",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic verified receipt advances exactly one event",
+      "status": "PASS"
+    },
+    {
+      "name": "injected conflict remains explicit 409",
+      "status": "PASS"
+    },
+    {
+      "name": "injected rate limit remains explicit 429",
+      "status": "PASS"
+    },
+    {
+      "name": "error cases do not advance projection",
+      "status": "PASS"
+    }
+  ]
+}

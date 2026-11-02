@@ -1,0 +1,5 @@
+import {writeFileSync,mkdirSync,readFileSync} from 'node:fs';
+const keys=['DATABASE_URL','SESSION_SECRET','OPERATOR_BOOTSTRAP_SECRET','TATUM_API_KEY','MEMWAL_ACCOUNT_ID','MEMWAL_PRIVATE_KEY','MEMWAL_AGENT_PUBLIC_KEY','LLM_BASE_URL','LLM_API_KEY','LLM_MODEL'];
+const pkg=JSON.parse(readFileSync(new URL('../package.json',import.meta.url),'utf8'));
+const report={observedAt:new Date().toISOString(),runtime:process.version,expectedRuntime:pkg.engines.node,runtimeMatches:process.version===`v${pkg.engines.node}`,dependencies:pkg.dependencies,configuration:Object.fromEntries(keys.map(k=>[k,{present:!!process.env[k]}])),liveAcceptance:'BLOCKED_NO_AUTHENTICATED_EVIDENCE',actualMainnetMemoryCount:0,mainnetWritesEnabled:process.env.ALLOW_MAINNET_MEMORY_WRITES==='true',notice:'Presence is not authentication or authorization. No keys or secret values are printed. No network request performed.'};
+mkdirSync('evidence',{recursive:true});writeFileSync('evidence/environment.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

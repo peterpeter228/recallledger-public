@@ -1,0 +1,63 @@
+{
+  "status": "CORE_PASS_RESPONSIVE_PENDING",
+  "observedAt": "2026-10-26T10:04:43Z",
+  "sourceCommit": "11d2af35ce9bb665a0f3de3d695582c237020825",
+  "mode": "synthetic fixture; no mainnet",
+  "browser": "existing cloud Chromium via supported CUA tab14",
+  "url": "http://localhost:3000/",
+  "viewport": {
+    "innerWidth": 1269,
+    "innerHeight": 757,
+    "documentScrollWidth": 1254
+  },
+  "passed": [
+    "Actual 12 explicit confirmation and completion steps",
+    "All 12 pending summaries unchanged",
+    "M02 double click only one event",
+    "Purpose changed to internal transfer then expense before save",
+    "Invalid min5 max4 rule rejected; version remained3 rules0; reload and corrected max30 recovered",
+    "Editable v2 maximum21 then20 before confirmation",
+    "Tools spend49 warning ->24 warning cleared ->12 after explicit D refund linked to B",
+    "Final unknown E25, rules0 after revoke, historical B remains rule-v1",
+    "Evidence clipboard983 chars fixtureB null memoryReceipt; initial modal focus Close evidence; Escape restores View evidence; explicit close",
+    "Memory shows12 events; v1 superseded and v2 revoked; opened v1 exact history",
+    "Fixture restore expected12 restored12 remoteRestoreVerified false",
+    "B: off unknown at every snapshot; on expense/v1 M04,expense/v2 M08,unknown M12",
+    "E: off unknown at every snapshot; on expense/v1 M04,unknown above max M08,unknown M12",
+    "Full input hashes constant across snapshots and off/on UI match message"
+  ],
+  "hashes": {
+    "B": "68cb9d42a26e175914bccffe5ecf0c9e0baaaa9acb003fc8fdf4cef753c34cd3",
+    "E": "075b137f9ef40c4bb9e96f5eeeb5ec57b4bd30b7ca8409078765fc88e7c7076b"
+  },
+  "findings": [
+    "Invalid input alert is generic INVALID_INPUT: INVALID_INPUT, no field explanation",
+    "Replay provides simultaneous on/off columns, not literal toggle",
+    "Only min/max/time fields editable; other scope predicates read-only",
+    "Screenshot API can lag completed DOM: image filenames are capture intentions, not content proof. See screenshot-content-notes.md."
+  ],
+  "untested": [
+    "375/768/1440 widths awaiting harness",
+    "Remote persistence failure/retry",
+    "rate-limited/unsupported/conflicting/incomplete restore UI",
+    "protected operator/live provider"
+  ],
+  "console": "100 returned entries all extension metadata errors; no app-origin error in this captured window, not blanket zero-error claim",
+  "screenshots": [
+    "M01-completed.jpg",
+    "M02-completed.jpg",
+    "M04-completed.jpg",
+    "M04-invalid-scope.jpg",
+    "M06-completed.jpg",
+    "M07-completed.jpg",
+    "M10-completed.jpg",
+    "M12-completed.jpg",
+    "evidence-copy.jpg",
+    "final-inbox-stable.jpg",
+    "memory-restore.jpg",
+    "replay-B-M04.jpg",
+    "replay-B-M12.jpg",
+    "replay-E-M04.jpg",
+    "replay-E-M08.jpg"
+  ]
+}

@@ -1,0 +1,123 @@
+RecallLedger
+Your wallet facts. Your remembered context.
+Inbox
+Memory
+Replay
+Temporary sandbox
+Synthetic inputs
+Storage: Mainnet verified (recorded 2026-11-02T05:45:02.234Z)
+Mainnet memories: 12
+Recorded Mainnet storage verification of synthetic teaching memories. This historical check is not a live availability or retention guarantee, and does not verify the synthetic transactions.
+
+The teaching sandbox runs only in this browser tab. Reloading or closing it loses its state; other tabs are isolated. Nothing is persisted or sent to Walrus.
+
+Remembered in this temporary sandbox. This is not a Walrus receipt.
+
+Context with a history.
+
+See what you confirmed, what changed, and why.
+
+Check fixture restoration
+Synthetic scenario timeline
+Planned scenario events: 12 · Current sandbox events: 12
+Fixture restore report
+{
+  "status": "simulated",
+  "source": "ephemeral_session_events",
+  "stateHash": "4bbdafa10ee6454f8d67254ad75c07317ff7754a23731e1ba5dc622951a7c101",
+  "expectedCount": 12,
+  "restoredCount": 12,
+  "remoteRestoreVerified": false,
+  "note": "Local replay only; not Walrus cold restore."
+}
+Remembered rules
+Tools · rule-tools-v1
+
+Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–30.00.
+
+2026-10-26 to 2026-11-25 · confirmed in ddcc5902-835a-47e1-9a51-37f95778528b
+
+Superseded
+Tools · rule-tools-v2
+
+Outgoing TEST_USDC to COUNTERPARTY_R, 5.00–20.00.
+
+2026-10-26 to 2026-11-25 · confirmed in 8f761b0c-5b9d-432c-95e7-fd3fda833c39
+
+Revoked
+Your memory timeline
+6bdd7400-1c09-4686-b284-ed56b2452775
+Set your Tools budget
+
+Preference confirmed · Synthetic event
+
+View event and exact scope
+f75dceb4-d65a-46e8-950d-3d9393939a07
+Inspect transfer A
+
+Observation recorded · Synthetic event
+
+View event and exact scope
+381fd1bf-3250-4c4e-8b24-656c3df08597
+Explain transfer A
+
+Label confirmed · Synthetic event
+
+View event and exact scope
+ddcc5902-835a-47e1-9a51-37f95778528b
+Teach a reusable rule
+
+Rule confirmed · Synthetic event
+
+View event and exact scope
+cf003a40-6a65-4b2a-bbfd-d15bfb803913
+Apply context to transfer B
+
+Decision recorded · Synthetic event
+
+View event and exact scope
+0e96c40c-a206-4615-bdd6-e1d0ea0c4b1e
+Review transfer C
+
+Decision recorded · Synthetic event
+
+View event and exact scope
+1829c1c5-1a71-4cfd-8e5b-bc22e9135462
+Correct this transfer
+
+Correction confirmed · Synthetic event
+
+View event and exact scope
+8f761b0c-5b9d-432c-95e7-fd3fda833c39
+Narrow the matching range
+
+Rule confirmed · Synthetic event
+
+View event and exact scope
+d86b76e8-70a2-4a40-b9e7-d847668956af
+Inspect incoming transfer D
+
+Observation recorded · Synthetic event
+
+View event and exact scope
+240e9809-9c27-4542-96a1-da7708f50a3f
+Link an explicit refund
+
+Refund link confirmed · Synthetic event
+
+View event and exact scope
+f3dbf296-e276-4563-9a71-e7d5390925ec
+Review the next transfer
+
+Decision recorded · Synthetic event
+
+View event and exact scope
+39dade43-9b32-4ab2-b0ac-620f2e10ae36
+Stop using this rule
+
+Rule revoked · Synthetic event
+
+View event and exact scope
+Operator tools · protected local session
+Fixture provider · No mainnet writes
+Your context is yours to confirm.

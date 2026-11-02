@@ -1,0 +1,64 @@
+- banner:
+  - heading "Real browser iframe viewport acceptance" [level=1]
+  - paragraph: Test fixture only. The unchanged RecallLedger app runs inside an ordinary same-origin iframe. This is not DevTools or device emulation, and it does not test mobile hardware or network conditions. Business data remains explicitly synthetic.
+  - navigation "Frame viewport width":
+    - button "375 CSS px"
+    - button "768 CSS px"
+    - button "1440 CSS px" [pressed]
+    - button "Measure rendered frame" [active]
+  - status: "{ \"requestedFrameWidth\": 1440, \"actualInnerWidth\": 1440, \"actualClientWidth\": 1425, \"actualScrollWidth\": 1425, \"actualHeight\": 900, \"horizontalOverflow\": false, \"appTitle\": \"RecallLedger · Remembered context\", \"observedAt\": \"2026-10-26T10:17:30.512Z\", \"scope\": \"ORDINARY_IFRAME_NOT_DEVICE_EMULATION\" }"
+- main:
+  - iframe [id="frame"]:
+    - banner:
+      - link "RecallLedger Your wallet facts. Your remembered context.":
+        - /url: "#"
+        - strong: RecallLedger
+        - generic: Your wallet facts. Your remembered context.
+      - navigation "Main navigation":
+        - button "Inbox"
+        - button "Memory"
+        - button "Replay"
+      - generic: Temporary sandbox
+      - strong: Synthetic inputs
+    - main:
+      - status: Remembered in this temporary sandbox. This is not a Walrus receipt.
+      - heading "The same transfer. Different context." [level=1]
+      - paragraph: Replay never changes your memories.
+      - text: Fixed synthetic input
+      - combobox "Fixed synthetic input":
+        - option "Transfer B · 12.00 TEST_USDC" [selected]
+        - option "Transfer E · 25.00 TEST_USDC"
+      - text: Memory snapshot
+      - combobox "Memory snapshot":
+        - option "As of M04 · Original scope" [selected]
+        - option "As of M08 · Narrowed scope"
+        - option "As of M12 · Revoked"
+      - generic: WITHOUT SAVED CONTEXT
+      - heading "Needs context" [level=2]
+      - paragraph: Your explanation is needed.
+      - separator
+      - term: Basis
+      - definition: Needs context
+      - term: Rule
+      - definition: None
+      - term: Reason
+      - definition: No matching rule
+      - term: Memory version
+      - definition: "0"
+      - generic: WITH SAVED CONTEXT
+      - heading "Expense" [level=2]
+      - paragraph: Tools expense
+      - separator
+      - term: Basis
+      - definition: Confirmed rule
+      - term: Rule
+      - definition: rule-tools-v1
+      - term: Reason
+      - definition: Confirmed scope match
+      - term: Memory version
+      - definition: "4"
+      - generic "Same input hash · 68cb9d42a26e1759…"
+      - generic "Operator tools · protected local session"
+    - contentinfo:
+      - generic: Fixture provider · No mainnet writes
+      - generic: Your context is yours to confirm.

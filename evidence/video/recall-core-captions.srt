@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:16,000
+RecallLedger — actual local UI, synthetic inputs.
+Four setup events are preloaded. No live model or Walrus Mainnet writes.
+
+2
+00:00:16,000 --> 00:00:34,000
+Apply the confirmed scope to transfer B.
+Pending fixture jobs do not change the current result.
+
+3
+00:00:34,000 --> 00:00:48,000
+The broad rule also includes transfer C.
+Completing the fixture brings Tools spend to 49 TEST_USDC.
+
+4
+00:00:48,000 --> 00:01:09,000
+49 triggers the unchanged reminder threshold.
+A transfer amount alone does not establish its purpose.
+
+5
+00:01:09,000 --> 00:01:30,000
+Next, explicitly review C as reimbursement.
+This is user-confirmed context, not a blockchain-proven purpose.
+
+6
+00:01:30,000 --> 00:01:39,500
+The correction waits for explicit local fixture completion.
+This test control is not a Walrus Mainnet receipt.
+
+7
+00:01:39,500 --> 00:01:56,000
+Tools spend drops from 49 to 24.
+Review a narrower future rule: maximum 30 becomes 20.
+
+8
+00:01:56,000 --> 00:02:13,000
+Record incoming transfer D as an observation.
+Do not assume that every incoming transfer is a refund.
+
+9
+00:02:13,000 --> 00:02:33,000
+Explicitly link D to the original expense B.
+The server checks direction, asset and remaining refundable amount.
+
+10
+00:02:33,000 --> 00:03:00,000
+Linked refund: Tools spend changes from 24 to 12.
+This clip ends after step 10. Later E/revocation were tested separately.

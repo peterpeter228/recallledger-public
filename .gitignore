@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!templates/env.example
+*.log
+.data/
+!evidence/**/*.log
+!tests/**/*.log
+out/

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-26T05:28:03.146550+00:00",
+  "status": "PASS",
+  "commands": [
+    "pnpm install --frozen-lockfile --prod=false --store-dir <temporary shared store>",
+    "pnpm run build",
+    "pnpm run doctor",
+    "pnpm run memory:seed"
+  ],
+  "workspace": "fresh temporary directory without node_modules or .git",
+  "limits": [
+    "No credentials, deployment, real mainnet or browser used"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1",
+  "scopeId": "demo-recallledger",
+  "namespace": "recallledger-demo-v1",
+  "checkedAt": "2026-11-02T05:44:22.553Z",
+  "snapshotVersion": 2,
+  "complete": true,
+  "operations": [
+    {
+      "operationId": "0295f5d6-c53e-4279-851c-cef8252b4dd1",
+      "jobId": "64318c0f-fc34-4f35-887d-5fb0b7c8a3f5",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "09e4eea8-acf1-49b1-ac75-f83e45b61d53",
+      "jobId": "fd5b7d48-6584-4391-828f-4d87451507a0",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "0ae47cad-688b-4988-9588-779a6260c244",
+      "jobId": "b1957e32-7d42-4c7d-9f43-649fe2e6ae9f",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "31944877-f870-48e6-94b5-94db5ee77b9c",
+      "jobId": "222c4b78-2290-4910-be84-43619839d1de",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "455eef0d-1564-48fa-a4fc-28f54512639c",
+      "jobId": "ce6acf10-28e2-4a2b-819c-708c001d62c7",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "52fd6a21-5f20-4679-a121-b685cf15e6fc",
+      "jobId": "52d82f96-1678-4fb4-9e8b-b9ce8565ef8e",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "7d91d41c-a7b3-4db8-b624-504cbae06301",
+      "jobId": "bb51b46c-92df-44ce-a973-e245424224cb",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "83b46e06-5e26-4410-b8cb-85142c330229",
+      "jobId": "da29df80-ca8c-4c1e-b557-897530cc16de",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "ae8d0a1d-136d-44bc-9a50-6c7cbb3d7bc6",
+      "jobId": "13e2a107-6320-4cda-b6ab-e80e5f6946cf",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "db5739a5-1802-475a-8863-940cb78331a3",
+      "jobId": "1de40fbe-8f3b-4ccc-804c-6123c05baf9b",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "e134706a-dff0-493c-bc82-629a6c7ec669",
+      "jobId": "237e17a6-5fed-4246-82fe-d01ca3b3014e",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    },
+    {
+      "operationId": "edc04cb5-8e5c-4164-8460-aae1e7983544",
+      "jobId": "7025096f-f80b-41ac-ae55-925a22f04db7",
+      "state": "done",
+      "noRemoteWriteVerified": false
+    }
+  ],
+  "remoteBlobIds": [
+    "-ofGFuN5B_cq3XCRd3HfQCkO94oXj9zoBO025Pj_YJM",
+    "1VLpL2IwdOy4sjGkoA_2O9N2HO5JcuZ7cMNP-856WEc",
+    "3UyydPggOWfY-m1mYwjZTGSp_Ovv707TzFERXKGhihY",
+    "4JBEDJczvP_Yi0s-_Fkh2tDI62Mx55MsLZgKZtemdBE",
+    "59Bo9eCPb0ZLruZYUAt6W_juAAbaFE6KB3XEMBGEs7A",
+    "anw62RUI9rj8-DblAAVs_cEBwFC4lnlgvBZWK9lut28",
+    "brUOKJ17kPVGuHZxG6EZA4OnTC1d2ROHpproqOBGrUI",
+    "fUmQbgw7JG8JvWXbM_EFp1JElD-fUfMjJB8L_KB7KY0",
+    "k8erNUZGjhSkVtlIGDLakeGVZlo2gRlQSqBO0MfC7EQ",
+    "lRk5LENp6C2sGjI-65cRd3hC2d79ziBbD3cwpN-IZvs",
+    "x9iB_rTAe5JQZXRki38KOY7lAfVFwH26DpeS--7aFzU",
+    "Y3ygZQo5rI4BZCvuaBJgC5_FrOnv_Hh9u6UqV-2rD0c"
+  ],
+  "unresolvedOperationIds": [],
+  "operationsHash": "f0bc6990fb35f5245e027d061013cdfeac84ed5f4cab8929245a620f508f1de2",
+  "inventoryHash": "88be044eb1923dc04f94ff80de4465fc7e8adbea0c74c9295c4cc4febdea4fbc"
+}

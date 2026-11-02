@@ -1,0 +1,14 @@
+{
+  "executedAt": "2026-10-26T05:25:46Z",
+  "command": "TEST_DATABASE_URL=<ephemeral localhost PG> vitest run",
+  "exitCode": 0,
+  "testFiles": 8,
+  "testsPassed": 42,
+  "testsSkipped": 0,
+  "postgres": "18.4 actual local",
+  "mode": "synthetic domain and fake remote adapters; real local Postgres",
+  "liveProviderCalls": 0,
+  "browser": "BLOCKED awaiting approved alternate method",
+  "sourceCommit": null,
+  "note": "Integrated final local suite including real PostgreSQL and synthetic CLI child processes. Browser/live independent gates remain blocked."
+}

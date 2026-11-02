@@ -1,0 +1,45 @@
+{
+  "recordedAt": {
+    "start": "2026-10-26T10:51:10Z",
+    "end": "2026-10-26T10:54:10Z"
+  },
+  "artifact": "RecallLedger_Core_Correction_180s.mp4",
+  "sha256": "b44c878096c23e4a4b8cf8cfc8d41ca4623f869973ae45c875324876d108328c",
+  "bytes": 1071639,
+  "durationSeconds": 180,
+  "codec": "h264",
+  "dimensions": [
+    1278,
+    848
+  ],
+  "fps": 15,
+  "audio": false,
+  "captions": "optional English mov_text",
+  "mode": "synthetic local fixture",
+  "scope": "M05\u2013M10; M01\u2013M04 preloaded; M11/M12 executed after capture",
+  "visibleSequence": [
+    49,
+    24,
+    12
+  ],
+  "editing": "Video stream copied unchanged; optional captions muxed; no cuts, speed-up or synthetic frames",
+  "verification": {
+    "decode": "completed; empty error log",
+    "rootInspectedRawFramesSeconds": [
+      55,
+      105,
+      165
+    ]
+  },
+  "library": {
+    "id": "libfile_9ad23f808b708191a7403cf0de71c380",
+    "version": 0,
+    "deliveryMessage": "Sentinel_2ee518d2ce70819192e0a270958dd8e8",
+    "acceptedAt": "2026-10-26T11:10:03Z",
+    "openedByUser": null
+  },
+  "priorAttempt": "blocked/static recording not a demo; excluded from private checkpoint binary artifacts",
+  "sourceBaseline": "11d2af35ce9bb665a0f3de3d695582c237020825",
+  "patchHashes": "../browser-cua/validation-fix/source-build-sha256.txt",
+  "mainnetMemories": 0
+}

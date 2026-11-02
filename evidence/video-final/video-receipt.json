@@ -1,0 +1,61 @@
+{
+  "status": "PASS_LOCAL_NARRATED_VIDEO",
+  "completedAt": "2026-11-02T08:10:48.644189Z",
+  "path": "out/recallledger-demo.mp4",
+  "durationS": 165.0,
+  "sha256": "c36e8af5a55d48792971ed059695f50b531361e50ee6d9e2b3c585794f7780ba",
+  "bytes": 5406462,
+  "srt": {
+    "path": "out/recallledger-demo.srt",
+    "sha256": "7c80a45a1bb9017b617d2b9d58965043f7386104598d61bf0a179a0b787079a5",
+    "bytes": 3282,
+    "cues": 38,
+    "embeddedTextMatchesSidecarAndNarration": true,
+    "burnedIn": true
+  },
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "pixelFormat": "yuv420p",
+    "frames": 4950
+  },
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "probePath": "out/media-check/ffprobe.json",
+  "renderPlan": "out/temp/recallledger-render-OujDWD/render-plan.json",
+  "speechTimingPath": "out/narration/alignment.json",
+  "captureManifest": {
+    "path": "evidence/video-final/capture-manifest.json",
+    "sha256": "e94d21e05d6157e84fda78a0532cad32afdc22ba264ce9f562ff1bdd0fc73a36"
+  },
+  "unlistedUpload": "NOT_RUN",
+  "remoteLoggedOutPlayback": "NOT_RUN",
+  "providerRequests": 0,
+  "mainnetWrites": 0,
+  "uploaded": false,
+  "publicUrl": null,
+  "limits": [
+    "Synthetic teaching story, not customer payments",
+    "Exactly one earlier authorized recorded Tatum read; no provider retry",
+    "Owner 1B real-transfer loop NOT_RUN",
+    "Recorded Mainnet teaching write/restore evidence, not new writes or availability guarantee",
+    "Fresh screenshots use exact existing build hashes; parent final rebuild is separate",
+    "No upload, deploy, post, signing or spending"
+  ],
+  "manifest": {
+    "path": "out/recallledger-demo-manifest.json",
+    "sha256": "2e3021de33d0c8fb32c4eb04ab0a49490e905568fc31a9d08cb90ebe3b11f602"
+  },
+  "actualMediaEvidence": {
+    "inspection": "out/media-check/inspection.json",
+    "visualReview": "out/media-check/visual-review.json",
+    "playback": "out/media-check/playback-1x.json",
+    "frameCount": 38,
+    "audioCueCount": 38,
+    "minimumDecodedAudioCueCorrelation": 0.9999616504655466,
+    "subjectiveListeningPerformed": false,
+    "allSpokenPcmPreservedWithinCaptions": true
+  }
+}

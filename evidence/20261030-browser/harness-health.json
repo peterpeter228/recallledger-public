@@ -1,0 +1,1 @@
+{"data":{"status":"ok","persistence":"postgres","operatorEnabled":true,"writesEnabled":true,"remoteWrites":"synthetic-fixture-only","demo":"ephemeral-synthetic","mainnetMemories":0},"meta":{"requestId":"req-1","dataOrigin":"synthetic","memoryVersion":0}}

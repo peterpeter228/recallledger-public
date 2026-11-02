@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -174,9 +174,45 @@ Your browser does not support HTML5 video. <a href="recallledger-demo.mp4">Downl
 </video>
 </section>
 
-<header id="title-block-header">
-<h1 class="title">RecallLedger — Walrus x Tatum: Total Recall</h1>
-</header>
+<header><h1>RecallLedger — Walrus x Tatum: Total Recall</h1></header>
+<h2 id="current-publication-status-2026-11-02-1014-utc">Current
+publication status — 2026-11-02 10:14 UTC</h2>
+<ul>
+<li><strong>Public repository:</strong> <a
+href="https://github.com/peterpeter228/recallledger-public">https://github.com/peterpeter228/recallledger-public</a>
+(MIT).</li>
+<li><strong>Published blog:</strong> <a
+href="https://peterpeter228.github.io/recallledger-public/">https://peterpeter228.github.io/recallledger-public/</a>.</li>
+<li><strong>Public demo:</strong> <a
+href="https://recallledger-public.vercel.app/">recallledger-public.vercel.app</a>
+— production deployment ready at 2026-11-02 10:10:58 UTC, application
+source <code>f4c6c4322511327cdc711abc40d607a61770685e</code>. Anonymous
+Inbox, View Evidence, Replay and Memory checks passed. Operator access
+and writes remain disabled; persistence is not configured.</li>
+<li><strong>Public video:</strong> <a
+href="https://cdn.jsdelivr.net/gh/peterpeter228/recallledger-public@2b86a4d6567afbfd428d818bb8d392fb6ed235fa/docs/recallledger-demo.mp4">narrated
+MP4, 165 seconds / 2:45</a>, also embedded in the blog; browser playback
+was verified. This is public hosting, not a claim of YouTube/Loom
+unlisted publication. SHA-256:
+<code>c36e8af5a55d48792971ed059695f50b531361e50ee6d9e2b3c585794f7780ba</code>.</li>
+<li><strong>Submission:</strong> the owner reported successful form
+submission at 2026-11-02 09:55 UTC. The submitted field values and
+independent receipt have not been inspected; this is owner-reported
+success, not an independently verified receipt or eligibility decision.
+Do not resubmit.</li>
+<li><strong>Evidence boundary:</strong> 12 synthetic teaching memories
+have recorded Mainnet verification at
+<code>2026-11-02T05:45:02.234Z</code> and fresh remote restore at
+<code>2026-11-02T05:45:08.379Z</code>. Public <code>recorded_live</code>
+evidence shows those saved results, not a fresh provider query. One
+successful read-only Tatum lookup is recorded; no live real-transfer
+operator learning loop was run.</li>
+</ul>
+<p>This status supersedes earlier preparation-only/publication-pending
+wording. Historical receipts, timestamps and failed runs remain
+unchanged. Private identity/account answers are deliberately not
+published; their absence here is not a claim that the owner’s submitted
+form omitted them.</p>
 <h1 id="what-it-does">What it does</h1>
 <p>RecallLedger lets a user explain a Sui transfer once without making
 that explanation an unlimited rule. It separates transaction facts from
@@ -250,7 +286,7 @@ reload loses it and another tab starts empty. The recorded evidence view
 shows saved verification, not a current provider query. <strong>The demo
 cannot write; Mainnet writes happen only from the separately authorized
 operator host.</strong> Local setup is in the <a
-href="../README.md#run-the-local-demo-without-credentials">README</a>.</p>
+href="https://github.com/peterpeter228/recallledger-public/blob/main/README.md#run-the-local-demo-without-credentials">README</a>.</p>
 <h1 id="how-it-uses-tatum-walrus">How it uses Tatum + Walrus</h1>
 <p><strong>One successful read-only Tatum Sui gRPC call is
 recorded</strong> for public digest
@@ -281,7 +317,8 @@ records are in the final section.</p>
 model weights. The paired comparisons hold transaction facts and
 evaluation time constant and add no memories. The four lifecycle cases
 above come from the saved <a
-href="../evidence/fixture-evaluation.json">fixture evaluation</a>.</p>
+href="https://github.com/peterpeter228/recallledger-public/blob/2b86a4d6567afbfd428d818bb8d392fb6ed235fa/evidence/fixture-evaluation.json">fixture
+evaluation</a>.</p>
 <p><strong>This evidence differs from “four flips.”</strong> It combines
 a changed decision, scope and revocation boundaries that still ask for
 context, and an explicit refund link. An incoming transfer does not
@@ -293,16 +330,13 @@ establish real-user accuracy or successful live Tatum
 interpretation.</p>
 <h1 id="audit-provenance">Audit &amp; Provenance</h1>
 <h2 id="checkpoints-and-scope">Checkpoints and scope</h2>
-<p>This is an <strong>unpublished, unsigned review copy</strong>, not a
-published or submitted release. Application source checkpoint:
+<p>This is the source of the published blog linked above. Historical
+application source checkpoint:
 <code>d2db0dac27ceaed9c7fd22a0e7b7f18e2b11cabc</code>; WP6a evidence
-checkpoint: <code>3858aadfcecfb37b2c5cad2b626283298587ff52</code>. These
-identify source and evidence, not an approved release. The containing
-private WP6b commit binds the current pack without embedding its own
-hash; it is not a public release or deployment identifier. Provenance:
+checkpoint: <code>3858aadfcecfb37b2c5cad2b626283298587ff52</code>
+(evidence-only, not a deployment SHA). Historical provenance remains in
 <code>evidence/acceptance.json</code> (<code>codeCommit</code>,
-<code>wp6aTeaching20261102</code>, latest job under
-<code>wp6bFinal</code>).</p>
+<code>wp6aTeaching20261102</code>, <code>wp6bFinal</code>).</p>
 <p>Owner request <strong>t209u1B</strong> selected the teaching set and
 <strong>no real-transfer operator loop</strong>, superseding the older
 conditional real-loop plan. That restriction remains after <strong>t211u
@@ -333,7 +367,8 @@ the older browser’s B/M12 case.</li>
 (<code>offlineExecution20261102.wp4</code>, <code>wp6b</code>
 health/evidence acceptance and writes-disabled view). These support
 local recorded/synthetic behavior, not a new public-platform pass.</li>
-<li>Tatum: <a href="../evidence/tatum-probe-J91TcZuh.json">probe
+<li>Tatum: <a
+href="https://github.com/peterpeter228/recallledger-public/blob/2b86a4d6567afbfd428d818bb8d392fb6ed235fa/evidence/tatum-probe-J91TcZuh.json">probe
 receipt</a>, <code>ok:true</code>, requested
 <code>2026-11-02T15:42:20.589+08:00</code>, gRPC method
 <code>/sui.rpc.v2.LedgerService/GetTransaction</code>, checkpoint
@@ -346,9 +381,9 @@ chain-content hash. <code>evidence/live-acceptance.json</code> records
 the scoped read; its earlier missing-digest state remains historical in
 <code>evidence/acceptance.json</code> →
 <code>wp6aTeaching20261102</code>. The <a
-href="../evidence/g0/tatum-proof-contract.md">structural contract</a>
-and <code>offlineExecution20261102.wp2</code> describe separate offline
-cases, not extra live requests.</li>
+href="https://github.com/peterpeter228/recallledger-public/blob/2b86a4d6567afbfd428d818bb8d392fb6ed235fa/evidence/g0/tatum-proof-contract.md">structural
+contract</a> and <code>offlineExecution20261102.wp2</code> describe
+separate offline cases, not extra live requests.</li>
 <li>Walrus writes: <code>evidence/acceptance.json</code>
 (<code>wp6aTeaching20261102.mainnetWritesPerformed</code>,
 <code>dataOrigin</code>, <code>storage</code>);
@@ -413,9 +448,9 @@ physical devices or a full matrix. Screenshot filenames are not proof of
 completed state:
 <code>evidence/browser-cua/screenshot-content-notes.md</code> identifies
 pending paint states. Fresh <a
-href="../evidence/video-final/capture-manifest.json">video captures</a>
-and final playback are LOCAL loopback evidence, not a new full WP4
-matrix or public-platform acceptance.</p>
+href="https://github.com/peterpeter228/recallledger-public/blob/2b86a4d6567afbfd428d818bb8d392fb6ed235fa/evidence/video-final/capture-manifest.json">video
+captures</a> and final playback are LOCAL loopback evidence, not a new
+full WP4 matrix or public-platform acceptance.</p>
 <p>The historical 180-second clip shows synthetic
 <strong>M05–M10</strong>, with M01–M04 preloaded and M11/M12 outside
 capture. It is silent, with optional English captions, not a Mainnet
@@ -429,28 +464,24 @@ English burned-in/embedded cues plus
 <code>out/recallledger-demo.srt</code>, 5,406,462 bytes, SHA-256
 <code>c36e8af5a55d48792971ed059695f50b531361e50ee6d9e2b3c585794f7780ba</code>.
 The retained <a
-href="../evidence/video-final/video-receipt.json">receipt</a>, completed
-<code>2026-11-02T08:10:48.644189Z</code>, indexes media inspection and
-full unmuted 1× local Chrome playback to the end: 4,950 decoded frames,
-zero drops/errors. Existing evidence and fresh loopback-only screenshots
-supply the visuals; this is not new Mainnet write footage, subjective
-listening or remote playback acceptance. Upload remains forbidden here;
-the public/unlisted URL is pending.</p>
+href="https://github.com/peterpeter228/recallledger-public/blob/2b86a4d6567afbfd428d818bb8d392fb6ed235fa/evidence/video-final/video-receipt.json">receipt</a>,
+completed <code>2026-11-02T08:10:48.644189Z</code>, indexes media
+inspection and full unmuted 1× local Chrome playback to the end: 4,950
+decoded frames, zero drops/errors. Existing evidence and fresh
+loopback-only screenshots supply the visuals; this is not new Mainnet
+write footage, subjective listening or remote playback acceptance. The
+later public MP4 and blog player are now available and browser playback
+was verified; see current status above. This does not change the scope
+or timestamp of the retained local receipt.</p>
 <h2 id="publication-and-owner-review">Publication and owner review</h2>
-<p><strong>Public repository:</strong>
-https://github.com/peterpeter228/recallledger-public (MIT). The older
-private source repository remains private.</p>
-<p><strong>Working demo preview (recorded-live, writes off):</strong>
-https://recallledger-public-9i7iiexz8-peterpeter228s-projects.vercel.app</p>
-<p>This published page is the external blog URL for judging. Local
-handler evidence is supplemental.</p>
-<p>Blog publication, unlisted video upload, form submission and optional
-social sharing remain separate pending owner acts. The <a
-href="SUBMISSION_CHECKLIST.md">ordered checklist</a> is unsigned/open;
-nine identity/account answers remain <strong>OWNER-ONLY open</strong>.
-No final release SHA, export clearance, public readbacks, owner
-signature or submission receipt is supplied by this pack. Twelve
-memories and one successful Tatum read support their stated technical
-scopes, not eligibility certification.</p>
+<p>This page is the published external blog. See current status above
+for the production demo, public video and owner-reported submission
+success. The <a
+href="https://github.com/peterpeter228/recallledger-public/blob/main/submission/SUBMISSION_CHECKLIST.md">current
+checklist</a> distinguishes publication from independent receipt/field
+verification. Optional social sharing is not claimed. Twelve memories
+and one Tatum lookup support only their stated technical scopes, not
+eligibility certification.</p>
+
 </body>
 </html>
